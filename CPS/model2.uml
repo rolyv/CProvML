@@ -3,7 +3,28 @@
   <packageImport xmi:type="uml:PackageImport" xmi:id="_bFrrUJHbEeO5baeFVHxvng">
     <importedPackage xmi:type="uml:Package" href="model.uml#_Q1JdgIt2EeOaDoh4ArG-Qg"/>
   </packageImport>
-  <packagedElement xmi:type="uml:Activity" xmi:id="_VTBwMJHbEeO5baeFVHxvng" name="Create VM" visibility="package">
+  <packagedElement xmi:type="uml:Activity" xmi:id="_VTBwMJHbEeO5baeFVHxvng" name="Create VM" visibility="package" node="_8z6rEJHcEeO5baeFVHxvng _Ai9IoJHdEeO5baeFVHxvng _IKUioJHdEeO5baeFVHxvng _fuW0sJHdEeO5baeFVHxvng _r5riEJHdEeO5baeFVHxvng _-bFLQJHeEeO5baeFVHxvng _w9GGsJHfEeO5baeFVHxvng _EXg4AJHgEeO5baeFVHxvng">
     <useCase xmi:type="uml:UseCase" href="model.uml#_NrwqsIt2EeOaDoh4ArG-Qg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_N0kvsJHdEeO5baeFVHxvng" name="ControlFlow1" source="_Ai9IoJHdEeO5baeFVHxvng" target="_IKUioJHdEeO5baeFVHxvng"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PgmMoJHdEeO5baeFVHxvng" name="ControlFlow2" source="_8z6rEJHcEeO5baeFVHxvng" target="_Ai9IoJHdEeO5baeFVHxvng"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_k8IhIJHdEeO5baeFVHxvng" name="ControlFlow3" source="_IKUioJHdEeO5baeFVHxvng" target="_fuW0sJHdEeO5baeFVHxvng"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_xD9OkJHdEeO5baeFVHxvng" name="ControlFlow4" visibility="public" source="_fuW0sJHdEeO5baeFVHxvng" target="_r5riEJHdEeO5baeFVHxvng">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_r_q_4JHeEeO5baeFVHxvng" annotatedElement="_xD9OkJHdEeO5baeFVHxvng">
+        <body></body>
+      </ownedComment>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_D30gwJHfEeO5baeFVHxvng" name="ControlFlow5" source="_r5riEJHdEeO5baeFVHxvng" target="_-bFLQJHeEeO5baeFVHxvng"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_VNl5wJHfEeO5baeFVHxvng" name="ControlFlow6" source="_r5riEJHdEeO5baeFVHxvng" target="_fuW0sJHdEeO5baeFVHxvng"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_5bEYkJHfEeO5baeFVHxvng" name="ControlFlow7" source="_-bFLQJHeEeO5baeFVHxvng" target="_w9GGsJHfEeO5baeFVHxvng"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_MBQ3oJHgEeO5baeFVHxvng" name="ControlFlow8" source="_w9GGsJHfEeO5baeFVHxvng" target="_EXg4AJHgEeO5baeFVHxvng"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_UM7RgJHgEeO5baeFVHxvng" name="ControlFlow9" source="_w9GGsJHfEeO5baeFVHxvng" target="_-bFLQJHeEeO5baeFVHxvng"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_8z6rEJHcEeO5baeFVHxvng" name="InitialNode1" outgoing="_PgmMoJHdEeO5baeFVHxvng"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Ai9IoJHdEeO5baeFVHxvng" name="New VM button clicked" outgoing="_N0kvsJHdEeO5baeFVHxvng" incoming="_PgmMoJHdEeO5baeFVHxvng"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_IKUioJHdEeO5baeFVHxvng" name="User defined option selected" outgoing="_k8IhIJHdEeO5baeFVHxvng" incoming="_N0kvsJHdEeO5baeFVHxvng"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_fuW0sJHdEeO5baeFVHxvng" name="Name entered" outgoing="_xD9OkJHdEeO5baeFVHxvng" incoming="_k8IhIJHdEeO5baeFVHxvng _VNl5wJHfEeO5baeFVHxvng"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_r5riEJHdEeO5baeFVHxvng" name="DecisionNode1" outgoing="_D30gwJHfEeO5baeFVHxvng _VNl5wJHfEeO5baeFVHxvng" incoming="_xD9OkJHdEeO5baeFVHxvng"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_-bFLQJHeEeO5baeFVHxvng" name="Properties are set" outgoing="_5bEYkJHfEeO5baeFVHxvng" incoming="_D30gwJHfEeO5baeFVHxvng _UM7RgJHgEeO5baeFVHxvng"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_w9GGsJHfEeO5baeFVHxvng" name="DecisionNode2" outgoing="_MBQ3oJHgEeO5baeFVHxvng _UM7RgJHgEeO5baeFVHxvng" incoming="_5bEYkJHfEeO5baeFVHxvng"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_EXg4AJHgEeO5baeFVHxvng" name="ActivityFinalNode1" incoming="_MBQ3oJHgEeO5baeFVHxvng"/>
   </packagedElement>
 </uml:Model>
