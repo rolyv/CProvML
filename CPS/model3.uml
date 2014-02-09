@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_sDsPIJHcEeOk5I5Foh-vog" name="model">
+  <packagedElement xmi:type="uml:Activity" xmi:id="_V-PlgJHdEeOk5I5Foh-vog" name="Create VM From Template Activity Diagram" node="_oaUfQJHdEeOk5I5Foh-vog">
+    <node xmi:type="uml:InitialNode" xmi:id="_oaUfQJHdEeOk5I5Foh-vog" name="InitialNode1"/>
+  </packagedElement>
+</uml:Model>
