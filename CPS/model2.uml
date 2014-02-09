@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_VTBJIJHbEeO5baeFVHxvng" name="model">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_bFrrUJHbEeO5baeFVHxvng">
+    <importedPackage xmi:type="uml:Package" href="model.uml#_Q1JdgIt2EeOaDoh4ArG-Qg"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_VTBwMJHbEeO5baeFVHxvng" name="Create VM" visibility="package">
+    <useCase xmi:type="uml:UseCase" href="model.uml#_NrwqsIt2EeOaDoh4ArG-Qg"/>
+  </packagedElement>
+</uml:Model>
