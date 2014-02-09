@@ -84,6 +84,11 @@
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_82B-EZDjEeO_F6mXGJ9tdA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_82B-EpDjEeO_F6mXGJ9tdA" value="*"/>
     </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_PHwaYJHTEeODqZMsRbi-sw" name="DeleteInstance">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_S6qEQJHTEeODqZMsRbi-sw" name="name">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_9OB6QJDWEeO_F6mXGJ9tdA" name="Instance">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_pbJwMJDXEeO_F6mXGJ9tdA" name="Name" visibility="public">
@@ -210,4 +215,5 @@
   <packagedElement xmi:type="uml:Class" xmi:id="_Z6f0AJD-EeO_F6mXGJ9tdA" name="Template">
     <generalization xmi:type="uml:Generalization" xmi:id="_buVwMJD-EeO_F6mXGJ9tdA" general="_9OB6QJDWEeO_F6mXGJ9tdA"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_sndPEJHSEeODqZMsRbi-sw" name="environment" classifier="_joviIJDWEeO_F6mXGJ9tdA"/>
 </uml:Model>
