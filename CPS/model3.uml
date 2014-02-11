@@ -1,6 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_sDsPIJHcEeOk5I5Foh-vog" name="model">
-  <packagedElement xmi:type="uml:Activity" xmi:id="_V-PlgJHdEeOk5I5Foh-vog" name="Create VM From Template Activity Diagram" node="_oaUfQJHdEeOk5I5Foh-vog">
-    <node xmi:type="uml:InitialNode" xmi:id="_oaUfQJHdEeOk5I5Foh-vog" name="InitialNode1"/>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_V-PlgJHdEeOk5I5Foh-vog" name="Create VM From Template Activity Diagram" node="_oaUfQJHdEeOk5I5Foh-vog _kAXnAJHeEeOk5I5Foh-vog _2QqukJHeEeOk5I5Foh-vog _9wXaUJHeEeOk5I5Foh-vog _N6NLsJHfEeOk5I5Foh-vog _gJqlwJHfEeOk5I5Foh-vog _bzRbAJHkEeOk5I5Foh-vog _D-ytkJKyEeOk5I5Foh-vog _cvptMJK0EeOk5I5Foh-vog">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_oW47UJHeEeOk5I5Foh-vog" name="ControlFlow1" source="_oaUfQJHdEeOk5I5Foh-vog" target="_kAXnAJHeEeOk5I5Foh-vog"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_5fT00JHeEeOk5I5Foh-vog" name="ControlFlow2" source="_kAXnAJHeEeOk5I5Foh-vog" target="_2QqukJHeEeOk5I5Foh-vog"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_EIMfEJHfEeOk5I5Foh-vog" name="ControlFlow3" source="_2QqukJHeEeOk5I5Foh-vog" target="_9wXaUJHeEeOk5I5Foh-vog"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_cOhl4JHfEeOk5I5Foh-vog" name="" source="_N6NLsJHfEeOk5I5Foh-vog"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_uL6YgJHfEeOk5I5Foh-vog" name="" target="_gJqlwJHfEeOk5I5Foh-vog"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_LdlGUJHhEeOk5I5Foh-vog" name="Is the template correct?" source="_N6NLsJHfEeOk5I5Foh-vog"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_idPYoJHkEeOk5I5Foh-vog" name="ControlFlow4" source="_9wXaUJHeEeOk5I5Foh-vog" target="_bzRbAJHkEeOk5I5Foh-vog"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="__ewbcJKyEeOk5I5Foh-vog" name="ControlFlow5" source="_bzRbAJHkEeOk5I5Foh-vog" target="_D-ytkJKyEeOk5I5Foh-vog">
+      <guard xmi:type="uml:LiteralString" xmi:id="_oSEc8JKzEeOk5I5Foh-vog" value="Cancel"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_OMPuIJK0EeOk5I5Foh-vog" name="" source="_bzRbAJHkEeOk5I5Foh-vog" target="_N6NLsJHfEeOk5I5Foh-vog">
+      <guard xmi:type="uml:LiteralString" xmi:id="_xIgKwJK2EeOk5I5Foh-vog" value="Accept"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_grKggJK0EeOk5I5Foh-vog" name="ControlFlow7" source="_N6NLsJHfEeOk5I5Foh-vog" target="_cvptMJK0EeOk5I5Foh-vog"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_l4wmwJK0EeOk5I5Foh-vog" name="ControlFlow8" source="_cvptMJK0EeOk5I5Foh-vog" target="_N6NLsJHfEeOk5I5Foh-vog">
+      <guard xmi:type="uml:LiteralString" xmi:id="_PNq5cJK1EeOk5I5Foh-vog" value="Change Template"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_5oQ3QJK0EeOk5I5Foh-vog" name="ControlFlow9" source="_cvptMJK0EeOk5I5Foh-vog" target="_gJqlwJHfEeOk5I5Foh-vog">
+      <guard xmi:type="uml:LiteralString" xmi:id="_925I8JK2EeOk5I5Foh-vog" value="Select"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_88yjEJK0EeOk5I5Foh-vog" name="ControlFlow10" source="_gJqlwJHfEeOk5I5Foh-vog" target="_D-ytkJKyEeOk5I5Foh-vog"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_oaUfQJHdEeOk5I5Foh-vog" name="InitialNode1" outgoing="_oW47UJHeEeOk5I5Foh-vog"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_kAXnAJHeEeOk5I5Foh-vog" name="Create VM From Template" outgoing="_5fT00JHeEeOk5I5Foh-vog" incoming="_oW47UJHeEeOk5I5Foh-vog"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_2QqukJHeEeOk5I5Foh-vog" name="List of Templates" outgoing="_EIMfEJHfEeOk5I5Foh-vog" incoming="_5fT00JHeEeOk5I5Foh-vog"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_9wXaUJHeEeOk5I5Foh-vog" name="Template Selected" outgoing="_idPYoJHkEeOk5I5Foh-vog" incoming="_EIMfEJHfEeOk5I5Foh-vog"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_N6NLsJHfEeOk5I5Foh-vog" name="List of Template Properties" outgoing="_cOhl4JHfEeOk5I5Foh-vog _LdlGUJHhEeOk5I5Foh-vog _grKggJK0EeOk5I5Foh-vog" incoming="_OMPuIJK0EeOk5I5Foh-vog _l4wmwJK0EeOk5I5Foh-vog"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_gJqlwJHfEeOk5I5Foh-vog" name="VM Created with the Template's Properties " outgoing="_88yjEJK0EeOk5I5Foh-vog" incoming="_uL6YgJHfEeOk5I5Foh-vog _5oQ3QJK0EeOk5I5Foh-vog"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_bzRbAJHkEeOk5I5Foh-vog" name="DecisionNode1" outgoing="__ewbcJKyEeOk5I5Foh-vog _OMPuIJK0EeOk5I5Foh-vog" incoming="_idPYoJHkEeOk5I5Foh-vog"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_D-ytkJKyEeOk5I5Foh-vog" name="ActivityFinalNode1" incoming="__ewbcJKyEeOk5I5Foh-vog _88yjEJK0EeOk5I5Foh-vog"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_cvptMJK0EeOk5I5Foh-vog" name="DecisionNode2" outgoing="_l4wmwJK0EeOk5I5Foh-vog _5oQ3QJK0EeOk5I5Foh-vog" incoming="_grKggJK0EeOk5I5Foh-vog"/>
   </packagedElement>
 </uml:Model>
