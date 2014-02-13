@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_jo33sJLIEeOyeNaZDwJ1OQ" name="Model">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_jo33sZLIEeOyeNaZDwJ1OQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_jo6T8JLIEeOyeNaZDwJ1OQ" name="StateMachine0">
+    <region xmi:type="uml:Region" xmi:id="_jo_McJLIEeOyeNaZDwJ1OQ" name="Region0"/>
+  </packagedElement>
+</uml:Model>
