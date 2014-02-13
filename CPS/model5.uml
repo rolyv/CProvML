@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_m2lUYJLJEeOIxPkWOYNCFg" name="model">
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_qZPi0JLJEeOIxPkWOYNCFg" name="Create VM From Template">
+    <region xmi:type="uml:Region" xmi:id="_u9KZ8JLJEeOIxPkWOYNCFg" name="Region1">
+      <transition xmi:type="uml:Transition" xmi:id="_WyZYoJOFEeOfS9FbMXeVGw" name="checkTemplate/chooseTemplate()" source="_qfcxIJLMEeOIxPkWOYNCFg" target="_a_rF4JLLEeOIxPkWOYNCFg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_xu_h8JOFEeOfS9FbMXeVGw" name="PressCreateVMTemplate/getListVM()" source="_CWsacJLKEeOIxPkWOYNCFg" target="_r1wdsJOFEeOfS9FbMXeVGw"/>
+      <transition xmi:type="uml:Transition" xmi:id="_eMIw4JOGEeOfS9FbMXeVGw" name="clickVM/selectVM()" source="_r1wdsJOFEeOfS9FbMXeVGw" target="_qfcxIJLMEeOIxPkWOYNCFg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_RP-xkJOIEeOfS9FbMXeVGw" name="PressCreate[confirmation]/createVM()" source="_a_rF4JLLEeOIxPkWOYNCFg" target="_Fq5rQJLMEeOIxPkWOYNCFg">
+        <ownedRule xmi:type="uml:Constraint" xmi:id="_i5SxoJOIEeOfS9FbMXeVGw" name="confirmation">
+          <specification xmi:type="uml:LiteralString" xmi:id="_i5SxoZOIEeOfS9FbMXeVGw" name="Confirm" value="confirm"/>
+        </ownedRule>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_0rUo0JOIEeOfS9FbMXeVGw" name="" source="_Fq5rQJLMEeOIxPkWOYNCFg" target="_LZrL8JLMEeOIxPkWOYNCFg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_BuPcwJReEeOTP-YZvC1ZqA" name="PressCancel[confirmation]/discardChanges()" source="_a_rF4JLLEeOIxPkWOYNCFg" target="_r1wdsJOFEeOfS9FbMXeVGw"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_CWsacJLKEeOIxPkWOYNCFg" name=""/>
+      <subvertex xmi:type="uml:State" xmi:id="_a_rF4JLLEeOIxPkWOYNCFg" name="Template_Assigned"/>
+      <subvertex xmi:type="uml:State" xmi:id="_Fq5rQJLMEeOIxPkWOYNCFg" name="Created"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_LZrL8JLMEeOIxPkWOYNCFg" name=""/>
+      <subvertex xmi:type="uml:State" xmi:id="_qfcxIJLMEeOIxPkWOYNCFg" name="Selected"/>
+      <subvertex xmi:type="uml:State" xmi:id="_r1wdsJOFEeOfS9FbMXeVGw" name="Listed"/>
+    </region>
+  </packagedElement>
+</uml:Model>
