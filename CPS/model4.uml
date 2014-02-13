@@ -4,6 +4,27 @@
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
   <packagedElement xmi:type="uml:StateMachine" xmi:id="_jo6T8JLIEeOyeNaZDwJ1OQ" name="StateMachine0">
-    <region xmi:type="uml:Region" xmi:id="_jo_McJLIEeOyeNaZDwJ1OQ" name="Region0"/>
+    <region xmi:type="uml:Region" xmi:id="_jo_McJLIEeOyeNaZDwJ1OQ" name="Region0">
+      <transition xmi:type="uml:Transition" xmi:id="_ENGCoJRPEeOvAK4rd9ij-w" name="Transition0" source="_AXJEwJRPEeOvAK4rd9ij-w" target="_Bcb44JRPEeOvAK4rd9ij-w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_hwGPsJReEeOvAK4rd9ij-w" name="" source="_dJWuEJReEeOvAK4rd9ij-w" target="__gmggJRdEeOvAK4rd9ij-w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_VWNscJRfEeOvAK4rd9ij-w" name="" source="_Bcb44JRPEeOvAK4rd9ij-w" target="_FFeB0JRfEeOvAK4rd9ij-w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_iC-6AJRfEeOvAK4rd9ij-w" name="" source="_FFeB0JRfEeOvAK4rd9ij-w" target="_dwAB4JRfEeOvAK4rd9ij-w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_remf4JRfEeOvAK4rd9ij-w" name="" source="_dwAB4JRfEeOvAK4rd9ij-w" target="_m9wx8JRfEeOvAK4rd9ij-w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_M_IQQJRgEeOvAK4rd9ij-w" name="" source="_m9wx8JRfEeOvAK4rd9ij-w" target="_HEgr8JRgEeOvAK4rd9ij-w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_OvqZwJRgEeOvAK4rd9ij-w" name="clickConfirm[confirmed]/CreateInstance()" source="_HEgr8JRgEeOvAK4rd9ij-w" target="_dJWuEJReEeOvAK4rd9ij-w">
+        <ownedRule xmi:type="uml:Constraint" xmi:id="_pQPqkJRiEeOvAK4rd9ij-w" name="" visibility="private">
+          <specification xmi:type="uml:LiteralString" xmi:id="_pQPqkZRiEeOvAK4rd9ij-w" value="test"/>
+        </ownedRule>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_HO_BIJRhEeOvAK4rd9ij-w" name="clickCancel[unconfirmed]" source="_HEgr8JRgEeOvAK4rd9ij-w" target="_m9wx8JRfEeOvAK4rd9ij-w"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_AXJEwJRPEeOvAK4rd9ij-w" name=""/>
+      <subvertex xmi:type="uml:State" xmi:id="_Bcb44JRPEeOvAK4rd9ij-w" name="&quot;New VM&quot; button clicked"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="__gmggJRdEeOvAK4rd9ij-w" name=""/>
+      <subvertex xmi:type="uml:State" xmi:id="_dJWuEJReEeOvAK4rd9ij-w" name="VM Created"/>
+      <subvertex xmi:type="uml:State" xmi:id="_FFeB0JRfEeOvAK4rd9ij-w" name="&quot;Create User-Defined VM” option selected"/>
+      <subvertex xmi:type="uml:State" xmi:id="_dwAB4JRfEeOvAK4rd9ij-w" name="Name Entered"/>
+      <subvertex xmi:type="uml:State" xmi:id="_m9wx8JRfEeOvAK4rd9ij-w" name="Properties Set"/>
+      <subvertex xmi:type="uml:State" xmi:id="_HEgr8JRgEeOvAK4rd9ij-w" name="Creation Confirmed"/>
+    </region>
   </packagedElement>
 </uml:Model>
