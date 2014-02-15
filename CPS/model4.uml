@@ -3,7 +3,7 @@
   <packageImport xmi:type="uml:PackageImport" xmi:id="_jo33sZLIEeOyeNaZDwJ1OQ">
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
-  <packagedElement xmi:type="uml:StateMachine" xmi:id="_jo6T8JLIEeOyeNaZDwJ1OQ" name="Modify Hardware">
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_jo6T8JLIEeOyeNaZDwJ1OQ" name="Create New Model">
     <region xmi:type="uml:Region" xmi:id="_jo_McJLIEeOyeNaZDwJ1OQ" name="">
       <transition xmi:type="uml:Transition" xmi:id="_ENGCoJRPEeOvAK4rd9ij-w" name="Transition0" source="_AXJEwJRPEeOvAK4rd9ij-w" target="_Bcb44JRPEeOvAK4rd9ij-w"/>
       <transition xmi:type="uml:Transition" xmi:id="_hwGPsJReEeOvAK4rd9ij-w" name="" source="_dJWuEJReEeOvAK4rd9ij-w" target="__gmggJRdEeOvAK4rd9ij-w"/>
@@ -22,6 +22,11 @@
       <transition xmi:type="uml:Transition" xmi:id="_mFRXcJaTEeOICcX3nf5HjA" name="Save[valid]/saveChanges()" source="_3NGQgJaSEeOICcX3nf5HjA" target="_jhyHAJaTEeOICcX3nf5HjA"/>
       <transition xmi:type="uml:Transition" xmi:id="_uhJXkJaTEeOICcX3nf5HjA" name="" source="_jhyHAJaTEeOICcX3nf5HjA" target="_raOp8JaTEeOICcX3nf5HjA"/>
       <transition xmi:type="uml:Transition" xmi:id="_33L54JaTEeOICcX3nf5HjA" name="[invalid]/undoChanges()" source="_jhyHAJaTEeOICcX3nf5HjA" target="_3NGQgJaSEeOICcX3nf5HjA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_-m5dsJaUEeOICcX3nf5HjA" name="" source="_2MzmQJaUEeOICcX3nf5HjA" target="_5MkjAJaUEeOICcX3nf5HjA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_IwOeIJaVEeOICcX3nf5HjA" name="Model Named/setName()" source="_5MkjAJaUEeOICcX3nf5HjA" target="_BZHGoJaVEeOICcX3nf5HjA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_VvZDQJaVEeOICcX3nf5HjA" name="Save[valid]/save()" source="_BZHGoJaVEeOICcX3nf5HjA" target="_TFdMkJaVEeOICcX3nf5HjA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_atcRoJaVEeOICcX3nf5HjA" name="[invalid]/undoChanges()" source="_TFdMkJaVEeOICcX3nf5HjA" target="_BZHGoJaVEeOICcX3nf5HjA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_hwkWIJaVEeOICcX3nf5HjA" name="" source="_TFdMkJaVEeOICcX3nf5HjA" target="_fEl4EJaVEeOICcX3nf5HjA"/>
       <subvertex xmi:type="uml:Pseudostate" xmi:id="_AXJEwJRPEeOvAK4rd9ij-w" name=""/>
       <subvertex xmi:type="uml:State" xmi:id="_Bcb44JRPEeOvAK4rd9ij-w" name="&quot;New VM&quot; button clicked"/>
       <subvertex xmi:type="uml:FinalState" xmi:id="__gmggJRdEeOvAK4rd9ij-w" name=""/>
@@ -35,6 +40,11 @@
       <subvertex xmi:type="uml:State" xmi:id="_3NGQgJaSEeOICcX3nf5HjA" name="Properties Set"/>
       <subvertex xmi:type="uml:State" xmi:id="_jhyHAJaTEeOICcX3nf5HjA" name="Saved"/>
       <subvertex xmi:type="uml:FinalState" xmi:id="_raOp8JaTEeOICcX3nf5HjA" name=""/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_2MzmQJaUEeOICcX3nf5HjA" name=""/>
+      <subvertex xmi:type="uml:State" xmi:id="_5MkjAJaUEeOICcX3nf5HjA" name="New Model button clicked"/>
+      <subvertex xmi:type="uml:State" xmi:id="_BZHGoJaVEeOICcX3nf5HjA" name="Name Entered"/>
+      <subvertex xmi:type="uml:State" xmi:id="_TFdMkJaVEeOICcX3nf5HjA" name="Created"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_fEl4EJaVEeOICcX3nf5HjA" name=""/>
     </region>
   </packagedElement>
 </uml:Model>
