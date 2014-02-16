@@ -406,7 +406,16 @@
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_r-H2oJaSEeOyGuS94aT43g" name="ModelingModel">
-      <packagedElement xmi:type="uml:Class" xmi:id="_fqfOoJc-EeOroeIBBGKvlg" name="Model"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_fqfOoJc-EeOroeIBBGKvlg" name="Model">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_J1l6wJdFEeObq5oedQz6Gw" name="Name" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Lz4zcJdFEeObq5oedQz6Gw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Lz7PsJdFEeObq5oedQz6Gw" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_L0B9YJdFEeObq5oedQz6Gw">
+            <value xsi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+      </packagedElement>
       <packagedElement xmi:type="uml:Interface" xmi:id="_JUZ9cJc-EeOroeIBBGKvlg" name="IModelRepository">
         <ownedOperation xmi:type="uml:Operation" xmi:id="_NpyCQJc-EeOroeIBBGKvlg" name="SaveModel" visibility="public">
           <ownedParameter xmi:type="uml:Parameter" xmi:id="_4RkSEJc-EeOroeIBBGKvlg" name="model" type="_fqfOoJc-EeOroeIBBGKvlg"/>
@@ -428,9 +437,17 @@
       </slot>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_8vedQJc9EeOroeIBBGKvlg" name="Controllers">
-      <packagedElement xmi:type="uml:Class" xmi:id="_DETRUJc-EeOroeIBBGKvlg" name="ModelController"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_DETRUJc-EeOroeIBBGKvlg" name="ModelController">
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_PhftoJdFEeObq5oedQz6Gw" name="ModelController">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_TJUI4JdFEeObq5oedQz6Gw" name="modelRepository" type="_JUZ9cJc-EeOroeIBBGKvlg"/>
+        </ownedOperation>
+      </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Package" xmi:id="_43fXsJdAEeOroeIBBGKvlg" name="View"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_43fXsJdAEeOroeIBBGKvlg" name="View">
+      <packagedElement xmi:type="uml:Class" xmi:id="_yzXe0JdQEeObq5oedQz6Gw" name="Window"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_1EInkJdQEeObq5oedQz6Gw" name="Canvas"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_3i8zYJdQEeObq5oedQz6Gw" name="Palette"/>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_GW0Z8JaZEeOKqrK20qbl7Q">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GYE-MJaZEeOKqrK20qbl7Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="MVC.profile.uml#_l53iAJc-EeOroeIBBGKvlg"/>
@@ -441,4 +458,6 @@
   <Profile:Entity xmi:id="_KHRz0JaZEeOKqrK20qbl7Q" base_Class="_joviIJDWEeO_F6mXGJ9tdA"/>
   <Profile:Entity xmi:id="_L6RbcJaZEeOKqrK20qbl7Q" base_Class="_9OB6QJDWEeO_F6mXGJ9tdA"/>
   <Profile:Entity xmi:id="_hAyTMJc-EeOroeIBBGKvlg" base_Class="_fqfOoJc-EeOroeIBBGKvlg"/>
+  <Profile:Controller xmi:id="_lGISwJdQEeObq5oedQz6Gw" base_Class="_DETRUJc-EeOroeIBBGKvlg"/>
+  <Profile:UIElement xmi:id="_0LUJMJdQEeObq5oedQz6Gw" base_Class="_yzXe0JdQEeObq5oedQz6Gw"/>
 </xmi:XMI>
