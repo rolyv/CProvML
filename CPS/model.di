@@ -30,28 +30,13 @@
     <windows>
       <children xsi:type="di:TabFolder">
         <children>
-          <emfPageIdentifier href="model.notation#_cCHXIIt0EeOyfZZDtSfbkg"/>
-        </children>
-        <children>
           <emfPageIdentifier href="model.notation#_aVFlcJDWEeO_F6mXGJ9tdA"/>
         </children>
         <children>
-          <emfPageIdentifier href="model.notation#_kEl2IJHSEeODqZMsRbi-sw"/>
-        </children>
-        <children>
-          <emfPageIdentifier href="model.notation#_bkFh4JLIEeO7iZO5xA5ZWw"/>
-        </children>
-        <children>
-          <emfPageIdentifier href="model.notation#_KEAmQJLcEeOMrbhAk4pXNQ"/>
+          <emfPageIdentifier href="model.notation#_k-zb8JLgEeOMrbhAk4pXNQ"/>
         </children>
         <children>
           <emfPageIdentifier href="model.notation#_W7-24JLfEeOMrbhAk4pXNQ"/>
-        </children>
-        <children>
-          <emfPageIdentifier href="model.notation#_PxyEkJLgEeOMrbhAk4pXNQ"/>
-        </children>
-        <children>
-          <emfPageIdentifier href="model.notation#_k-zb8JLgEeOMrbhAk4pXNQ"/>
         </children>
       </children>
     </windows>

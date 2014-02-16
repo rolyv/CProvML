@@ -52,7 +52,7 @@
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gWoAUpaYEeOKqrK20qbl7Q"/>
     </children>
     <element xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gWQz8JaYEeOKqrK20qbl7Q" x="544" y="160"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gWQz8JaYEeOKqrK20qbl7Q" x="640" y="160"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="_laN2AJaYEeOKqrK20qbl7Q" type="1026">
     <children xmi:type="notation:DecorationNode" xmi:id="_laN2ApaYEeOKqrK20qbl7Q" type="1034"/>
@@ -114,6 +114,36 @@
     <element xmi:type="uml:Stereotype" href="MVC.profile.uml#_zOxLAJaYEeOKqrK20qbl7Q"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zOyZIZaYEeOKqrK20qbl7Q" x="736" y="336"/>
   </children>
+  <children xmi:type="notation:Shape" xmi:id="_i-hLMJc-EeOroeIBBGKvlg" type="1026">
+    <children xmi:type="notation:DecorationNode" xmi:id="_i-hLMpc-EeOroeIBBGKvlg" type="1034"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_i-hyQJc-EeOroeIBBGKvlg" type="1071">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_i-hySpc-EeOroeIBBGKvlg" source="PapyrusCSSForceValue">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_i-hyS5c-EeOroeIBBGKvlg" key="showTitle" value="true"/>
+      </eAnnotations>
+      <styles xmi:type="notation:TitleStyle" xmi:id="_i-hyQZc-EeOroeIBBGKvlg"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_i-hyQpc-EeOroeIBBGKvlg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_i-hyQ5c-EeOroeIBBGKvlg"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_i-hyRJc-EeOroeIBBGKvlg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_i-hyRZc-EeOroeIBBGKvlg" visible="false" type="1019">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_i-iZUJc-EeOroeIBBGKvlg" source="PapyrusCSSForceValue">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_i-iZUZc-EeOroeIBBGKvlg" key="showTitle" value="true"/>
+      </eAnnotations>
+      <styles xmi:type="notation:TitleStyle" xmi:id="_i-hyRpc-EeOroeIBBGKvlg"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_i-hyR5c-EeOroeIBBGKvlg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_i-hySJc-EeOroeIBBGKvlg"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_i-hySZc-EeOroeIBBGKvlg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_i-nR0Jc-EeOroeIBBGKvlg" visible="false" type="compartment_shape_display">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_i-nR05c-EeOroeIBBGKvlg" source="PapyrusCSSForceValue">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_i-nR1Jc-EeOroeIBBGKvlg" key="mutable" value="true"/>
+      </eAnnotations>
+      <styles xmi:type="notation:TitleStyle" xmi:id="_i-nR0Zc-EeOroeIBBGKvlg"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_i-nR0pc-EeOroeIBBGKvlg"/>
+    </children>
+    <element xmi:type="uml:Stereotype" href="MVC.profile.uml#_i-eu8Jc-EeOroeIBBGKvlg"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_i-hLMZc-EeOroeIBBGKvlg" x="912" y="336"/>
+  </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_GLv5wZaWEeOyGuS94aT43g"/>
   <element xmi:type="uml:Profile" href="MVC.profile.uml#_GLroUJaWEeOyGuS94aT43g"/>
   <edges xmi:type="notation:Connector" xmi:id="_5ZlHcJaYEeOKqrK20qbl7Q" type="1013" source="_dKs24JaYEeOKqrK20qbl7Q" target="_gWQM4JaYEeOKqrK20qbl7Q">
@@ -130,5 +160,10 @@
     <styles xmi:type="notation:FontStyle" xmi:id="_6uz1AZaYEeOKqrK20qbl7Q"/>
     <element xmi:type="uml:Extension" href="MVC.profile.uml#_6uym4ZaYEeOKqrK20qbl7Q"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_6uz1ApaYEeOKqrK20qbl7Q" points="[-48, -50, 146, 151]$[-144, -201, 50, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_lDXX0Jc-EeOroeIBBGKvlg" type="1013" source="_i-hLMJc-EeOroeIBBGKvlg" target="_gWQM4JaYEeOKqrK20qbl7Q">
+    <styles xmi:type="notation:FontStyle" xmi:id="_lDXX0Zc-EeOroeIBBGKvlg"/>
+    <element xmi:type="uml:Extension" href="MVC.profile.uml#_lDUUgJc-EeOroeIBBGKvlg"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_lDXX0pc-EeOroeIBBGKvlg" points="[-52, -40, 222, 161]$[-279, -226, -5, -25]"/>
   </edges>
 </notation:Diagram>
