@@ -5,32 +5,32 @@
       <transition xmi:type="uml:Transition" xmi:id="_BU4MAJdHEeOJ6d5_LQ5bDw" name="clickCreate/createElement()" source="_d43mYJdGEeOJ6d5_LQ5bDw" target="_tdpi4JdGEeOJ6d5_LQ5bDw"/>
       <transition xmi:type="uml:Transition" xmi:id="_v8z3gJdHEeOJ6d5_LQ5bDw" name="clickCancel/removeFromCanvas()" source="_d43mYJdGEeOJ6d5_LQ5bDw" target="_dB33gJdHEeOJ6d5_LQ5bDw"/>
       <transition xmi:type="uml:Transition" xmi:id="_3lVvIJdHEeOJ6d5_LQ5bDw" name="changeProperties()" source="_d43mYJdGEeOJ6d5_LQ5bDw" target="_d43mYJdGEeOJ6d5_LQ5bDw"/>
-      <transition xmi:type="uml:Transition" xmi:id="_ywaAgJdHEeOJ6d5_LQ5bDw" name="" source="_dB33gJdHEeOJ6d5_LQ5bDw" target="_DrjvgJdHEeOJ6d5_LQ5bDw"/>
+      <transition xmi:type="uml:Transition" xmi:id="_ywaAgJdHEeOJ6d5_LQ5bDw" name="removed" source="_dB33gJdHEeOJ6d5_LQ5bDw" target="_DrjvgJdHEeOJ6d5_LQ5bDw"/>
       <transition xmi:type="uml:Transition" xmi:id="_HE-X0JdGEeOJ6d5_LQ5bDw" name="dropped[onCanvas]/displayProperties()" source="_TVoGkJdFEeOJ6d5_LQ5bDw" target="_3AEw0JdFEeOJ6d5_LQ5bDw"/>
-      <transition xmi:type="uml:Transition" xmi:id="_EiRVEJdHEeOJ6d5_LQ5bDw" name="" source="_tdpi4JdGEeOJ6d5_LQ5bDw" target="_DrjvgJdHEeOJ6d5_LQ5bDw"/>
+      <transition xmi:type="uml:Transition" xmi:id="_EiRVEJdHEeOJ6d5_LQ5bDw" name="created" source="_tdpi4JdGEeOJ6d5_LQ5bDw" target="_DrjvgJdHEeOJ6d5_LQ5bDw"/>
       <transition xmi:type="uml:Transition" xmi:id="_Ao-IQJdHEeOJ6d5_LQ5bDw" name="fillProperties/setProperties()" source="_3AEw0JdFEeOJ6d5_LQ5bDw" target="_d43mYJdGEeOJ6d5_LQ5bDw"/>
       <transition xmi:type="uml:Transition" xmi:id="_ePLtQJdJEeOJ6d5_LQ5bDw" name="clickElement/selectElement()" source="_Y40skJdJEeOJ6d5_LQ5bDw" target="_TVoGkJdFEeOJ6d5_LQ5bDw"/>
       <subvertex xmi:type="uml:State" xmi:id="_d43mYJdGEeOJ6d5_LQ5bDw" name="Properties Set"/>
-      <subvertex xmi:type="uml:FinalState" xmi:id="_DrjvgJdHEeOJ6d5_LQ5bDw" name=""/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_DrjvgJdHEeOJ6d5_LQ5bDw" name="Final"/>
       <subvertex xmi:type="uml:State" xmi:id="_dB33gJdHEeOJ6d5_LQ5bDw" name="Removed"/>
       <subvertex xmi:type="uml:State" xmi:id="_TVoGkJdFEeOJ6d5_LQ5bDw" name="Selected from Palette"/>
       <subvertex xmi:type="uml:State" xmi:id="_tdpi4JdGEeOJ6d5_LQ5bDw" name="Element_Created"/>
       <subvertex xmi:type="uml:State" xmi:id="_3AEw0JdFEeOJ6d5_LQ5bDw" name="Dropped"/>
-      <subvertex xmi:type="uml:Pseudostate" xmi:id="_Y40skJdJEeOJ6d5_LQ5bDw" name=""/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_Y40skJdJEeOJ6d5_LQ5bDw" name="Start"/>
     </region>
   </packagedElement>
   <packagedElement xmi:type="uml:StateMachine" xmi:id="_gXSFYJdNEeOZlbu3y9dV4Q" name="Delete VM">
     <region xmi:type="uml:Region" xmi:id="_iUq_IJdNEeOZlbu3y9dV4Q" name="Region1">
       <transition xmi:type="uml:Transition" xmi:id="_gLxKMJdTEeOZlbu3y9dV4Q" name="clickElement/selectElement()" source="_I5qyIJdSEeOZlbu3y9dV4Q" target="_SxRJYJdSEeOZlbu3y9dV4Q"/>
       <transition xmi:type="uml:Transition" xmi:id="_tjO6kJdTEeOZlbu3y9dV4Q" name="pressDelete[confirmation]/removeFromCanvas()" source="_SxRJYJdSEeOZlbu3y9dV4Q" target="_y2O6sJdSEeOZlbu3y9dV4Q"/>
-      <transition xmi:type="uml:Transition" xmi:id="_5HSMkJdTEeOZlbu3y9dV4Q" name="clickElement/selectElement()" source="_SxRJYJdSEeOZlbu3y9dV4Q" target="_SxRJYJdSEeOZlbu3y9dV4Q"/>
+      <transition xmi:type="uml:Transition" xmi:id="_5HSMkJdTEeOZlbu3y9dV4Q" name="clickElements/selectElement()" source="_SxRJYJdSEeOZlbu3y9dV4Q" target="_SxRJYJdSEeOZlbu3y9dV4Q"/>
       <transition xmi:type="uml:Transition" xmi:id="_Nv-H0JdUEeOZlbu3y9dV4Q" name="deleteVM()" source="_y2O6sJdSEeOZlbu3y9dV4Q" target="_1Sgv4JdSEeOZlbu3y9dV4Q"/>
-      <transition xmi:type="uml:Transition" xmi:id="_ZC6bsJdUEeOZlbu3y9dV4Q" name="" source="_1Sgv4JdSEeOZlbu3y9dV4Q" target="_H8EE8JdTEeOZlbu3y9dV4Q"/>
-      <subvertex xmi:type="uml:Pseudostate" xmi:id="_I5qyIJdSEeOZlbu3y9dV4Q" name=""/>
+      <transition xmi:type="uml:Transition" xmi:id="_ZC6bsJdUEeOZlbu3y9dV4Q" name="VMDeleted" source="_1Sgv4JdSEeOZlbu3y9dV4Q" target="_H8EE8JdTEeOZlbu3y9dV4Q"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_I5qyIJdSEeOZlbu3y9dV4Q" name="Start"/>
       <subvertex xmi:type="uml:State" xmi:id="_SxRJYJdSEeOZlbu3y9dV4Q" name="VM_Selected"/>
       <subvertex xmi:type="uml:State" xmi:id="_y2O6sJdSEeOZlbu3y9dV4Q" name="Removed"/>
       <subvertex xmi:type="uml:State" xmi:id="_1Sgv4JdSEeOZlbu3y9dV4Q" name="Deleted"/>
-      <subvertex xmi:type="uml:FinalState" xmi:id="_H8EE8JdTEeOZlbu3y9dV4Q" name=""/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_H8EE8JdTEeOZlbu3y9dV4Q" name="Final"/>
     </region>
   </packagedElement>
   <packagedElement xmi:type="uml:StateMachine" xmi:id="_tg8DQJdNEeOZlbu3y9dV4Q" name="Create VM From Template">
@@ -40,13 +40,13 @@
       <transition xmi:type="uml:Transition" xmi:id="_TLh48JdREeOZlbu3y9dV4Q" name="checkTemplate/chooseTemplate()" source="_zGAuAJdQEeOZlbu3y9dV4Q" target="_2xGfsJdQEeOZlbu3y9dV4Q"/>
       <transition xmi:type="uml:Transition" xmi:id="_aupsIJdREeOZlbu3y9dV4Q" name="PressCreate[confirmation]/createVM()" source="_2xGfsJdQEeOZlbu3y9dV4Q" target="__Wr1cJdQEeOZlbu3y9dV4Q"/>
       <transition xmi:type="uml:Transition" xmi:id="_fQTSYJdREeOZlbu3y9dV4Q" name="PressCancel[confirmation]/discardChanges()" source="_2xGfsJdQEeOZlbu3y9dV4Q" target="_r1OA8JdQEeOZlbu3y9dV4Q"/>
-      <transition xmi:type="uml:Transition" xmi:id="_t7R5EJdREeOZlbu3y9dV4Q" name="" source="__Wr1cJdQEeOZlbu3y9dV4Q" target="_su3wUJdREeOZlbu3y9dV4Q"/>
-      <subvertex xmi:type="uml:Pseudostate" xmi:id="_pyeGEJdQEeOZlbu3y9dV4Q" name=""/>
+      <transition xmi:type="uml:Transition" xmi:id="_t7R5EJdREeOZlbu3y9dV4Q" name="VMCreated" source="__Wr1cJdQEeOZlbu3y9dV4Q" target="_su3wUJdREeOZlbu3y9dV4Q"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_pyeGEJdQEeOZlbu3y9dV4Q" name="start"/>
       <subvertex xmi:type="uml:State" xmi:id="_r1OA8JdQEeOZlbu3y9dV4Q" name="Listed"/>
       <subvertex xmi:type="uml:State" xmi:id="_zGAuAJdQEeOZlbu3y9dV4Q" name="Selected"/>
       <subvertex xmi:type="uml:State" xmi:id="_2xGfsJdQEeOZlbu3y9dV4Q" name="Template_Assigned"/>
       <subvertex xmi:type="uml:State" xmi:id="__Wr1cJdQEeOZlbu3y9dV4Q" name="Created"/>
-      <subvertex xmi:type="uml:FinalState" xmi:id="_su3wUJdREeOZlbu3y9dV4Q" name=""/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_su3wUJdREeOZlbu3y9dV4Q" name="Final"/>
     </region>
   </packagedElement>
 </uml:Model>
