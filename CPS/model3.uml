@@ -121,15 +121,15 @@
       <guard xmi:type="uml:LiteralString" xmi:id="_Ju2FsJaZEeOTP-YZvC1ZqA" value="Cancel"/>
       <weight xmi:type="uml:LiteralNull" xmi:id="_-hhuIJaXEeOTP-YZvC1ZqA"/>
     </edge>
-    <edge xmi:type="uml:ControlFlow" xmi:id="_6OnugJaXEeOTP-YZvC1ZqA" name="ControlFlow57" source="_PDDuIJaVEeOTP-YZvC1ZqA" target="_U7ycEJaVEeOTP-YZvC1ZqA">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_6OnugJaXEeOTP-YZvC1ZqA" name="ControlFlow57" source="_PDDuIJaVEeOTP-YZvC1ZqA" target="_XcI49ZaVEeOTP-YZvC1ZqA">
       <guard xmi:type="uml:LiteralNull" xmi:id="_8Eyl8JaXEeOTP-YZvC1ZqA"/>
       <weight xmi:type="uml:LiteralNull" xmi:id="_8k2mEJaXEeOTP-YZvC1ZqA"/>
     </edge>
-    <edge xmi:type="uml:ControlFlow" xmi:id="_AHMrcJaYEeOTP-YZvC1ZqA" name="ControlFlow58" source="_U7ycEJaVEeOTP-YZvC1ZqA" target="_XcI49ZaVEeOTP-YZvC1ZqA">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_AHMrcJaYEeOTP-YZvC1ZqA" name="ControlFlow58" source="_XcI49ZaVEeOTP-YZvC1ZqA" target="_U7ycEJaVEeOTP-YZvC1ZqA">
       <guard xmi:type="uml:LiteralNull" xmi:id="_Axp9sJaYEeOTP-YZvC1ZqA"/>
       <weight xmi:type="uml:LiteralNull" xmi:id="_BRkz4JaYEeOTP-YZvC1ZqA"/>
     </edge>
-    <edge xmi:type="uml:ControlFlow" xmi:id="_COiycJaYEeOTP-YZvC1ZqA" name="ControlFlow59" source="_XcI49ZaVEeOTP-YZvC1ZqA" target="_bfFxAJaVEeOTP-YZvC1ZqA">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_COiycJaYEeOTP-YZvC1ZqA" name="ControlFlow59" source="_U7ycEJaVEeOTP-YZvC1ZqA" target="_bfFxAJaVEeOTP-YZvC1ZqA">
       <guard xmi:type="uml:LiteralNull" xmi:id="_Qw_SwJaZEeOTP-YZvC1ZqA"/>
       <weight xmi:type="uml:LiteralNull" xmi:id="_RQl_4JaZEeOTP-YZvC1ZqA"/>
     </edge>
@@ -190,8 +190,8 @@
     <node xmi:type="uml:OpaqueAction" xmi:id="_ms4UkJaUEeOTP-YZvC1ZqA" name="VM Selected" outgoing="_hNGx0JaXEeOTP-YZvC1ZqA" incoming="_bQGn4JaXEeOTP-YZvC1ZqA _3vSlUJaXEeOTP-YZvC1ZqA"/>
     <node xmi:type="uml:OpaqueAction" xmi:id="__OELYJaUEeOTP-YZvC1ZqA" name="Delete Button" outgoing="_mFB08JaVEeOTP-YZvC1ZqA" incoming="_hNGx0JaXEeOTP-YZvC1ZqA"/>
     <node xmi:type="uml:OpaqueAction" xmi:id="_PDDuIJaVEeOTP-YZvC1ZqA" name="Delete Relations with Artifacts" outgoing="_6OnugJaXEeOTP-YZvC1ZqA" incoming="_riVLIJaVEeOTP-YZvC1ZqA"/>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_U7ycEJaVEeOTP-YZvC1ZqA" name="VM Deleted" outgoing="_AHMrcJaYEeOTP-YZvC1ZqA" incoming="_6OnugJaXEeOTP-YZvC1ZqA"/>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_XcI49ZaVEeOTP-YZvC1ZqA" name="VM Removed from Canvas" outgoing="_COiycJaYEeOTP-YZvC1ZqA" incoming="_AHMrcJaYEeOTP-YZvC1ZqA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_U7ycEJaVEeOTP-YZvC1ZqA" name="VM Deleted" outgoing="_COiycJaYEeOTP-YZvC1ZqA" incoming="_AHMrcJaYEeOTP-YZvC1ZqA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_XcI49ZaVEeOTP-YZvC1ZqA" name="VM Removed from Canvas" outgoing="_AHMrcJaYEeOTP-YZvC1ZqA" incoming="_6OnugJaXEeOTP-YZvC1ZqA"/>
     <node xmi:type="uml:ActivityFinalNode" xmi:id="_bfFxAJaVEeOTP-YZvC1ZqA" name="ActivityFinalNode4" incoming="_COiycJaYEeOTP-YZvC1ZqA"/>
     <node xmi:type="uml:DecisionNode" xmi:id="_i-wAgJaVEeOTP-YZvC1ZqA" name="DecisionNode5" outgoing="_riVLIJaVEeOTP-YZvC1ZqA _3vSlUJaXEeOTP-YZvC1ZqA" incoming="_mFB08JaVEeOTP-YZvC1ZqA"/>
     <node xmi:type="uml:InitialNode" xmi:id="_zTbzIJaZEeOTP-YZvC1ZqA" name="InitialNode5" outgoing="_oebtkJabEeOTP-YZvC1ZqA"/>
