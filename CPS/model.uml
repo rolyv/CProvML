@@ -448,6 +448,15 @@
         <ownedOperation xmi:type="uml:Operation" xmi:id="_RyHzAJdyEeOn6MdNd15vIw" name="ModelController">
           <ownedParameter xmi:type="uml:Parameter" xmi:id="_UBl7QJdyEeOn6MdNd15vIw" name="modelRepository" type="_JUZ9cJc-EeOroeIBBGKvlg"/>
         </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_-TYOMJgoEeOVlqugL7Ckdw" name="CreateModel"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_DMocIJgpEeOVlqugL7Ckdw" name="SaveModel">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_NS1QEJgpEeOVlqugL7Ckdw" name="model" type="_fqfOoJc-EeOroeIBBGKvlg"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_J7rHAJgpEeOVlqugL7Ckdw" name="OpenModel">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_QwAhkJgpEeOVlqugL7Ckdw" name="fileName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
       </packagedElement>
       <packagedElement xmi:type="uml:Dependency" xmi:id="_2rU7IJeNEeOn6MdNd15vIw" name="depends on Cloud Provisioning Model" client="_8vedQJc9EeOroeIBBGKvlg" supplier="_T-wTcJaSEeOyGuS94aT43g"/>
       <packagedElement xmi:type="uml:Dependency" xmi:id="_6WBrQJeNEeOn6MdNd15vIw" name="depends on Modeling Model" client="_8vedQJc9EeOroeIBBGKvlg" supplier="_r-H2oJaSEeOyGuS94aT43g"/>
@@ -477,7 +486,15 @@
           <ownedParameter xmi:type="uml:Parameter" xmi:id="_OxNcMJdxEeOn6MdNd15vIw" name="modelController" type="_DETRUJc-EeOroeIBBGKvlg"/>
         </ownedOperation>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_1EInkJdQEeObq5oedQz6Gw" name="Canvas"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_1EInkJdQEeObq5oedQz6Gw" name="Canvas">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Mkt3wJgnEeOVlqugL7Ckdw" name="Model" visibility="public" type="_fqfOoJc-EeOroeIBBGKvlg">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OU0jcJgnEeOVlqugL7Ckdw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OU2YoJgnEeOVlqugL7Ckdw" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_OU4N0JgnEeOVlqugL7Ckdw">
+            <value xsi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+      </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_3i8zYJdQEeObq5oedQz6Gw" name="Palette"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_n3TF8JdoEeObq5oedQz6Gw" name="PropertyEditor"/>
       <packagedElement xmi:type="uml:Association" xmi:id="_DElWo5dpEeObq5oedQz6Gw" name="window_canvas_1" memberEnd="_DElWpJdpEeObq5oedQz6Gw _DElWoJdpEeObq5oedQz6Gw">
