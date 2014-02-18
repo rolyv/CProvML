@@ -25,6 +25,21 @@
     <availablePage>
       <emfPageIdentifier href="model.notation#_k-zb8JLgEeOMrbhAk4pXNQ"/>
     </availablePage>
+    <availablePage>
+      <emfPageIdentifier href="model.notation#_H31BIJhDEeOBJIkCAvOppw"/>
+    </availablePage>
+    <availablePage>
+      <emfPageIdentifier href="model.notation#_EBHjYJhFEeOBJIkCAvOppw"/>
+    </availablePage>
+    <availablePage>
+      <emfPageIdentifier href="model.notation#_p0qWMJhHEeOBJIkCAvOppw"/>
+    </availablePage>
+    <availablePage>
+      <emfPageIdentifier href="model.notation#_gZLBQJhJEeOBJIkCAvOppw"/>
+    </availablePage>
+    <availablePage>
+      <emfPageIdentifier href="model.notation#_g_17gJhQEeOBJIkCAvOppw"/>
+    </availablePage>
   </pageList>
   <sashModel currentSelection="//@sashModel/@windows.0/@children.0">
     <windows>
@@ -33,10 +48,19 @@
           <emfPageIdentifier href="model.notation#_aVFlcJDWEeO_F6mXGJ9tdA"/>
         </children>
         <children>
+          <emfPageIdentifier href="model.notation#_EBHjYJhFEeOBJIkCAvOppw"/>
+        </children>
+        <children>
           <emfPageIdentifier href="model.notation#_k-zb8JLgEeOMrbhAk4pXNQ"/>
         </children>
         <children>
-          <emfPageIdentifier href="model.notation#_W7-24JLfEeOMrbhAk4pXNQ"/>
+          <emfPageIdentifier href="model.notation#_p0qWMJhHEeOBJIkCAvOppw"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="model.notation#_gZLBQJhJEeOBJIkCAvOppw"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="model.notation#_g_17gJhQEeOBJIkCAvOppw"/>
         </children>
       </children>
     </windows>
