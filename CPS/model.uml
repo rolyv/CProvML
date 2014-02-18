@@ -5,12 +5,12 @@
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
     </packageImport>
     <packagedElement xmi:type="uml:Actor" xmi:id="_0x4nEIt1EeOaDoh4ArG-Qg" name="CloudProvisioningAdministrator"/>
-    <packagedElement xmi:type="uml:Package" xmi:id="_Q1JdgIt2EeOaDoh4ArG-Qg" name="CPS Use Cases">
+    <packagedElement xmi:type="uml:Package" xmi:id="_Q1JdgIt2EeOaDoh4ArG-Qg" name="CPS">
       <packagedElement xmi:type="uml:UseCase" xmi:id="_NrwqsIt2EeOaDoh4ArG-Qg" name="CreateVM"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_tQ_MAIt2EeOaDoh4ArG-Qg" name="CreateVMFromTemplate"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_w_ooAIt2EeOaDoh4ArG-Qg" name="DeleteExistingVM"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_3273AIt2EeOaDoh4ArG-Qg" name="Modify hardware"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_6cvboIt2EeOaDoh4ArG-Qg" name="CreateEnvironment"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_6cvboIt2EeOaDoh4ArG-Qg" name="CloneVM"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_-QINsIt2EeOaDoh4ArG-Qg" name="Modify software"/>
       <packagedElement xmi:type="uml:Association" xmi:id="_4FcWMJDeEeO_F6mXGJ9tdA" name="A_createvm_cloudprovisioningadministrator" memberEnd="_4FcWMZDeEeO_F6mXGJ9tdA _4FcWNJDeEeO_F6mXGJ9tdA">
         <ownedEnd xmi:type="uml:Property" xmi:id="_4FcWMZDeEeO_F6mXGJ9tdA" name="createvm" type="_NrwqsIt2EeOaDoh4ArG-Qg" association="_4FcWMJDeEeO_F6mXGJ9tdA">
@@ -842,6 +842,151 @@
       <slot xmi:type="uml:Slot" xmi:id="_xrL3cJhQEeOBJIkCAvOppw" definingFeature="_61FkkJg3EeOVlqugL7Ckdw">
         <value xmi:type="uml:InstanceValue" xmi:id="_2fZ0YJhQEeOBJIkCAvOppw" type="_joviIJDWEeO_F6mXGJ9tdA" instance="_ifXNgJhQEeOBJIkCAvOppw"/>
       </slot>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_gQLxcJhWEeOitcKOzJTkGg" name="GVE">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_mbW6QJhWEeOitcKOzJTkGg" name="CreateModel"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_xoqgMJhWEeOitcKOzJTkGg" name="OpenModel"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_Bbm0gJhXEeOitcKOzJTkGg" name="SaveModel"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_K9_JsJhXEeOitcKOzJTkGg" name="AddElementsToModel"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_QEiz0JhXEeOitcKOzJTkGg" name="ModifyElementPropertiesOnModel">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_SIN7wJhXEeOitcKOzJTkGg">
+          <body>ModifyElementPropertiesOnModel
+</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_Z7Dl8JhXEeOitcKOzJTkGg" name="ValidateModel"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_gufooJhXEeOitcKOzJTkGg" name="A_cloudprovisioningadministrator_createmodel" memberEnd="_gufooZhXEeOitcKOzJTkGg _gufopJhXEeOitcKOzJTkGg">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_gufooZhXEeOitcKOzJTkGg" name="cloudprovisioningadministrator" type="_0x4nEIt1EeOaDoh4ArG-Qg" association="_gufooJhXEeOitcKOzJTkGg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gufoophXEeOitcKOzJTkGg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gufoo5hXEeOitcKOzJTkGg" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_gufopJhXEeOitcKOzJTkGg" name="createmodel" type="_mbW6QJhWEeOitcKOzJTkGg" association="_gufooJhXEeOitcKOzJTkGg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gufopZhXEeOitcKOzJTkGg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gufopphXEeOitcKOzJTkGg" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_iIwAIJhXEeOitcKOzJTkGg" name="A_cloudprovisioningadministrator_openmodel" memberEnd="_iIwAIZhXEeOitcKOzJTkGg _iIwAJJhXEeOitcKOzJTkGg">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_iIwAIZhXEeOitcKOzJTkGg" name="cloudprovisioningadministrator" type="_0x4nEIt1EeOaDoh4ArG-Qg" association="_iIwAIJhXEeOitcKOzJTkGg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iIwAIphXEeOitcKOzJTkGg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iIwAI5hXEeOitcKOzJTkGg" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_iIwAJJhXEeOitcKOzJTkGg" name="openmodel" type="_xoqgMJhWEeOitcKOzJTkGg" association="_iIwAIJhXEeOitcKOzJTkGg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iIwAJZhXEeOitcKOzJTkGg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iIwAJphXEeOitcKOzJTkGg" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_i8me8JhXEeOitcKOzJTkGg" name="A_cloudprovisioningadministrator_addelementstomodel" memberEnd="_i8me8ZhXEeOitcKOzJTkGg _i8me9JhXEeOitcKOzJTkGg">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_i8me8ZhXEeOitcKOzJTkGg" name="cloudprovisioningadministrator" type="_0x4nEIt1EeOaDoh4ArG-Qg" association="_i8me8JhXEeOitcKOzJTkGg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_i8me8phXEeOitcKOzJTkGg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_i8me85hXEeOitcKOzJTkGg" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_i8me9JhXEeOitcKOzJTkGg" name="addelementstomodel" type="_K9_JsJhXEeOitcKOzJTkGg" association="_i8me8JhXEeOitcKOzJTkGg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_i8me9ZhXEeOitcKOzJTkGg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_i8me9phXEeOitcKOzJTkGg" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_jsVSwJhXEeOitcKOzJTkGg" name="A_cloudprovisioningadministrator_modifyelementpropertiesonmodel" memberEnd="_jsVSwZhXEeOitcKOzJTkGg _jsVSxJhXEeOitcKOzJTkGg">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_jsVSwZhXEeOitcKOzJTkGg" name="cloudprovisioningadministrator" type="_0x4nEIt1EeOaDoh4ArG-Qg" association="_jsVSwJhXEeOitcKOzJTkGg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jsVSwphXEeOitcKOzJTkGg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jsVSw5hXEeOitcKOzJTkGg" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_jsVSxJhXEeOitcKOzJTkGg" name="modifyelementpropertiesonmodel" type="_QEiz0JhXEeOitcKOzJTkGg" association="_jsVSwJhXEeOitcKOzJTkGg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jsVSxZhXEeOitcKOzJTkGg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jsVSxphXEeOitcKOzJTkGg" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_kdOkMJhXEeOitcKOzJTkGg" name="A_cloudprovisioningadministrator_validatemodel" memberEnd="_kdOkMZhXEeOitcKOzJTkGg _kdOkNJhXEeOitcKOzJTkGg">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_kdOkMZhXEeOitcKOzJTkGg" name="cloudprovisioningadministrator" type="_0x4nEIt1EeOaDoh4ArG-Qg" association="_kdOkMJhXEeOitcKOzJTkGg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kdOkMphXEeOitcKOzJTkGg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kdOkM5hXEeOitcKOzJTkGg" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_kdOkNJhXEeOitcKOzJTkGg" name="validatemodel" type="_Z7Dl8JhXEeOitcKOzJTkGg" association="_kdOkMJhXEeOitcKOzJTkGg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kdOkNZhXEeOitcKOzJTkGg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kdOkNphXEeOitcKOzJTkGg" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_tTG_wJhXEeOitcKOzJTkGg" name="A_cloudprovisioningadministrator_savemodel" memberEnd="_tTG_wZhXEeOitcKOzJTkGg _tTG_xJhXEeOitcKOzJTkGg">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_tTG_wZhXEeOitcKOzJTkGg" name="cloudprovisioningadministrator" type="_0x4nEIt1EeOaDoh4ArG-Qg" association="_tTG_wJhXEeOitcKOzJTkGg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tTG_wphXEeOitcKOzJTkGg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tTG_w5hXEeOitcKOzJTkGg" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_tTG_xJhXEeOitcKOzJTkGg" name="savemodel" type="_Bbm0gJhXEeOitcKOzJTkGg" association="_tTG_wJhXEeOitcKOzJTkGg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tTG_xZhXEeOitcKOzJTkGg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tTG_xphXEeOitcKOzJTkGg" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Y5qk8JhYEeOitcKOzJTkGg" name="CPS-GVE">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_5d6TQJhYEeOitcKOzJTkGg" name="CreateVM"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_7g10UJhYEeOitcKOzJTkGg" name="CreateVMFromTemplate">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_9UGhsJhYEeOitcKOzJTkGg">
+          <body>CreateVMFromTemplate</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_A14mYJhZEeOitcKOzJTkGg" name="DeleteExistingVM"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_D4CIwJhZEeOitcKOzJTkGg" name="ModifyHardware"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_Guv3MJhZEeOitcKOzJTkGg" name="CreateEnvironment"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_JLiCsJhZEeOitcKOzJTkGg" name="ModifySoftware"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ycOjwJhZEeOitcKOzJTkGg" name="A_cloudprovisioningadministrator_createvm" memberEnd="_ycOjwZhZEeOitcKOzJTkGg _ycOjxJhZEeOitcKOzJTkGg">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_ycOjwZhZEeOitcKOzJTkGg" name="cloudprovisioningadministrator" type="_0x4nEIt1EeOaDoh4ArG-Qg" association="_ycOjwJhZEeOitcKOzJTkGg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ycOjwphZEeOitcKOzJTkGg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ycOjw5hZEeOitcKOzJTkGg" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_ycOjxJhZEeOitcKOzJTkGg" name="createvm" type="_5d6TQJhYEeOitcKOzJTkGg" association="_ycOjwJhZEeOitcKOzJTkGg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ycOjxZhZEeOitcKOzJTkGg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ycOjxphZEeOitcKOzJTkGg" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_1bvo4JhZEeOitcKOzJTkGg" name="A_cloudprovisioningadministrator_createvmfromtemplate" memberEnd="_1bvo4ZhZEeOitcKOzJTkGg _1bvo5JhZEeOitcKOzJTkGg">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_1bvo4ZhZEeOitcKOzJTkGg" name="cloudprovisioningadministrator" type="_0x4nEIt1EeOaDoh4ArG-Qg" association="_1bvo4JhZEeOitcKOzJTkGg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1bvo4phZEeOitcKOzJTkGg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1bvo45hZEeOitcKOzJTkGg" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_1bvo5JhZEeOitcKOzJTkGg" name="createvmfromtemplate" type="_7g10UJhYEeOitcKOzJTkGg" association="_1bvo4JhZEeOitcKOzJTkGg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1bvo5ZhZEeOitcKOzJTkGg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1bvo5phZEeOitcKOzJTkGg" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_5e6jYJhZEeOitcKOzJTkGg" name="A_cloudprovisioningadministrator_deleteexistingvm" memberEnd="_5e6jYZhZEeOitcKOzJTkGg _5e6jZJhZEeOitcKOzJTkGg">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_5e6jYZhZEeOitcKOzJTkGg" name="cloudprovisioningadministrator" type="_0x4nEIt1EeOaDoh4ArG-Qg" association="_5e6jYJhZEeOitcKOzJTkGg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5e6jYphZEeOitcKOzJTkGg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5e6jY5hZEeOitcKOzJTkGg" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_5e6jZJhZEeOitcKOzJTkGg" name="deleteexistingvm" type="_A14mYJhZEeOitcKOzJTkGg" association="_5e6jYJhZEeOitcKOzJTkGg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5e6jZZhZEeOitcKOzJTkGg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5e6jZphZEeOitcKOzJTkGg" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="___xBQJhZEeOitcKOzJTkGg" name="A_cloudprovisioningadministrator_createenvironment" memberEnd="___xBQZhZEeOitcKOzJTkGg ___xBRJhZEeOitcKOzJTkGg">
+      <ownedEnd xmi:type="uml:Property" xmi:id="___xBQZhZEeOitcKOzJTkGg" name="cloudprovisioningadministrator" type="_0x4nEIt1EeOaDoh4ArG-Qg" association="___xBQJhZEeOitcKOzJTkGg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="___xBQphZEeOitcKOzJTkGg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="___xBQ5hZEeOitcKOzJTkGg" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="___xBRJhZEeOitcKOzJTkGg" name="createenvironment" type="_Guv3MJhZEeOitcKOzJTkGg" association="___xBQJhZEeOitcKOzJTkGg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="___xBRZhZEeOitcKOzJTkGg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="___xBRphZEeOitcKOzJTkGg" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_G2CVgJhaEeOitcKOzJTkGg" name="A_cloudprovisioningadministrator_modifysoftware" memberEnd="_G2CVgZhaEeOitcKOzJTkGg _G2CVhJhaEeOitcKOzJTkGg">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_G2CVgZhaEeOitcKOzJTkGg" name="cloudprovisioningadministrator" type="_0x4nEIt1EeOaDoh4ArG-Qg" association="_G2CVgJhaEeOitcKOzJTkGg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G2CVgphaEeOitcKOzJTkGg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G2CVg5haEeOitcKOzJTkGg" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_G2CVhJhaEeOitcKOzJTkGg" name="modifysoftware" type="_JLiCsJhZEeOitcKOzJTkGg" association="_G2CVgJhaEeOitcKOzJTkGg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G2CVhZhaEeOitcKOzJTkGg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G2CVhphaEeOitcKOzJTkGg" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_K-sM8JhaEeOitcKOzJTkGg" name="A_cloudprovisioningadministrator_modifyhardware" memberEnd="_K-sM8ZhaEeOitcKOzJTkGg _K-sM9JhaEeOitcKOzJTkGg">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_K-sM8ZhaEeOitcKOzJTkGg" name="cloudprovisioningadministrator" type="_0x4nEIt1EeOaDoh4ArG-Qg" association="_K-sM8JhaEeOitcKOzJTkGg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_K-sM8phaEeOitcKOzJTkGg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_K-sM85haEeOitcKOzJTkGg" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_K-sM9JhaEeOitcKOzJTkGg" name="modifyhardware" type="_D4CIwJhZEeOitcKOzJTkGg" association="_K-sM8JhaEeOitcKOzJTkGg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_K-sM9ZhaEeOitcKOzJTkGg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_K-sM9phaEeOitcKOzJTkGg" value="1"/>
+      </ownedEnd>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_GW0Z8JaZEeOKqrK20qbl7Q">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GYE-MJaZEeOKqrK20qbl7Q" source="http://www.eclipse.org/uml2/2.0.0/UML">

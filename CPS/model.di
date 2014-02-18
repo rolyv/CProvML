@@ -62,6 +62,9 @@
         <children>
           <emfPageIdentifier href="model.notation#_g_17gJhQEeOBJIkCAvOppw"/>
         </children>
+        <children>
+          <emfPageIdentifier href="model.notation#_cCHXIIt0EeOyfZZDtSfbkg"/>
+        </children>
       </children>
     </windows>
   </sashModel>
