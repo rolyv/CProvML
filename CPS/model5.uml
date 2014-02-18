@@ -35,8 +35,8 @@
   </packagedElement>
   <packagedElement xmi:type="uml:StateMachine" xmi:id="_tg8DQJdNEeOZlbu3y9dV4Q" name="Create VM From Template">
     <region xmi:type="uml:Region" xmi:id="_ceGF8JdQEeOZlbu3y9dV4Q" name="Region1">
-      <transition xmi:type="uml:Transition" xmi:id="_FEg68JdREeOZlbu3y9dV4Q" name="PressCreateVMTemplate/getListVM()" source="_pyeGEJdQEeOZlbu3y9dV4Q" target="_r1OA8JdQEeOZlbu3y9dV4Q"/>
-      <transition xmi:type="uml:Transition" xmi:id="_N2aOYJdREeOZlbu3y9dV4Q" name="clickVM/selectVM()" source="_r1OA8JdQEeOZlbu3y9dV4Q" target="_zGAuAJdQEeOZlbu3y9dV4Q"/>
+      <transition xmi:type="uml:Transition" xmi:id="_FEg68JdREeOZlbu3y9dV4Q" name="PressCreateVMTemplate/getTemplateList()" source="_pyeGEJdQEeOZlbu3y9dV4Q" target="_r1OA8JdQEeOZlbu3y9dV4Q"/>
+      <transition xmi:type="uml:Transition" xmi:id="_N2aOYJdREeOZlbu3y9dV4Q" name="clickTemplate/selectTemplate()" source="_r1OA8JdQEeOZlbu3y9dV4Q" target="_zGAuAJdQEeOZlbu3y9dV4Q"/>
       <transition xmi:type="uml:Transition" xmi:id="_TLh48JdREeOZlbu3y9dV4Q" name="checkTemplate/chooseTemplate()" source="_zGAuAJdQEeOZlbu3y9dV4Q" target="_2xGfsJdQEeOZlbu3y9dV4Q"/>
       <transition xmi:type="uml:Transition" xmi:id="_aupsIJdREeOZlbu3y9dV4Q" name="PressCreate[confirmation]/createVM()" source="_2xGfsJdQEeOZlbu3y9dV4Q" target="__Wr1cJdQEeOZlbu3y9dV4Q"/>
       <transition xmi:type="uml:Transition" xmi:id="_fQTSYJdREeOZlbu3y9dV4Q" name="PressCancel[confirmation]/discardChanges()" source="_2xGfsJdQEeOZlbu3y9dV4Q" target="_r1OA8JdQEeOZlbu3y9dV4Q"/>

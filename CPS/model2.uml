@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_VTBJIJHbEeO5baeFVHxvng" name="model">
-  <packageImport xmi:type="uml:PackageImport" xmi:id="_bFrrUJHbEeO5baeFVHxvng">
-    <importedPackage xmi:type="uml:Package" href="model.uml#_Q1JdgIt2EeOaDoh4ArG-Qg"/>
-  </packageImport>
-  <packagedElement xmi:type="uml:Activity" xmi:id="_VTBwMJHbEeO5baeFVHxvng" name="Create Model" node="_8z6rEJHcEeO5baeFVHxvng _Ai9IoJHdEeO5baeFVHxvng _IKUioJHdEeO5baeFVHxvng _fuW0sJHdEeO5baeFVHxvng _r5riEJHdEeO5baeFVHxvng _-bFLQJHeEeO5baeFVHxvng _w9GGsJHfEeO5baeFVHxvng _EXg4AJHgEeO5baeFVHxvng _3sKFAJK2EeOyeNaZDwJ1OQ _FHisEJK3EeOyeNaZDwJ1OQ _Pw8TsJK3EeOyeNaZDwJ1OQ _dLlT4JK3EeOyeNaZDwJ1OQ _pWWnoJK3EeOyeNaZDwJ1OQ _xVT2sJLBEeOyeNaZDwJ1OQ _1w4DEJLBEeOyeNaZDwJ1OQ _EFYOAJLDEeOyeNaZDwJ1OQ _RUBZkJLDEeOyeNaZDwJ1OQ _cqI9QJLDEeOyeNaZDwJ1OQ _hlZ9YJLDEeOyeNaZDwJ1OQ _LuP6AJaLEeOICcX3nf5HjA _PdTlsJaLEeOICcX3nf5HjA _XfG48JaLEeOICcX3nf5HjA _jtp5cJaLEeOICcX3nf5HjA _rzQuoJaLEeOICcX3nf5HjA _9l8tIJaLEeOICcX3nf5HjA _Aaq3gJaMEeOICcX3nf5HjA _J3CEQJaMEeOICcX3nf5HjA _YeVE0JaMEeOICcX3nf5HjA _fz1SwJaMEeOICcX3nf5HjA _lh6P4JaMEeOICcX3nf5HjA">
+  <packagedElement xmi:type="uml:Activity" xmi:id="_VTBwMJHbEeO5baeFVHxvng" name="CProvML Activity Diagrams 1" node="_8z6rEJHcEeO5baeFVHxvng _Ai9IoJHdEeO5baeFVHxvng _IKUioJHdEeO5baeFVHxvng _fuW0sJHdEeO5baeFVHxvng _r5riEJHdEeO5baeFVHxvng _-bFLQJHeEeO5baeFVHxvng _w9GGsJHfEeO5baeFVHxvng _EXg4AJHgEeO5baeFVHxvng _3sKFAJK2EeOyeNaZDwJ1OQ _FHisEJK3EeOyeNaZDwJ1OQ _Pw8TsJK3EeOyeNaZDwJ1OQ _dLlT4JK3EeOyeNaZDwJ1OQ _pWWnoJK3EeOyeNaZDwJ1OQ _xVT2sJLBEeOyeNaZDwJ1OQ _1w4DEJLBEeOyeNaZDwJ1OQ _EFYOAJLDEeOyeNaZDwJ1OQ _RUBZkJLDEeOyeNaZDwJ1OQ _cqI9QJLDEeOyeNaZDwJ1OQ _hlZ9YJLDEeOyeNaZDwJ1OQ _LuP6AJaLEeOICcX3nf5HjA _PdTlsJaLEeOICcX3nf5HjA _XfG48JaLEeOICcX3nf5HjA _jtp5cJaLEeOICcX3nf5HjA _rzQuoJaLEeOICcX3nf5HjA _9l8tIJaLEeOICcX3nf5HjA _Aaq3gJaMEeOICcX3nf5HjA _J3CEQJaMEeOICcX3nf5HjA _YeVE0JaMEeOICcX3nf5HjA _fz1SwJaMEeOICcX3nf5HjA _lh6P4JaMEeOICcX3nf5HjA _c91wkJhOEeOhe5MoJX5P5A">
     <edge xmi:type="uml:ControlFlow" xmi:id="_N0kvsJHdEeO5baeFVHxvng" name="ControlFlow1" source="_Ai9IoJHdEeO5baeFVHxvng" target="_IKUioJHdEeO5baeFVHxvng">
       <guard xmi:type="uml:LiteralNull" xmi:id="_7hWi4JRAEeOEFaAMwNlaow"/>
       <weight xmi:type="uml:LiteralNull" xmi:id="_8I8uYJRAEeOEFaAMwNlaow"/>
@@ -116,9 +113,13 @@
       <guard xmi:type="uml:LiteralNull" xmi:id="_jkgIAJaMEeOICcX3nf5HjA"/>
       <weight xmi:type="uml:LiteralNull" xmi:id="_j_5DgJaMEeOICcX3nf5HjA"/>
     </edge>
-    <edge xmi:type="uml:ControlFlow" xmi:id="_nsxk8JaMEeOICcX3nf5HjA" name="ControlFlow109" source="_fz1SwJaMEeOICcX3nf5HjA" target="_lh6P4JaMEeOICcX3nf5HjA">
-      <guard xmi:type="uml:LiteralNull" xmi:id="_onZaIJaMEeOICcX3nf5HjA"/>
-      <weight xmi:type="uml:LiteralNull" xmi:id="_pF-zkJaMEeOICcX3nf5HjA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_z8BjkJhOEeOhe5MoJX5P5A" name="ControlFlow109" source="_fz1SwJaMEeOICcX3nf5HjA" target="_c91wkJhOEeOhe5MoJX5P5A">
+      <guard xmi:type="uml:LiteralNull" xmi:id="_2C-B8JhOEeOhe5MoJX5P5A"/>
+      <weight xmi:type="uml:LiteralNull" xmi:id="_2p3C0JhOEeOhe5MoJX5P5A"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_ag3iYJhPEeOhe5MoJX5P5A" name="ControlFlow110" source="_c91wkJhOEeOhe5MoJX5P5A" target="_lh6P4JaMEeOICcX3nf5HjA">
+      <guard xmi:type="uml:LiteralNull" xmi:id="_oYcWMJhPEeOhe5MoJX5P5A"/>
+      <weight xmi:type="uml:LiteralNull" xmi:id="_o3-x4JhPEeOhe5MoJX5P5A"/>
     </edge>
     <node xmi:type="uml:InitialNode" xmi:id="_8z6rEJHcEeO5baeFVHxvng" name="InitialNode1" outgoing="_PgmMoJHdEeO5baeFVHxvng"/>
     <node xmi:type="uml:OpaqueAction" xmi:id="_Ai9IoJHdEeO5baeFVHxvng" name="New VM button clicked" outgoing="_N0kvsJHdEeO5baeFVHxvng" incoming="_PgmMoJHdEeO5baeFVHxvng"/>
@@ -147,8 +148,9 @@
     <node xmi:type="uml:InitialNode" xmi:id="_9l8tIJaLEeOICcX3nf5HjA" name="InitialNode5" outgoing="_Nt3y8JaMEeOICcX3nf5HjA"/>
     <node xmi:type="uml:ActivityFinalNode" xmi:id="_Aaq3gJaMEeOICcX3nf5HjA" name="ActivityFinalNode4" incoming="_BvbrAJaMEeOICcX3nf5HjA"/>
     <node xmi:type="uml:OpaqueAction" xmi:id="_J3CEQJaMEeOICcX3nf5HjA" name="New Model button clicked" outgoing="_a_ey8JaMEeOICcX3nf5HjA" incoming="_Nt3y8JaMEeOICcX3nf5HjA"/>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_YeVE0JaMEeOICcX3nf5HjA" name="Name Entered" outgoing="_iyW5YJaMEeOICcX3nf5HjA" incoming="_a_ey8JaMEeOICcX3nf5HjA"/>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_fz1SwJaMEeOICcX3nf5HjA" name="Available Components Displayed" outgoing="_nsxk8JaMEeOICcX3nf5HjA" incoming="_iyW5YJaMEeOICcX3nf5HjA"/>
-    <node xmi:type="uml:ActivityFinalNode" xmi:id="_lh6P4JaMEeOICcX3nf5HjA" name="ActivityFinalNode5" incoming="_nsxk8JaMEeOICcX3nf5HjA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_YeVE0JaMEeOICcX3nf5HjA" name="List Available Templates" outgoing="_iyW5YJaMEeOICcX3nf5HjA" incoming="_a_ey8JaMEeOICcX3nf5HjA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_fz1SwJaMEeOICcX3nf5HjA" name="Template Selected" outgoing="_z8BjkJhOEeOhe5MoJX5P5A" incoming="_iyW5YJaMEeOICcX3nf5HjA"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_lh6P4JaMEeOICcX3nf5HjA" name="ActivityFinalNode5" incoming="_ag3iYJhPEeOhe5MoJX5P5A"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_c91wkJhOEeOhe5MoJX5P5A" name="Name Entered" outgoing="_ag3iYJhPEeOhe5MoJX5P5A" incoming="_z8BjkJhOEeOhe5MoJX5P5A"/>
   </packagedElement>
 </uml:Model>

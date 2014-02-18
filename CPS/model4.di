@@ -2,26 +2,26 @@
 <di:SashWindowsMngr xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:di="http://www.eclipse.org/papyrus/0.7.0/sashdi">
   <pageList>
     <availablePage>
-      <emfPageIdentifier href="model4.notation#_jpUjoJLIEeOyeNaZDwJ1OQ"/>
+      <emfPageIdentifier href="model4.notation#_xysZMJhGEeOhe5MoJX5P5A"/>
     </availablePage>
     <availablePage>
-      <emfPageIdentifier href="model4.notation#_N6EpoJaREeOICcX3nf5HjA"/>
+      <emfPageIdentifier href="model4.notation#_pYx2AJhIEeOhe5MoJX5P5A"/>
     </availablePage>
     <availablePage>
-      <emfPageIdentifier href="model4.notation#_taYHUJaUEeOICcX3nf5HjA"/>
+      <emfPageIdentifier href="model4.notation#_ZYtH0JhMEeOhe5MoJX5P5A"/>
     </availablePage>
   </pageList>
   <sashModel>
     <windows>
       <children xsi:type="di:TabFolder">
         <children>
-          <emfPageIdentifier href="model4.notation#_jpUjoJLIEeOyeNaZDwJ1OQ"/>
+          <emfPageIdentifier href="model4.notation#_xysZMJhGEeOhe5MoJX5P5A"/>
         </children>
         <children>
-          <emfPageIdentifier href="model4.notation#_N6EpoJaREeOICcX3nf5HjA"/>
+          <emfPageIdentifier href="model4.notation#_pYx2AJhIEeOhe5MoJX5P5A"/>
         </children>
         <children>
-          <emfPageIdentifier href="model4.notation#_taYHUJaUEeOICcX3nf5HjA"/>
+          <emfPageIdentifier href="model4.notation#_ZYtH0JhMEeOhe5MoJX5P5A"/>
         </children>
       </children>
     </windows>
