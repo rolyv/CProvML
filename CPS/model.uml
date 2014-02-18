@@ -119,7 +119,7 @@
         <value xmi:type="uml:InstanceValue" xmi:id="_XthjEJHjEeOoBY9-SSD0YA" type="_Ao3UoJHjEeOoBY9-SSD0YA" instance="_CQZ6MJHjEeOoBY9-SSD0YA"/>
       </slot>
     </packagedElement>
-    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_cVP5EJLIEeO7iZO5xA5ZWw" name="env" classifier="_joviIJDWEeO_F6mXGJ9tdA">
+    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_cVP5EJLIEeO7iZO5xA5ZWw" name="env2" classifier="_joviIJDWEeO_F6mXGJ9tdA">
       <slot xmi:type="uml:Slot" xmi:id="_gIZakJLIEeO7iZO5xA5ZWw" definingFeature="_nMiZAJDWEeO_F6mXGJ9tdA">
         <value xmi:type="uml:LiteralString" xmi:id="_mpZCYJLIEeO7iZO5xA5ZWw" name="" value="myEnv"/>
       </slot>
@@ -168,7 +168,7 @@
         <value xmi:type="uml:InstanceValue" xmi:id="_AGCJ8pLLEeO7iZO5xA5ZWw" name="InstanceValue0" type="_joviIJDWEeO_F6mXGJ9tdA" instance="_sndPEJHSEeODqZMsRbi-sw"/>
       </slot>
     </packagedElement>
-    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="__gtKIJLcEeOMrbhAk4pXNQ" name="env5" classifier="_joviIJDWEeO_F6mXGJ9tdA">
+    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="__gtKIJLcEeOMrbhAk4pXNQ" name="env3" classifier="_joviIJDWEeO_F6mXGJ9tdA">
       <slot xmi:type="uml:Slot" xmi:id="_B2VkwJLdEeOMrbhAk4pXNQ" definingFeature="_nMiZAJDWEeO_F6mXGJ9tdA">
         <value xmi:type="uml:LiteralString" xmi:id="_EdfNMJLdEeOMrbhAk4pXNQ" value="myEnv"/>
       </slot>
@@ -208,7 +208,7 @@
         <value xmi:type="uml:InstanceValue" xmi:id="_l9NFQpLdEeOMrbhAk4pXNQ" name="InstanceValue0" type="_joviIJDWEeO_F6mXGJ9tdA" instance="__gtKIJLcEeOMrbhAk4pXNQ"/>
       </slot>
     </packagedElement>
-    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_Xx8OgJLfEeOMrbhAk4pXNQ" name="env2" classifier="_joviIJDWEeO_F6mXGJ9tdA">
+    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_Xx8OgJLfEeOMrbhAk4pXNQ" name="env4" classifier="_joviIJDWEeO_F6mXGJ9tdA">
       <slot xmi:type="uml:Slot" xmi:id="_dH3xYJLfEeOMrbhAk4pXNQ" definingFeature="_82B-EJDjEeO_F6mXGJ9tdA">
         <value xmi:type="uml:InstanceValue" xmi:id="_dH3xYZLfEeOMrbhAk4pXNQ" name="InstanceValue0" type="_9OB6QJDWEeO_F6mXGJ9tdA" instance="_ZmUWMJLfEeOMrbhAk4pXNQ"/>
       </slot>
@@ -248,12 +248,12 @@
         <value xmi:type="uml:InstanceValue" xmi:id="_dH3KU5LfEeOMrbhAk4pXNQ" name="InstanceValue0" type="_joviIJDWEeO_F6mXGJ9tdA" instance="_Xx8OgJLfEeOMrbhAk4pXNQ"/>
       </slot>
     </packagedElement>
-    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_Ql_IsJLgEeOMrbhAk4pXNQ" name="env3" classifier="_joviIJDWEeO_F6mXGJ9tdA">
+    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_Ql_IsJLgEeOMrbhAk4pXNQ" name="env5" classifier="_joviIJDWEeO_F6mXGJ9tdA">
       <slot xmi:type="uml:Slot" xmi:id="_SbLvwJLgEeOMrbhAk4pXNQ" definingFeature="_nMiZAJDWEeO_F6mXGJ9tdA">
         <value xmi:type="uml:LiteralString" xmi:id="_VNqecJLgEeOMrbhAk4pXNQ" value="myEnv"/>
       </slot>
     </packagedElement>
-    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_ltkmcJLgEeOMrbhAk4pXNQ" name="env4" classifier="_joviIJDWEeO_F6mXGJ9tdA">
+    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_ltkmcJLgEeOMrbhAk4pXNQ" name="env6" classifier="_joviIJDWEeO_F6mXGJ9tdA">
       <slot xmi:type="uml:Slot" xmi:id="_pyr4kJc8EeOroeIBBGKvlg" definingFeature="_nMiZAJDWEeO_F6mXGJ9tdA">
         <value xmi:type="uml:LiteralString" xmi:id="_4re40Jc8EeOroeIBBGKvlg" value="myEnv"/>
       </slot>
@@ -261,7 +261,23 @@
         <value xmi:type="uml:InstanceValue" xmi:id="_08uvIJc8EeOroeIBBGKvlg" name="InstanceValue0" type="_9OB6QJDWEeO_F6mXGJ9tdA" instance="_nWxY4JLgEeOMrbhAk4pXNQ"/>
       </slot>
     </packagedElement>
-    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_nWxY4JLgEeOMrbhAk4pXNQ" name="existingInstance" classifier="_9OB6QJDWEeO_F6mXGJ9tdA"/>
+    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_nWxY4JLgEeOMrbhAk4pXNQ" name="existingInstance" classifier="_9OB6QJDWEeO_F6mXGJ9tdA">
+      <slot xmi:type="uml:Slot" xmi:id="_LjSUUJhFEeOBJIkCAvOppw" definingFeature="_pbJwMJDXEeO_F6mXGJ9tdA">
+        <value xmi:type="uml:LiteralString" xmi:id="_N1avAJhFEeOBJIkCAvOppw" value="comvmsql10"/>
+      </slot>
+      <slot xmi:type="uml:Slot" xmi:id="_PzpWQJhFEeOBJIkCAvOppw" definingFeature="_FTnmsJDqEeO_F6mXGJ9tdA">
+        <value xmi:type="uml:LiteralInteger" xmi:id="_SDIFkJhFEeOBJIkCAvOppw" value="1"/>
+      </slot>
+      <slot xmi:type="uml:Slot" xmi:id="_SgGVcJhFEeOBJIkCAvOppw" definingFeature="_f0WTYJDqEeO_F6mXGJ9tdA">
+        <value xmi:type="uml:InstanceValue" xmi:id="_dgVvwJhFEeOBJIkCAvOppw" type="_aaItcJDqEeO_F6mXGJ9tdA" instance="_dQyKcJDqEeO_F6mXGJ9tdA"/>
+      </slot>
+      <slot xmi:type="uml:Slot" xmi:id="_eBmpwJhFEeOBJIkCAvOppw" definingFeature="_dtMOEJD0EeO_F6mXGJ9tdA">
+        <value xmi:type="uml:LiteralInteger" xmi:id="_gmCVYJhFEeOBJIkCAvOppw" value="8"/>
+      </slot>
+      <slot xmi:type="uml:Slot" xmi:id="_hRg7UJhFEeOBJIkCAvOppw" definingFeature="_LC5N8JD7EeO_F6mXGJ9tdA">
+        <value xmi:type="uml:InstanceValue" xmi:id="_khihoJhFEeOBJIkCAvOppw" type="_edok0JD6EeO_F6mXGJ9tdA" instance="_nA5mYJD6EeO_F6mXGJ9tdA"/>
+      </slot>
+    </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_T-wTcJaSEeOyGuS94aT43g" name="CloudProvisioningModel">
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_edok0JD6EeO_F6mXGJ9tdA" name="OperatingSystem">
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_fo3B0JD6EeO_F6mXGJ9tdA" name="Windows Server 2008"/>
@@ -553,7 +569,34 @@
     <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_1ZBvEJg4EeOVlqugL7Ckdw" name="palette" classifier="_3i8zYJdQEeObq5oedQz6Gw"/>
     <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_110_0Jg4EeOVlqugL7Ckdw" name="canvas" classifier="_1EInkJdQEeObq5oedQz6Gw">
       <slot xmi:type="uml:Slot" xmi:id="_ydTS4Jg6EeOVlqugL7Ckdw" definingFeature="_Mkt3wJgnEeOVlqugL7Ckdw">
-        <value xmi:type="uml:InstanceValue" xmi:id="_2biDAJg6EeOVlqugL7Ckdw" type="_fqfOoJc-EeOroeIBBGKvlg" instance="_QfXqQJg5EeOVlqugL7Ckdw"/>
+        <value xmi:type="uml:InstanceValue" xmi:id="_2biDAJg6EeOVlqugL7Ckdw" type="_fqfOoJc-EeOroeIBBGKvlg" instance="_rY2jQJg7EeOVlqugL7Ckdw"/>
+      </slot>
+      <slot xmi:type="uml:Slot" xmi:id="_PbU2gJg9EeOVlqugL7Ckdw" definingFeature="_Mkt3wJgnEeOVlqugL7Ckdw">
+        <value xmi:type="uml:InstanceValue" xmi:id="_nltW4Jg9EeOVlqugL7Ckdw" type="_fqfOoJc-EeOroeIBBGKvlg" instance="_rY2jQJg7EeOVlqugL7Ckdw"/>
+      </slot>
+      <slot xmi:type="uml:Slot" xmi:id="_bEM-IJg9EeOVlqugL7Ckdw" definingFeature="_Mkt3wJgnEeOVlqugL7Ckdw">
+        <value xmi:type="uml:InstanceValue" xmi:id="_d1D8MJg9EeOVlqugL7Ckdw" type="_fqfOoJc-EeOroeIBBGKvlg" instance="_QfXqQJg5EeOVlqugL7Ckdw"/>
+      </slot>
+      <slot xmi:type="uml:Slot" xmi:id="_qoQh4Jg9EeOVlqugL7Ckdw" definingFeature="_Mkt3wJgnEeOVlqugL7Ckdw">
+        <value xmi:type="uml:InstanceValue" xmi:id="_s21SQJg9EeOVlqugL7Ckdw" type="_fqfOoJc-EeOroeIBBGKvlg" instance="_rnhjUJg5EeOVlqugL7Ckdw"/>
+      </slot>
+      <slot xmi:type="uml:Slot" xmi:id="_XnqJUJg-EeOVlqugL7Ckdw" definingFeature="_Mkt3wJgnEeOVlqugL7Ckdw">
+        <value xmi:type="uml:InstanceValue" xmi:id="_bPM3wJg-EeOVlqugL7Ckdw" type="_fqfOoJc-EeOroeIBBGKvlg" instance="_4U3b0Jg9EeOVlqugL7Ckdw"/>
+      </slot>
+      <slot xmi:type="uml:Slot" xmi:id="_snIM4Jg-EeOVlqugL7Ckdw" definingFeature="_Mkt3wJgnEeOVlqugL7Ckdw">
+        <value xmi:type="uml:InstanceValue" xmi:id="_vMDAsJg-EeOVlqugL7Ckdw" instance="_iiF2kJg-EeOVlqugL7Ckdw"/>
+      </slot>
+      <slot xmi:type="uml:Slot" xmi:id="_CpScgJg_EeOVlqugL7Ckdw" definingFeature="_Mkt3wJgnEeOVlqugL7Ckdw">
+        <value xmi:type="uml:InstanceValue" xmi:id="_FpA9AJg_EeOVlqugL7Ckdw" type="_fqfOoJc-EeOroeIBBGKvlg" instance="_6rqeoJg-EeOVlqugL7Ckdw"/>
+      </slot>
+      <slot xmi:type="uml:Slot" xmi:id="_UKBykJhDEeOBJIkCAvOppw" definingFeature="_Mkt3wJgnEeOVlqugL7Ckdw">
+        <value xmi:type="uml:InstanceValue" xmi:id="_aCh3AJhDEeOBJIkCAvOppw" type="_fqfOoJc-EeOroeIBBGKvlg" instance="_PlpBYJhDEeOBJIkCAvOppw"/>
+      </slot>
+      <slot xmi:type="uml:Slot" xmi:id="_O4qp0JhHEeOBJIkCAvOppw" definingFeature="_Mkt3wJgnEeOVlqugL7Ckdw">
+        <value xmi:type="uml:InstanceValue" xmi:id="_TX3ZAJhHEeOBJIkCAvOppw" type="_fqfOoJc-EeOroeIBBGKvlg" instance="_p7tO0JhGEeOBJIkCAvOppw"/>
+      </slot>
+      <slot xmi:type="uml:Slot" xmi:id="_S5DEIJhJEeOBJIkCAvOppw" definingFeature="_Mkt3wJgnEeOVlqugL7Ckdw">
+        <value xmi:type="uml:InstanceValue" xmi:id="_YQlwkJhJEeOBJIkCAvOppw" type="_fqfOoJc-EeOroeIBBGKvlg" instance="_6IdU0JhHEeOBJIkCAvOppw"/>
       </slot>
     </packagedElement>
     <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_DJRL0Jg5EeOVlqugL7Ckdw" name="InstanceSpecification5" classifier="_XOu7w5dpEeObq5oedQz6Gw">
@@ -590,49 +633,165 @@
         <value xmi:type="uml:InstanceValue" xmi:id="_6au48Jg5EeOVlqugL7Ckdw" type="_joviIJDWEeO_F6mXGJ9tdA" instance="_cVP5EJLIEeO7iZO5xA5ZWw"/>
       </slot>
     </packagedElement>
-    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_wXvxEJg5EeOVlqugL7Ckdw" name="window2" classifier="_yzXe0JdQEeObq5oedQz6Gw">
-      <slot xmi:type="uml:Slot" xmi:id="_7wNosJg6EeOVlqugL7Ckdw" definingFeature="_DElWoJdpEeObq5oedQz6Gw">
-        <value xmi:type="uml:InstanceValue" xmi:id="_7wNosZg6EeOVlqugL7Ckdw" name="InstanceValue0" type="_1EInkJdQEeObq5oedQz6Gw" instance="_xeiaAJg5EeOVlqugL7Ckdw"/>
-      </slot>
-      <slot xmi:type="uml:Slot" xmi:id="_8WEu0Jg6EeOVlqugL7Ckdw" definingFeature="_UCEygJdpEeObq5oedQz6Gw">
-        <value xmi:type="uml:InstanceValue" xmi:id="_8WEu0Zg6EeOVlqugL7Ckdw" name="InstanceValue0" type="_3i8zYJdQEeObq5oedQz6Gw" instance="_xJAO4Jg5EeOVlqugL7Ckdw"/>
-      </slot>
-      <slot xmi:type="uml:Slot" xmi:id="_88ZvA5g6EeOVlqugL7Ckdw" definingFeature="_XOu7wJdpEeObq5oedQz6Gw">
-        <value xmi:type="uml:InstanceValue" xmi:id="_88ZvBJg6EeOVlqugL7Ckdw" name="InstanceValue0" type="_n3TF8JdoEeObq5oedQz6Gw" instance="_w2PD4Jg5EeOVlqugL7Ckdw"/>
-      </slot>
-      <slot xmi:type="uml:Slot" xmi:id="_9SUUoJg6EeOVlqugL7Ckdw" definingFeature="_QgC8kJdxEeOn6MdNd15vIw">
-        <value xmi:type="uml:InstanceValue" xmi:id="_AoLdMJg7EeOVlqugL7Ckdw" type="_DETRUJc-EeOroeIBBGKvlg" instance="_xu80kJg5EeOVlqugL7Ckdw"/>
+    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_rY2jQJg7EeOVlqugL7Ckdw" name="model3" classifier="_fqfOoJc-EeOroeIBBGKvlg">
+      <slot xmi:type="uml:Slot" xmi:id="_wauhsJg7EeOVlqugL7Ckdw" definingFeature="_J1l6wJdFEeObq5oedQz6Gw"/>
+      <slot xmi:type="uml:Slot" xmi:id="_zQNhEJg7EeOVlqugL7Ckdw" definingFeature="_61FkkJg3EeOVlqugL7Ckdw">
+        <value xmi:type="uml:InstanceValue" xmi:id="_4Cj1wJg7EeOVlqugL7Ckdw" type="_joviIJDWEeO_F6mXGJ9tdA" instance="__gtKIJLcEeOMrbhAk4pXNQ"/>
       </slot>
     </packagedElement>
-    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_w2PD4Jg5EeOVlqugL7Ckdw" name="propEditor2" classifier="_n3TF8JdoEeObq5oedQz6Gw"/>
-    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_xJAO4Jg5EeOVlqugL7Ckdw" name="palette2" classifier="_3i8zYJdQEeObq5oedQz6Gw"/>
-    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_xeiaAJg5EeOVlqugL7Ckdw" name="canvas2" classifier="_1EInkJdQEeObq5oedQz6Gw">
-      <slot xmi:type="uml:Slot" xmi:id="_uPZIAJg6EeOVlqugL7Ckdw" definingFeature="_Mkt3wJgnEeOVlqugL7Ckdw">
-        <value xmi:type="uml:InstanceValue" xmi:id="_6ayt4Jg6EeOVlqugL7Ckdw" type="_fqfOoJc-EeOroeIBBGKvlg" instance="_rnhjUJg5EeOVlqugL7Ckdw"/>
+    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_4U3b0Jg9EeOVlqugL7Ckdw" name="model4" classifier="_fqfOoJc-EeOroeIBBGKvlg">
+      <slot xmi:type="uml:Slot" xmi:id="_Ex3IAJg-EeOVlqugL7Ckdw" definingFeature="_J1l6wJdFEeObq5oedQz6Gw">
+        <value xmi:type="uml:LiteralString" xmi:id="_H_LYkJg-EeOVlqugL7Ckdw" value="windowsVMFromTemplateModel"/>
+      </slot>
+      <slot xmi:type="uml:Slot" xmi:id="_KCn3AJg-EeOVlqugL7Ckdw" definingFeature="_61FkkJg3EeOVlqugL7Ckdw">
+        <value xmi:type="uml:InstanceValue" xmi:id="_WDH0cJg-EeOVlqugL7Ckdw" type="_joviIJDWEeO_F6mXGJ9tdA" instance="_Xx8OgJLfEeOMrbhAk4pXNQ"/>
       </slot>
     </packagedElement>
-    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_xu80kJg5EeOVlqugL7Ckdw" name="modelController2" classifier="_DETRUJc-EeOroeIBBGKvlg">
-      <slot xmi:type="uml:Slot" xmi:id="_V3g-MJg6EeOVlqugL7Ckdw" definingFeature="_YFpmkJdyEeOn6MdNd15vIw">
-        <value xmi:type="uml:InstanceValue" xmi:id="_gBe30Jg6EeOVlqugL7Ckdw" type="_8j07MJdvEeOn6MdNd15vIw" instance="_yGE7IJg5EeOVlqugL7Ckdw"/>
+    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_iiF2kJg-EeOVlqugL7Ckdw" name="model5" classifier="_fqfOoJc-EeOroeIBBGKvlg">
+      <slot xmi:type="uml:Slot" xmi:id="_kfWNcJg-EeOVlqugL7Ckdw" definingFeature="_J1l6wJdFEeObq5oedQz6Gw">
+        <value xmi:type="uml:LiteralString" xmi:id="_okqdAJg-EeOVlqugL7Ckdw" value="deletedVMModel"/>
+      </slot>
+      <slot xmi:type="uml:Slot" xmi:id="_pJirsJg-EeOVlqugL7Ckdw" definingFeature="_61FkkJg3EeOVlqugL7Ckdw">
+        <value xmi:type="uml:InstanceValue" xmi:id="_rMxuwJg-EeOVlqugL7Ckdw" instance="_Ql_IsJLgEeOMrbhAk4pXNQ"/>
       </slot>
     </packagedElement>
-    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_yGE7IJg5EeOVlqugL7Ckdw" name="modelRepository2" classifier="_8j07MJdvEeOn6MdNd15vIw"/>
-    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_7wNBoJg6EeOVlqugL7Ckdw" name="InstanceSpecification8" classifier="_DElWo5dpEeObq5oedQz6Gw">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7wNBoZg6EeOVlqugL7Ckdw" source="InstanceEnd" references="_wXvxEJg5EeOVlqugL7Ckdw _xeiaAJg5EeOVlqugL7Ckdw"/>
-      <slot xmi:type="uml:Slot" xmi:id="_7wNBopg6EeOVlqugL7Ckdw" definingFeature="_DElWpJdpEeObq5oedQz6Gw">
-        <value xmi:type="uml:InstanceValue" xmi:id="_7wNBo5g6EeOVlqugL7Ckdw" name="InstanceValue0" type="_yzXe0JdQEeObq5oedQz6Gw" instance="_wXvxEJg5EeOVlqugL7Ckdw"/>
+    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_6rqeoJg-EeOVlqugL7Ckdw" name="model6" classifier="_fqfOoJc-EeOroeIBBGKvlg">
+      <slot xmi:type="uml:Slot" xmi:id="_820uoJg-EeOVlqugL7Ckdw" definingFeature="_J1l6wJdFEeObq5oedQz6Gw">
+        <value xmi:type="uml:LiteralString" xmi:id="__eKkUJg-EeOVlqugL7Ckdw" value="increasedRAMModel"/>
+      </slot>
+      <slot xmi:type="uml:Slot" xmi:id="__4fv4Jg-EeOVlqugL7Ckdw" definingFeature="_61FkkJg3EeOVlqugL7Ckdw">
+        <value xmi:type="uml:InstanceValue" xmi:id="_B3z8QJg_EeOVlqugL7Ckdw" instance="_ltkmcJLgEeOMrbhAk4pXNQ"/>
       </slot>
     </packagedElement>
-    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_8WEHwJg6EeOVlqugL7Ckdw" name="InstanceSpecification9" classifier="_UCEyg5dpEeObq5oedQz6Gw">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8WEHwZg6EeOVlqugL7Ckdw" source="InstanceEnd" references="_wXvxEJg5EeOVlqugL7Ckdw _xJAO4Jg5EeOVlqugL7Ckdw"/>
-      <slot xmi:type="uml:Slot" xmi:id="_8WEHwpg6EeOVlqugL7Ckdw" definingFeature="_UCEyhJdpEeObq5oedQz6Gw">
-        <value xmi:type="uml:InstanceValue" xmi:id="_8WEHw5g6EeOVlqugL7Ckdw" name="InstanceValue0" type="_yzXe0JdQEeObq5oedQz6Gw" instance="_wXvxEJg5EeOVlqugL7Ckdw"/>
+    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_PlpBYJhDEeOBJIkCAvOppw" name="newModel" classifier="_fqfOoJc-EeOroeIBBGKvlg">
+      <slot xmi:type="uml:Slot" xmi:id="_R-oSAJhDEeOBJIkCAvOppw" definingFeature="_nMiZAJDWEeO_F6mXGJ9tdA">
+        <value xmi:type="uml:LiteralString" xmi:id="_Tsh-QJhDEeOBJIkCAvOppw" value="newModel"/>
       </slot>
     </packagedElement>
-    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_88ZH8Jg6EeOVlqugL7Ckdw" name="InstanceSpecification10" classifier="_XOu7w5dpEeObq5oedQz6Gw">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_88ZvAJg6EeOVlqugL7Ckdw" source="InstanceEnd" references="_wXvxEJg5EeOVlqugL7Ckdw _w2PD4Jg5EeOVlqugL7Ckdw"/>
-      <slot xmi:type="uml:Slot" xmi:id="_88ZvAZg6EeOVlqugL7Ckdw" definingFeature="_XOu7xJdpEeObq5oedQz6Gw">
-        <value xmi:type="uml:InstanceValue" xmi:id="_88ZvApg6EeOVlqugL7Ckdw" name="InstanceValue0" type="_yzXe0JdQEeObq5oedQz6Gw" instance="_wXvxEJg5EeOVlqugL7Ckdw"/>
+    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_dKx6AJhGEeOBJIkCAvOppw" name="env7" classifier="_joviIJDWEeO_F6mXGJ9tdA">
+      <slot xmi:type="uml:Slot" xmi:id="_lY0ScZhGEeOBJIkCAvOppw" definingFeature="_82B-EJDjEeO_F6mXGJ9tdA">
+        <value xmi:type="uml:InstanceValue" xmi:id="_lY0ScphGEeOBJIkCAvOppw" name="InstanceValue0" type="_9OB6QJDWEeO_F6mXGJ9tdA" instance="_iSWQwJhGEeOBJIkCAvOppw"/>
+      </slot>
+      <slot xmi:type="uml:Slot" xmi:id="_2kf7UJhGEeOBJIkCAvOppw" definingFeature="_nMiZAJDWEeO_F6mXGJ9tdA">
+        <value xmi:type="uml:LiteralString" xmi:id="_BblZoJhHEeOBJIkCAvOppw" value="anEnv"/>
+      </slot>
+    </packagedElement>
+    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_iSWQwJhGEeOBJIkCAvOppw" name="instance7" classifier="_9OB6QJDWEeO_F6mXGJ9tdA">
+      <slot xmi:type="uml:Slot" xmi:id="_CfPPAJhHEeOBJIkCAvOppw" definingFeature="_pbJwMJDXEeO_F6mXGJ9tdA">
+        <value xmi:type="uml:LiteralString" xmi:id="_HnmP8JhHEeOBJIkCAvOppw" value="comvmdev09"/>
+      </slot>
+      <slot xmi:type="uml:Slot" xmi:id="_Ig7EoJhHEeOBJIkCAvOppw" definingFeature="_FTnmsJDqEeO_F6mXGJ9tdA">
+        <value xmi:type="uml:LiteralInteger" xmi:id="_KbLK0JhHEeOBJIkCAvOppw" value="1"/>
+      </slot>
+      <slot xmi:type="uml:Slot" xmi:id="_LFesEJhHEeOBJIkCAvOppw" definingFeature="_f0WTYJDqEeO_F6mXGJ9tdA">
+        <value xmi:type="uml:InstanceValue" xmi:id="_Omk0QJhHEeOBJIkCAvOppw" type="_aaItcJDqEeO_F6mXGJ9tdA" instance="_dQyKcJDqEeO_F6mXGJ9tdA"/>
+      </slot>
+      <slot xmi:type="uml:Slot" xmi:id="_UobB8JhHEeOBJIkCAvOppw" definingFeature="_dtMOEJD0EeO_F6mXGJ9tdA">
+        <value xmi:type="uml:LiteralInteger" xmi:id="_W20zMJhHEeOBJIkCAvOppw" value="4"/>
+      </slot>
+      <slot xmi:type="uml:Slot" xmi:id="_XQtS0JhHEeOBJIkCAvOppw" definingFeature="_oJNhAJD0EeO_F6mXGJ9tdA">
+        <value xmi:type="uml:LiteralInteger" xmi:id="_a6SooJhHEeOBJIkCAvOppw" value="95"/>
+      </slot>
+      <slot xmi:type="uml:Slot" xmi:id="_bhr_0JhHEeOBJIkCAvOppw" definingFeature="_LC5N8JD7EeO_F6mXGJ9tdA">
+        <value xmi:type="uml:InstanceValue" xmi:id="_gLOWwJhHEeOBJIkCAvOppw" type="_edok0JD6EeO_F6mXGJ9tdA" instance="_oqpLYJD6EeO_F6mXGJ9tdA"/>
+      </slot>
+    </packagedElement>
+    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_lYzEUJhGEeOBJIkCAvOppw" name="InstanceSpecification8" classifier="_82B-E5DjEeO_F6mXGJ9tdA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_lYzrYJhGEeOBJIkCAvOppw" source="InstanceEnd" references="_iSWQwJhGEeOBJIkCAvOppw _dKx6AJhGEeOBJIkCAvOppw"/>
+      <slot xmi:type="uml:Slot" xmi:id="_lYzrYZhGEeOBJIkCAvOppw" definingFeature="_82B-FJDjEeO_F6mXGJ9tdA">
+        <value xmi:type="uml:InstanceValue" xmi:id="_lY0ScJhGEeOBJIkCAvOppw" name="InstanceValue0" type="_joviIJDWEeO_F6mXGJ9tdA" instance="_dKx6AJhGEeOBJIkCAvOppw"/>
+      </slot>
+    </packagedElement>
+    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_p7tO0JhGEeOBJIkCAvOppw" name="model7" classifier="_fqfOoJc-EeOroeIBBGKvlg">
+      <slot xmi:type="uml:Slot" xmi:id="_sc-4wJhGEeOBJIkCAvOppw" definingFeature="_J1l6wJdFEeObq5oedQz6Gw">
+        <value xmi:type="uml:LiteralString" xmi:id="_wLkqYJhGEeOBJIkCAvOppw" value="increaseStorageModel"/>
+      </slot>
+      <slot xmi:type="uml:Slot" xmi:id="_xzsewJhGEeOBJIkCAvOppw" definingFeature="_61FkkJg3EeOVlqugL7Ckdw">
+        <value xmi:type="uml:InstanceValue" xmi:id="_1p2Q8JhGEeOBJIkCAvOppw" type="_joviIJDWEeO_F6mXGJ9tdA" instance="_dKx6AJhGEeOBJIkCAvOppw"/>
+      </slot>
+    </packagedElement>
+    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_sXkX0JhHEeOBJIkCAvOppw" name="env8" classifier="_joviIJDWEeO_F6mXGJ9tdA">
+      <slot xmi:type="uml:Slot" xmi:id="_0jPYwJhHEeOBJIkCAvOppw" definingFeature="_82B-EJDjEeO_F6mXGJ9tdA">
+        <value xmi:type="uml:InstanceValue" xmi:id="_0jPYwZhHEeOBJIkCAvOppw" name="InstanceValue0" type="_9OB6QJDWEeO_F6mXGJ9tdA" instance="_uoNkwJhHEeOBJIkCAvOppw"/>
+      </slot>
+      <slot xmi:type="uml:Slot" xmi:id="_Pfs_MJhIEeOBJIkCAvOppw" definingFeature="_82B-EJDjEeO_F6mXGJ9tdA">
+        <value xmi:type="uml:InstanceValue" xmi:id="_Pfs_MZhIEeOBJIkCAvOppw" name="InstanceValue0" type="_9OB6QJDWEeO_F6mXGJ9tdA" instance="_ISMPoJhIEeOBJIkCAvOppw"/>
+      </slot>
+      <slot xmi:type="uml:Slot" xmi:id="_Qj_twJhIEeOBJIkCAvOppw" definingFeature="_nMiZAJDWEeO_F6mXGJ9tdA">
+        <value xmi:type="uml:LiteralString" xmi:id="_S_tiQJhIEeOBJIkCAvOppw" value="cloningEnvironment"/>
+      </slot>
+    </packagedElement>
+    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_uoNkwJhHEeOBJIkCAvOppw" name="instance8a" classifier="_9OB6QJDWEeO_F6mXGJ9tdA">
+      <slot xmi:type="uml:Slot" xmi:id="_1Ga-UJhHEeOBJIkCAvOppw" definingFeature="_pbJwMJDXEeO_F6mXGJ9tdA">
+        <value xmi:type="uml:LiteralString" xmi:id="_3jCKsJhHEeOBJIkCAvOppw" value="WinSQL200801"/>
+      </slot>
+      <slot xmi:type="uml:Slot" xmi:id="_UIa2wJhIEeOBJIkCAvOppw" definingFeature="_FTnmsJDqEeO_F6mXGJ9tdA">
+        <value xmi:type="uml:LiteralInteger" xmi:id="_WXzfcJhIEeOBJIkCAvOppw" value="1"/>
+      </slot>
+      <slot xmi:type="uml:Slot" xmi:id="_YzTRgJhIEeOBJIkCAvOppw" definingFeature="_f0WTYJDqEeO_F6mXGJ9tdA">
+        <value xmi:type="uml:InstanceValue" xmi:id="_dMe4QJhIEeOBJIkCAvOppw" type="_aaItcJDqEeO_F6mXGJ9tdA" instance="_dQyKcJDqEeO_F6mXGJ9tdA"/>
+      </slot>
+      <slot xmi:type="uml:Slot" xmi:id="_hc3vYJhIEeOBJIkCAvOppw" definingFeature="_dtMOEJD0EeO_F6mXGJ9tdA">
+        <value xmi:type="uml:LiteralInteger" xmi:id="__nPcQJhIEeOBJIkCAvOppw" value="4"/>
+      </slot>
+      <slot xmi:type="uml:Slot" xmi:id="_CH40EJhJEeOBJIkCAvOppw" definingFeature="_oJNhAJD0EeO_F6mXGJ9tdA">
+        <value xmi:type="uml:LiteralInteger" xmi:id="_Et83YJhJEeOBJIkCAvOppw" value="10"/>
+      </slot>
+      <slot xmi:type="uml:Slot" xmi:id="_HO_30JhJEeOBJIkCAvOppw" definingFeature="_LC5N8JD7EeO_F6mXGJ9tdA">
+        <value xmi:type="uml:InstanceValue" xmi:id="_K6WvQJhJEeOBJIkCAvOppw" type="_edok0JD6EeO_F6mXGJ9tdA" instance="_oqpLYJD6EeO_F6mXGJ9tdA"/>
+      </slot>
+    </packagedElement>
+    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_0jOxsJhHEeOBJIkCAvOppw" name="InstanceSpecification9" classifier="_82B-E5DjEeO_F6mXGJ9tdA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0jOxsZhHEeOBJIkCAvOppw" source="InstanceEnd" references="_uoNkwJhHEeOBJIkCAvOppw _sXkX0JhHEeOBJIkCAvOppw"/>
+      <slot xmi:type="uml:Slot" xmi:id="_0jOxsphHEeOBJIkCAvOppw" definingFeature="_82B-FJDjEeO_F6mXGJ9tdA">
+        <value xmi:type="uml:InstanceValue" xmi:id="_0jOxs5hHEeOBJIkCAvOppw" name="InstanceValue0" type="_joviIJDWEeO_F6mXGJ9tdA" instance="_sXkX0JhHEeOBJIkCAvOppw"/>
+      </slot>
+    </packagedElement>
+    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_6IdU0JhHEeOBJIkCAvOppw" name="model8" classifier="_fqfOoJc-EeOroeIBBGKvlg">
+      <slot xmi:type="uml:Slot" xmi:id="_77TygJhHEeOBJIkCAvOppw" definingFeature="_J1l6wJdFEeObq5oedQz6Gw">
+        <value xmi:type="uml:LiteralString" xmi:id="__x7ewJhHEeOBJIkCAvOppw" value="cloneVMModel"/>
+      </slot>
+      <slot xmi:type="uml:Slot" xmi:id="_AnKdoJhIEeOBJIkCAvOppw" definingFeature="_61FkkJg3EeOVlqugL7Ckdw">
+        <value xmi:type="uml:InstanceValue" xmi:id="_G1lHsJhIEeOBJIkCAvOppw" type="_joviIJDWEeO_F6mXGJ9tdA" instance="_sXkX0JhHEeOBJIkCAvOppw"/>
+      </slot>
+    </packagedElement>
+    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_ISMPoJhIEeOBJIkCAvOppw" name="instance8b" classifier="_9OB6QJDWEeO_F6mXGJ9tdA">
+      <slot xmi:type="uml:Slot" xmi:id="_LfIFsJhIEeOBJIkCAvOppw" definingFeature="_pbJwMJDXEeO_F6mXGJ9tdA">
+        <value xmi:type="uml:LiteralString" xmi:id="_OOnKwJhIEeOBJIkCAvOppw" value="WinSQL200802"/>
+      </slot>
+      <slot xmi:type="uml:Slot" xmi:id="_W3WiMJhIEeOBJIkCAvOppw" definingFeature="_FTnmsJDqEeO_F6mXGJ9tdA">
+        <value xmi:type="uml:LiteralInteger" xmi:id="_YYBqwJhIEeOBJIkCAvOppw" value="1"/>
+      </slot>
+      <slot xmi:type="uml:Slot" xmi:id="_dzUOwJhIEeOBJIkCAvOppw" definingFeature="_f0WTYJDqEeO_F6mXGJ9tdA">
+        <value xmi:type="uml:InstanceValue" xmi:id="_g5ANUJhIEeOBJIkCAvOppw" type="_aaItcJDqEeO_F6mXGJ9tdA" instance="_dQyKcJDqEeO_F6mXGJ9tdA"/>
+      </slot>
+      <slot xmi:type="uml:Slot" xmi:id="_AL2lMJhJEeOBJIkCAvOppw" definingFeature="_dtMOEJD0EeO_F6mXGJ9tdA">
+        <value xmi:type="uml:LiteralInteger" xmi:id="_BtvOsJhJEeOBJIkCAvOppw" value="4"/>
+      </slot>
+      <slot xmi:type="uml:Slot" xmi:id="_FIwkEJhJEeOBJIkCAvOppw" definingFeature="_oJNhAJD0EeO_F6mXGJ9tdA">
+        <value xmi:type="uml:LiteralInteger" xmi:id="_G6gOgJhJEeOBJIkCAvOppw" value="10"/>
+      </slot>
+      <slot xmi:type="uml:Slot" xmi:id="_MWQskJhJEeOBJIkCAvOppw" definingFeature="_LC5N8JD7EeO_F6mXGJ9tdA">
+        <value xmi:type="uml:InstanceValue" xmi:id="_OfgRAJhJEeOBJIkCAvOppw" type="_edok0JD6EeO_F6mXGJ9tdA" instance="_oqpLYJD6EeO_F6mXGJ9tdA"/>
+      </slot>
+    </packagedElement>
+    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_PfrxEJhIEeOBJIkCAvOppw" name="InstanceSpecification10" classifier="_82B-E5DjEeO_F6mXGJ9tdA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PfsYIJhIEeOBJIkCAvOppw" source="InstanceEnd" references="_ISMPoJhIEeOBJIkCAvOppw _sXkX0JhHEeOBJIkCAvOppw"/>
+      <slot xmi:type="uml:Slot" xmi:id="_PfsYIZhIEeOBJIkCAvOppw" definingFeature="_82B-FJDjEeO_F6mXGJ9tdA">
+        <value xmi:type="uml:InstanceValue" xmi:id="_PfsYIphIEeOBJIkCAvOppw" name="InstanceValue0" type="_joviIJDWEeO_F6mXGJ9tdA" instance="_sXkX0JhHEeOBJIkCAvOppw"/>
+      </slot>
+    </packagedElement>
+    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_mhAiMJhJEeOBJIkCAvOppw" name="env9" classifier="_joviIJDWEeO_F6mXGJ9tdA">
+      <slot xmi:type="uml:Slot" xmi:id="_uF5P85hJEeOBJIkCAvOppw" definingFeature="_82B-EJDjEeO_F6mXGJ9tdA">
+        <value xmi:type="uml:InstanceValue" xmi:id="_uF5P9JhJEeOBJIkCAvOppw" name="InstanceValue0" type="_9OB6QJDWEeO_F6mXGJ9tdA" instance="_oU2eYJhJEeOBJIkCAvOppw"/>
+      </slot>
+    </packagedElement>
+    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_oU2eYJhJEeOBJIkCAvOppw" name="instance9" classifier="_9OB6QJDWEeO_F6mXGJ9tdA"/>
+    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_rZPccJhJEeOBJIkCAvOppw" name="model9" classifier="_fqfOoJc-EeOroeIBBGKvlg"/>
+    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_uF4o4JhJEeOBJIkCAvOppw" name="InstanceSpecification11" classifier="_82B-E5DjEeO_F6mXGJ9tdA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uF5P8JhJEeOBJIkCAvOppw" source="InstanceEnd" references="_oU2eYJhJEeOBJIkCAvOppw _mhAiMJhJEeOBJIkCAvOppw"/>
+      <slot xmi:type="uml:Slot" xmi:id="_uF5P8ZhJEeOBJIkCAvOppw" definingFeature="_82B-FJDjEeO_F6mXGJ9tdA">
+        <value xmi:type="uml:InstanceValue" xmi:id="_uF5P8phJEeOBJIkCAvOppw" name="InstanceValue0" type="_joviIJDWEeO_F6mXGJ9tdA" instance="_mhAiMJhJEeOBJIkCAvOppw"/>
       </slot>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_GW0Z8JaZEeOKqrK20qbl7Q">
