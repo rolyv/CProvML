@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated CPmodeling -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="CPmodeling.presentation.CPmodelingModelWizardID"
+            name="%_UI_CPmodelingModelWizard_label"
+            class="CPmodeling.presentation.CPmodelingModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/CPmodelingModelFile.gif">
+         <description>%_UI_CPmodelingModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated CPmodeling -->
+      <editor
+            id="CPmodeling.presentation.CPmodelingEditorID"
+            name="%_UI_CPmodelingEditor_label"
+            icon="icons/full/obj16/CPmodelingModelFile.gif"
+            extensions="cpmodeling"
+            class="CPmodeling.presentation.CPmodelingEditor"
+            contributorClass="CPmodeling.presentation.CPmodelingActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
