@@ -1,0 +1,17 @@
+package CPmodeling.diagram.part;
+
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.gmf.tooling.runtime.update.UpdaterNodeDescriptor;
+
+/**
+ * @generated
+ */
+public class CPmodelingNodeDescriptor extends UpdaterNodeDescriptor {
+	/**
+	 * @generated
+	 */
+	public CPmodelingNodeDescriptor(EObject modelElement, int visualID) {
+		super(modelElement, visualID);
+	}
+
+}
