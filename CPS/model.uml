@@ -685,6 +685,18 @@
       <packagedElement xmi:type="uml:Class" xmi:id="_8j07MJdvEeOn6MdNd15vIw" clientDependency="_b6oJgJdxEeOn6MdNd15vIw" name="ModelRepository">
         <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_b6oJgJdxEeOn6MdNd15vIw" name="ModelRepositoryInterfaceRealization" client="_8j07MJdvEeOn6MdNd15vIw" supplier="_JUZ9cJc-EeOroeIBBGKvlg" contract="_JUZ9cJc-EeOroeIBBGKvlg"/>
       </packagedElement>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_noYs8K_iEeOOC9Au7rHU_g">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_noxHcK_iEeOOC9Au7rHU_g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="MVC.profile.uml#_vYB2Aa_eEeOOC9Au7rHU_g"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="MVC.profile.uml#_GLroUJaWEeOyGuS94aT43g"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_noxHca_iEeOOC9Au7rHU_g">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_npF3kK_iEeOOC9Au7rHU_g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="MVC.profile.uml#_vYCdEa_eEeOOC9Au7rHU_g"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="MVC.profile.uml#_S8PPAK_XEeOOC9Au7rHU_g"/>
+      </profileApplication>
     </packagedElement>
     <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_K7dLMJg4EeOVlqugL7Ckdw" name="window" classifier="_yzXe0JdQEeObq5oedQz6Gw">
       <slot xmi:type="uml:Slot" xmi:id="_cBzoIJg4EeOVlqugL7Ckdw" definingFeature="_QgC8kJdxEeOn6MdNd15vIw">
@@ -1142,14 +1154,13 @@
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_GW0Z8JaZEeOKqrK20qbl7Q">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GYE-MJaZEeOKqrK20qbl7Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="MVC.profile.uml#_Kitgsa8FEeOJl6blt6F-Sw"/>
+        <references xmi:type="ecore:EPackage" href="MVC.profile.uml#_vYB2Aa_eEeOOC9Au7rHU_g"/>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="MVC.profile.uml#_GLroUJaWEeOyGuS94aT43g"/>
     </profileApplication>
   </uml:Model>
   <Profile:Controller xmi:id="_lGISwJdQEeObq5oedQz6Gw" base_Class="_DETRUJc-EeOroeIBBGKvlg"/>
   <Profile:UIElement xmi:id="_0LUJMJdQEeObq5oedQz6Gw" base_Class="_yzXe0JdQEeObq5oedQz6Gw"/>
-  <Profile:Repository xmi:id="_pc5bsJdxEeOn6MdNd15vIw" base_Class="_8j07MJdvEeOn6MdNd15vIw"/>
   <Profile:UIElement xmi:id="_rK3ZYJdxEeOn6MdNd15vIw" base_Class="_1EInkJdQEeObq5oedQz6Gw"/>
   <Profile:UIElement xmi:id="_sCuOcJdxEeOn6MdNd15vIw" base_Class="_3i8zYJdQEeObq5oedQz6Gw"/>
   <Profile:UIElement xmi:id="_tAGcsJdxEeOn6MdNd15vIw" base_Class="_n3TF8JdoEeObq5oedQz6Gw"/>
@@ -1163,4 +1174,13 @@
   <Profile:ValueObject xmi:id="_k-LvYK8EEeOJl6blt6F-Sw" base_Enumeration="_aaItcJDqEeO_F6mXGJ9tdA"/>
   <Profile:ModelEntity xmi:id="_mwYFwK8EEeOJl6blt6F-Sw" base_Class="_9OB6QJDWEeO_F6mXGJ9tdA"/>
   <Profile:ModelEntity xmi:id="_oUe80K8EEeOJl6blt6F-Sw" base_Class="_fqfOoJc-EeOroeIBBGKvlg"/>
+  <GVEApp:Contract xmi:id="_VL4VYK_iEeOOC9Au7rHU_g" base_Interface="__imqQK75EeO5UoDFZFQEkw"/>
+  <GVEApp:ProcessObject xmi:id="_XPFjQK_iEeOOC9Au7rHU_g" base_Class="_8fsS4K75EeO5UoDFZFQEkw"/>
+  <GVEApp:ProcessObject xmi:id="_X5-6YK_iEeOOC9Au7rHU_g" base_Class="_SoTv0K76EeO5UoDFZFQEkw"/>
+  <GVEApp:ProcessObject xmi:id="_YqFhoK_iEeOOC9Au7rHU_g" base_Class="_rp16oK76EeO5UoDFZFQEkw"/>
+  <GVEApp:ProcessObject xmi:id="_fXKdoK_iEeOOC9Au7rHU_g" base_Class="_MX8BIK7-EeOJl6blt6F-Sw"/>
+  <GVEApp:Contract xmi:id="_gQq4gK_iEeOOC9Au7rHU_g" base_Interface="_JUZ9cJc-EeOroeIBBGKvlg"/>
+  <GVEApp:Contract xmi:id="_hgx1gK_iEeOOC9Au7rHU_g" base_Interface="_OJG5QK79EeO5UoDFZFQEkw"/>
+  <GVEApp:Repository xmi:id="_oiTXgK_iEeOOC9Au7rHU_g" base_Class="_8j07MJdvEeOn6MdNd15vIw"/>
+  <GVEApp:Contract xmi:id="_p-tEEK_iEeOOC9Au7rHU_g" base_Interface="_K1Zs0K79EeO5UoDFZFQEkw"/>
 </xmi:XMI>
