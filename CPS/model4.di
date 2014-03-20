@@ -13,21 +13,18 @@
     <availablePage>
       <emfPageIdentifier href="model4.notation#_qjn7kK_NEeOhMPRRKu_Vyg"/>
     </availablePage>
+    <availablePage>
+      <emfPageIdentifier href="model4.notation#_HgX2YK_cEeOhMPRRKu_Vyg"/>
+    </availablePage>
   </pageList>
   <sashModel>
     <windows>
       <children xsi:type="di:TabFolder">
         <children>
-          <emfPageIdentifier href="model4.notation#_xysZMJhGEeOhe5MoJX5P5A"/>
-        </children>
-        <children>
-          <emfPageIdentifier href="model4.notation#_pYx2AJhIEeOhe5MoJX5P5A"/>
-        </children>
-        <children>
-          <emfPageIdentifier href="model4.notation#_ZYtH0JhMEeOhe5MoJX5P5A"/>
-        </children>
-        <children>
           <emfPageIdentifier href="model4.notation#_qjn7kK_NEeOhMPRRKu_Vyg"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="model4.notation#_HgX2YK_cEeOhMPRRKu_Vyg"/>
         </children>
       </children>
     </windows>
