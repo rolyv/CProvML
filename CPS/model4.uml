@@ -69,6 +69,8 @@
       <transition xmi:type="uml:Transition" xmi:id="_dVRzgK_kEeOhMPRRKu_Vyg" name="" source="_7KzEAK_fEeOhMPRRKu_Vyg" target="_bqnBcK_kEeOhMPRRKu_Vyg"/>
       <transition xmi:type="uml:Transition" xmi:id="_mWkN0K_kEeOhMPRRKu_Vyg" name="Close/close()" source="_orleEK_cEeOhMPRRKu_Vyg" target="_7KzEAK_fEeOhMPRRKu_Vyg"/>
       <transition xmi:type="uml:Transition" xmi:id="_BYXAMK_lEeOhMPRRKu_Vyg" name="CanvasChanged/execute()" source="_bPExcK_jEeOhMPRRKu_Vyg" target="_orleEK_cEeOhMPRRKu_Vyg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_jOohoK_mEeOnY-GGAUnVaw" name="Transform[valid]/transform()" source="_bPExcK_jEeOhMPRRKu_Vyg" target="_eS_uEK_mEeOnY-GGAUnVaw"/>
+      <transition xmi:type="uml:Transition" xmi:id="_ndoRoK_mEeOnY-GGAUnVaw" name="Close/close()" source="_eS_uEK_mEeOnY-GGAUnVaw" target="_7KzEAK_fEeOhMPRRKu_Vyg"/>
       <subvertex xmi:type="uml:Pseudostate" xmi:id="_L9PqUK_cEeOhMPRRKu_Vyg" name=""/>
       <subvertex xmi:type="uml:State" xmi:id="_orleEK_cEeOhMPRRKu_Vyg" name="Unsaved"/>
       <subvertex xmi:type="uml:State" xmi:id="_dsEnEK_dEeOhMPRRKu_Vyg" name="Saved"/>
@@ -76,6 +78,7 @@
       <subvertex xmi:type="uml:State" xmi:id="_7KzEAK_fEeOhMPRRKu_Vyg" name="Model_Closed"/>
       <subvertex xmi:type="uml:State" xmi:id="_bPExcK_jEeOhMPRRKu_Vyg" name="Model_Validated"/>
       <subvertex xmi:type="uml:FinalState" xmi:id="_bqnBcK_kEeOhMPRRKu_Vyg" name=""/>
+      <subvertex xmi:type="uml:State" xmi:id="_eS_uEK_mEeOnY-GGAUnVaw" name="Model_Transformed"/>
     </region>
   </packagedElement>
 </uml:Model>
