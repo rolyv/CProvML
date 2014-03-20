@@ -1142,36 +1142,25 @@
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_GW0Z8JaZEeOKqrK20qbl7Q">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GYE-MJaZEeOKqrK20qbl7Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="MVC.profile.uml#_vYB2Aa_eEeOOC9Au7rHU_g"/>
+        <references xmi:type="ecore:EPackage" href="MVC.profile.uml#_Kitgsa8FEeOJl6blt6F-Sw"/>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="MVC.profile.uml#_GLroUJaWEeOyGuS94aT43g"/>
     </profileApplication>
   </uml:Model>
+  <Profile:Controller xmi:id="_lGISwJdQEeObq5oedQz6Gw" base_Class="_DETRUJc-EeOroeIBBGKvlg"/>
+  <Profile:UIElement xmi:id="_0LUJMJdQEeObq5oedQz6Gw" base_Class="_yzXe0JdQEeObq5oedQz6Gw"/>
   <Profile:Repository xmi:id="_pc5bsJdxEeOn6MdNd15vIw" base_Class="_8j07MJdvEeOn6MdNd15vIw"/>
-  <GVEApp:Name xmi:id="_h996EK_dEeOOC9Au7rHU_g" base_Property="_nMiZAJDWEeO_F6mXGJ9tdA"/>
-  <GVEApp:ModelEntity xmi:id="_tgds4K_dEeOOC9Au7rHU_g" base_Class="_joviIJDWEeO_F6mXGJ9tdA"/>
-  <GVEApp:ModelEntity xmi:id="_vElLAK_dEeOOC9Au7rHU_g" base_Class="_fqfOoJc-EeOroeIBBGKvlg"/>
-  <GVEApp:Name xmi:id="_wONFgK_dEeOOC9Au7rHU_g" base_Property="_J1l6wJdFEeObq5oedQz6Gw"/>
-  <GVEApp:ModelEntity xmi:id="_xhpqYK_dEeOOC9Au7rHU_g" base_Class="_9OB6QJDWEeO_F6mXGJ9tdA"/>
-  <GVEApp:Name xmi:id="_yWeZkK_dEeOOC9Au7rHU_g" base_Property="_pbJwMJDXEeO_F6mXGJ9tdA"/>
-  <GVEApp:Contract xmi:id="_zwlnIK_dEeOOC9Au7rHU_g" base_Interface="_K1Zs0K79EeO5UoDFZFQEkw"/>
-  <GVEApp:ValueObject xmi:id="_1fupgK_dEeOOC9Au7rHU_g" base_Enumeration="_edok0JD6EeO_F6mXGJ9tdA"/>
-  <GVEApp:ValueObject xmi:id="_2dLwQK_dEeOOC9Au7rHU_g" base_Enumeration="_Ao3UoJHjEeOoBY9-SSD0YA"/>
-  <GVEApp:ValueObject xmi:id="_3SjSAK_dEeOOC9Au7rHU_g" base_Enumeration="_A7ResJDwEeO_F6mXGJ9tdA"/>
-  <GVEApp:ValueObject xmi:id="_4XoqwK_dEeOOC9Au7rHU_g" base_Enumeration="_A_bFgJLKEeO7iZO5xA5ZWw"/>
-  <GVEApp:ValueObject xmi:id="_5g1ugK_dEeOOC9Au7rHU_g" base_Enumeration="_DNs68JLKEeO7iZO5xA5ZWw"/>
-  <GVEApp:ValueObject xmi:id="__Mzy0K_dEeOOC9Au7rHU_g" base_Enumeration="_aaItcJDqEeO_F6mXGJ9tdA"/>
-  <GVEApp:Contract xmi:id="_ARQSYK_eEeOOC9Au7rHU_g" base_Interface="_OJG5QK79EeO5UoDFZFQEkw"/>
-  <GVEApp:Contract xmi:id="_CYwKYK_eEeOOC9Au7rHU_g" base_Interface="_JUZ9cJc-EeOroeIBBGKvlg"/>
-  <GVEApp:Controller xmi:id="_HUtHAK_eEeOOC9Au7rHU_g" base_Class="_DETRUJc-EeOroeIBBGKvlg"/>
-  <GVEApp:UIElement xmi:id="_LG_F0K_eEeOOC9Au7rHU_g" base_Class="_yzXe0JdQEeObq5oedQz6Gw"/>
-  <GVEApp:UIElement xmi:id="_MMq7gK_eEeOOC9Au7rHU_g" base_Class="_3i8zYJdQEeObq5oedQz6Gw"/>
-  <GVEApp:UIElement xmi:id="_NLWxUK_eEeOOC9Au7rHU_g" base_Class="_1EInkJdQEeObq5oedQz6Gw"/>
-  <GVEApp:UIElement xmi:id="_ORDOEK_eEeOOC9Au7rHU_g" base_Class="_n3TF8JdoEeObq5oedQz6Gw"/>
-  <GVEApp:Contract xmi:id="_PmG8gK_eEeOOC9Au7rHU_g" base_Interface="__imqQK75EeO5UoDFZFQEkw"/>
-  <GVEApp:UIElement xmi:id="_TdvVYK_eEeOOC9Au7rHU_g" base_Class="_dtJ9UK76EeO5UoDFZFQEkw"/>
-  <GVEApp:ProcessObject xmi:id="_37ivMK_eEeOOC9Au7rHU_g" base_Class="_rp16oK76EeO5UoDFZFQEkw"/>
-  <GVEApp:ProcessObject xmi:id="_43okAK_eEeOOC9Au7rHU_g" base_Class="_SoTv0K76EeO5UoDFZFQEkw"/>
-  <GVEApp:ProcessObject xmi:id="_5roz0K_eEeOOC9Au7rHU_g" base_Class="_8fsS4K75EeO5UoDFZFQEkw"/>
-  <GVEApp:ProcessObject xmi:id="_79F5EK_eEeOOC9Au7rHU_g" base_Class="_MX8BIK7-EeOJl6blt6F-Sw"/>
+  <Profile:UIElement xmi:id="_rK3ZYJdxEeOn6MdNd15vIw" base_Class="_1EInkJdQEeObq5oedQz6Gw"/>
+  <Profile:UIElement xmi:id="_sCuOcJdxEeOn6MdNd15vIw" base_Class="_3i8zYJdQEeObq5oedQz6Gw"/>
+  <Profile:UIElement xmi:id="_tAGcsJdxEeOn6MdNd15vIw" base_Class="_n3TF8JdoEeObq5oedQz6Gw"/>
+  <Profile:UIElement xmi:id="_6Mc5YK8DEeOJl6blt6F-Sw" base_Class="_dtJ9UK76EeO5UoDFZFQEkw"/>
+  <Profile:ModelEntity xmi:id="_Mvc6gK8EEeOJl6blt6F-Sw" base_Class="_joviIJDWEeO_F6mXGJ9tdA"/>
+  <Profile:ValueObject xmi:id="_f-zrUK8EEeOJl6blt6F-Sw" base_Enumeration="_edok0JD6EeO_F6mXGJ9tdA"/>
+  <Profile:ValueObject xmi:id="_hHt0IK8EEeOJl6blt6F-Sw" base_Enumeration="_Ao3UoJHjEeOoBY9-SSD0YA"/>
+  <Profile:ValueObject xmi:id="_h4o6wK8EEeOJl6blt6F-Sw" base_Enumeration="_A7ResJDwEeO_F6mXGJ9tdA"/>
+  <Profile:ValueObject xmi:id="_iz1XsK8EEeOJl6blt6F-Sw" base_Enumeration="_A_bFgJLKEeO7iZO5xA5ZWw"/>
+  <Profile:ValueObject xmi:id="_j3YfYK8EEeOJl6blt6F-Sw" base_Enumeration="_DNs68JLKEeO7iZO5xA5ZWw"/>
+  <Profile:ValueObject xmi:id="_k-LvYK8EEeOJl6blt6F-Sw" base_Enumeration="_aaItcJDqEeO_F6mXGJ9tdA"/>
+  <Profile:ModelEntity xmi:id="_mwYFwK8EEeOJl6blt6F-Sw" base_Class="_9OB6QJDWEeO_F6mXGJ9tdA"/>
+  <Profile:ModelEntity xmi:id="_oUe80K8EEeOJl6blt6F-Sw" base_Class="_fqfOoJc-EeOroeIBBGKvlg"/>
 </xmi:XMI>
