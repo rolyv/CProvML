@@ -1966,6 +1966,14 @@
             <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8j3-gpdvEeOn6MdNd15vIw" source="PapyrusCSSForceValue">
               <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8j3-g5dvEeOn6MdNd15vIw" key="showTitle" value="true"/>
             </eAnnotations>
+            <children xmi:type="notation:Shape" xmi:id="_xdNI4K_VEeOhMPRRKu_Vyg" type="3013" fontName="Segoe UI" lineColor="0">
+              <element xmi:type="uml:Operation" href="model.uml#_xcRUwK_VEeOhMPRRKu_Vyg"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_xdNI4a_VEeOhMPRRKu_Vyg"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_5m5M0K_VEeOhMPRRKu_Vyg" type="3013" fontName="Segoe UI" lineColor="0">
+              <element xmi:type="uml:Operation" href="model.uml#_5m4lwK_VEeOhMPRRKu_Vyg"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_5m5M0a_VEeOhMPRRKu_Vyg"/>
+            </children>
             <styles xmi:type="notation:TitleStyle" xmi:id="_8j3XeZdvEeOn6MdNd15vIw"/>
             <styles xmi:type="notation:SortingStyle" xmi:id="_8j3XepdvEeOn6MdNd15vIw"/>
             <styles xmi:type="notation:FilteringStyle" xmi:id="_8j3Xe5dvEeOn6MdNd15vIw"/>

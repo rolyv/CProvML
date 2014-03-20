@@ -1,16 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_jo33sJLIEeOyeNaZDwJ1OQ" name="Model">
-  <packagedElement xmi:type="uml:StateMachine" xmi:id="_vUQA0JhGEeOhe5MoJX5P5A" name="Create VM SmDiagram">
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_vUQA0JhGEeOhe5MoJX5P5A" name="Repository Control Object SmDiagram">
     <region xmi:type="uml:Region" xmi:id="_xyqkAJhGEeOhe5MoJX5P5A" name="Region1">
       <transition xmi:type="uml:Transition" xmi:id="_A5LQIJhHEeOhe5MoJX5P5A" name="PressCreateVM/listProperties()" source="_y3gFIJhGEeOhe5MoJX5P5A" target="_27xL0JhGEeOhe5MoJX5P5A"/>
       <transition xmi:type="uml:Transition" xmi:id="_npqeQJhHEeOhe5MoJX5P5A" name="fillProperties/setProperties()" source="_27xL0JhGEeOhe5MoJX5P5A" target="_gOEPYJhHEeOhe5MoJX5P5A"/>
       <transition xmi:type="uml:Transition" xmi:id="_--IqUJhHEeOhe5MoJX5P5A" name="PressCreate[confirmation]/createVM()" source="_gOEPYJhHEeOhe5MoJX5P5A" target="_z0CJYJhHEeOhe5MoJX5P5A"/>
       <transition xmi:type="uml:Transition" xmi:id="_MLZ84JhIEeOhe5MoJX5P5A" name="VMCreated" source="_z0CJYJhHEeOhe5MoJX5P5A" target="_JMDP0JhIEeOhe5MoJX5P5A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_YaqOQK_REeOhMPRRKu_Vyg" name="Save[sucessful]/write()" source="_-x2vcK_NEeOhMPRRKu_Vyg" target="_QTUTsK_REeOhMPRRKu_Vyg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_f7RDgK_SEeOhMPRRKu_Vyg" name="Save/saveModel(model, fileName)" source="_7KGo0K_REeOhMPRRKu_Vyg" target="_-x2vcK_NEeOhMPRRKu_Vyg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_ypjuoK_SEeOhMPRRKu_Vyg" name="" source="_0KWlQK_NEeOhMPRRKu_Vyg" target="_7KGo0K_REeOhMPRRKu_Vyg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_1Q49QK_SEeOhMPRRKu_Vyg" name="Done" source="_QTUTsK_REeOhMPRRKu_Vyg" target="_7KGo0K_REeOhMPRRKu_Vyg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_BnbcIK_TEeOhMPRRKu_Vyg" name="Open/openModel(fileName)" source="_7KGo0K_REeOhMPRRKu_Vyg" target="_8TXhgK_SEeOhMPRRKu_Vyg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_Ac6UUK_UEeOhMPRRKu_Vyg" name="Read[successful]/read()" source="_8TXhgK_SEeOhMPRRKu_Vyg" target="_zEkaMK_TEeOhMPRRKu_Vyg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_Gi4NAK_UEeOhMPRRKu_Vyg" name="Done" source="_zEkaMK_TEeOhMPRRKu_Vyg" target="_7KGo0K_REeOhMPRRKu_Vyg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_HU7_QK_YEeOhMPRRKu_Vyg" name="" source="_7KGo0K_REeOhMPRRKu_Vyg" target="_EBnNUK_YEeOhMPRRKu_Vyg"/>
       <subvertex xmi:type="uml:Pseudostate" xmi:id="_y3gFIJhGEeOhe5MoJX5P5A" name="Start"/>
       <subvertex xmi:type="uml:State" xmi:id="_27xL0JhGEeOhe5MoJX5P5A" name="User_Defined"/>
       <subvertex xmi:type="uml:State" xmi:id="_gOEPYJhHEeOhe5MoJX5P5A" name="Properties_Set"/>
       <subvertex xmi:type="uml:State" xmi:id="_z0CJYJhHEeOhe5MoJX5P5A" name="Created"/>
       <subvertex xmi:type="uml:FinalState" xmi:id="_JMDP0JhIEeOhe5MoJX5P5A" name="Final"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_0KWlQK_NEeOhMPRRKu_Vyg" name=""/>
+      <subvertex xmi:type="uml:State" xmi:id="_-x2vcK_NEeOhMPRRKu_Vyg" name="Writing"/>
+      <subvertex xmi:type="uml:State" xmi:id="_QTUTsK_REeOhMPRRKu_Vyg" name="Write_Completed"/>
+      <subvertex xmi:type="uml:State" xmi:id="_7KGo0K_REeOhMPRRKu_Vyg" name="Idle"/>
+      <subvertex xmi:type="uml:State" xmi:id="_8TXhgK_SEeOhMPRRKu_Vyg" name="Reading"/>
+      <subvertex xmi:type="uml:State" xmi:id="_zEkaMK_TEeOhMPRRKu_Vyg" name="Read_Completed"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_EBnNUK_YEeOhMPRRKu_Vyg" name=""/>
     </region>
   </packagedElement>
   <packagedElement xmi:type="uml:StateMachine" xmi:id="_lIH5IJhIEeOhe5MoJX5P5A" name="Modify Hardware SmDiagram">

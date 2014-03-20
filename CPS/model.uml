@@ -645,6 +645,8 @@
     <packagedElement xmi:type="uml:Package" xmi:id="_5S0dcJdvEeOn6MdNd15vIw" name="Repositories">
       <packagedElement xmi:type="uml:Class" xmi:id="_8j07MJdvEeOn6MdNd15vIw" clientDependency="_b6oJgJdxEeOn6MdNd15vIw" name="ModelRepository">
         <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_b6oJgJdxEeOn6MdNd15vIw" name="ModelRepositoryInterfaceRealization" client="_8j07MJdvEeOn6MdNd15vIw" supplier="_JUZ9cJc-EeOroeIBBGKvlg" contract="_JUZ9cJc-EeOroeIBBGKvlg"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_xcRUwK_VEeOhMPRRKu_Vyg" name="read" visibility="private"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_5m4lwK_VEeOhMPRRKu_Vyg" name="write" visibility="private"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_K7dLMJg4EeOVlqugL7Ckdw" name="window" classifier="_yzXe0JdQEeObq5oedQz6Gw">
