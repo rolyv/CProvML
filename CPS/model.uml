@@ -1152,17 +1152,6 @@
     <packagedElement xmi:type="uml:Package" xmi:id="_xu6tYK74EeO5UoDFZFQEkw" clientDependency="_RaDCYK75EeO5UoDFZFQEkw" name="Repository">
       <packagedElement xmi:type="uml:Dependency" xmi:id="_RaDCYK75EeO5UoDFZFQEkw" name="depends on" client="_xu6tYK74EeO5UoDFZFQEkw" supplier="_u_ocoK74EeO5UoDFZFQEkw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Interaction" xmi:id="_aGeoYMBPEeO5pYEdEFkd5A" name="Interaction1">
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_Oe85sMBREeO5pYEdEFkd5A" name="" type="_0x4nEIt1EeOaDoh4ArG-Qg"/>
-      <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_HSPl8MBSEeO5pYEdEFkd5A" name="ActionExecSpec0" covered="_K2vSUMBQEeO5pYEdEFkd5A" finish="_HSPl8cBSEeO5pYEdEFkd5A" start="_Mr-DsMBSEeO5pYEdEFkd5A"/>
-      <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_GM7jscBSEeO5pYEdEFkd5A" name="ActionExecSpec" covered="_WQyeUMBREeO5pYEdEFkd5A" finish="_GM8KwMBSEeO5pYEdEFkd5A" start="_Mr-DscBSEeO5pYEdEFkd5A"/>
-      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_HSPl8cBSEeO5pYEdEFkd5A" name="ActionExecSpec0Finish" covered="_K2vSUMBQEeO5pYEdEFkd5A" execution="_HSPl8MBSEeO5pYEdEFkd5A"/>
-      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_GM8KwMBSEeO5pYEdEFkd5A" name="ActionExecSpecFinish" covered="_WQyeUMBREeO5pYEdEFkd5A" execution="_GM7jscBSEeO5pYEdEFkd5A"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Mr-DscBSEeO5pYEdEFkd5A" name="MessageRecv0" covered="_WQyeUMBREeO5pYEdEFkd5A"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Mr-DsMBSEeO5pYEdEFkd5A" name="MessageSend0" covered="_K2vSUMBQEeO5pYEdEFkd5A"/>
-      <lifeline xmi:type="uml:Lifeline" xmi:id="_K2vSUMBQEeO5pYEdEFkd5A" name="Lifeline" represents="_Oe85sMBREeO5pYEdEFkd5A" coveredBy="_HSPl8cBSEeO5pYEdEFkd5A _HSPl8MBSEeO5pYEdEFkd5A _Mr-DsMBSEeO5pYEdEFkd5A"/>
-      <lifeline xmi:type="uml:Lifeline" xmi:id="_WQyeUMBREeO5pYEdEFkd5A" name="Window" coveredBy="_GM8KwMBSEeO5pYEdEFkd5A _GM7jscBSEeO5pYEdEFkd5A _Mr-DscBSEeO5pYEdEFkd5A"/>
-    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_GW0Z8JaZEeOKqrK20qbl7Q">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GYE-MJaZEeOKqrK20qbl7Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="MVC.profile.uml#_ltnDkMBPEeO5pYEdEFkd5A"/>
@@ -1200,5 +1189,4 @@
   <GVEApp:Contract xmi:id="_hgx1gK_iEeOOC9Au7rHU_g" base_Interface="_OJG5QK79EeO5UoDFZFQEkw"/>
   <GVEApp:Repository xmi:id="_oiTXgK_iEeOOC9Au7rHU_g" base_Class="_8j07MJdvEeOn6MdNd15vIw"/>
   <GVEApp:Contract xmi:id="_p-tEEK_iEeOOC9Au7rHU_g" base_Interface="_K1Zs0K79EeO5UoDFZFQEkw"/>
-  <GVEApp:UIElement xmi:id="_lSCP8MBREeO5pYEdEFkd5A" base_Lifeline="_WQyeUMBREeO5pYEdEFkd5A"/>
 </xmi:XMI>
