@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GVEApp="http://Profile/schemas/GVEApp/_vYCdEK_eEeOOC9Au7rHU_g/3" xmlns:Profile="http:///schemas/Profile/_jkne4K_JEeOOC9Au7rHU_g/6" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xsi:schemaLocation="http://Profile/schemas/GVEApp/_vYCdEK_eEeOOC9Au7rHU_g/3 MVC.profile.uml#_vYCdEa_eEeOOC9Au7rHU_g http:///schemas/Profile/_jkne4K_JEeOOC9Au7rHU_g/6 MVC.profile.uml#_jkotAK_JEeOOC9Au7rHU_g">
+<xmi:XMI xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GVEApp="http://Profile/schemas/GVEApp/_lto4wMBPEeO5pYEdEFkd5A/4" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xsi:schemaLocation="http://Profile/schemas/GVEApp/_lto4wMBPEeO5pYEdEFkd5A/4 MVC.profile.uml#_ltpf0MBPEeO5pYEdEFkd5A">
   <uml:Model xmi:id="_cB0cMIt0EeOyfZZDtSfbkg" name="Model">
     <packageImport xmi:type="uml:PackageImport" xmi:id="_cB1DQIt0EeOyfZZDtSfbkg">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
@@ -10,14 +10,14 @@
     <packageImport xmi:type="uml:PackageImport" xmi:id="_SngGYK_dEeOOC9Au7rHU_g">
       <importedPackage xmi:type="uml:Profile" href="MVC.profile.uml#_S8PPAK_XEeOOC9Au7rHU_g"/>
     </packageImport>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_0x4nEIt1EeOaDoh4ArG-Qg" name="CloudProvisioningAdministrator"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_0x4nEIt1EeOaDoh4ArG-Qg" name="CloudProvisioningAdministrator" useCase="_NrwqsIt2EeOaDoh4ArG-Qg _tQ_MAIt2EeOaDoh4ArG-Qg _w_ooAIt2EeOaDoh4ArG-Qg _3273AIt2EeOaDoh4ArG-Qg _6cvboIt2EeOaDoh4ArG-Qg _-QINsIt2EeOaDoh4ArG-Qg _mbW6QJhWEeOitcKOzJTkGg _xoqgMJhWEeOitcKOzJTkGg _Bbm0gJhXEeOitcKOzJTkGg _K9_JsJhXEeOitcKOzJTkGg _QEiz0JhXEeOitcKOzJTkGg _Z7Dl8JhXEeOitcKOzJTkGg _5d6TQJhYEeOitcKOzJTkGg _7g10UJhYEeOitcKOzJTkGg _A14mYJhZEeOitcKOzJTkGg _D4CIwJhZEeOitcKOzJTkGg _Guv3MJhZEeOitcKOzJTkGg _JLiCsJhZEeOitcKOzJTkGg"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_Q1JdgIt2EeOaDoh4ArG-Qg" name="CPS">
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_NrwqsIt2EeOaDoh4ArG-Qg" name="CreateVM"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_tQ_MAIt2EeOaDoh4ArG-Qg" name="CreateVMFromTemplate"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_w_ooAIt2EeOaDoh4ArG-Qg" name="DeleteExistingVM"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_3273AIt2EeOaDoh4ArG-Qg" name="Modify hardware"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_6cvboIt2EeOaDoh4ArG-Qg" name="CloneVM"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_-QINsIt2EeOaDoh4ArG-Qg" name="Modify software"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_NrwqsIt2EeOaDoh4ArG-Qg" name="CreateVM" subject="_0x4nEIt1EeOaDoh4ArG-Qg"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_tQ_MAIt2EeOaDoh4ArG-Qg" name="CreateVMFromTemplate" subject="_0x4nEIt1EeOaDoh4ArG-Qg"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_w_ooAIt2EeOaDoh4ArG-Qg" name="DeleteExistingVM" subject="_0x4nEIt1EeOaDoh4ArG-Qg"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_3273AIt2EeOaDoh4ArG-Qg" name="Modify hardware" subject="_0x4nEIt1EeOaDoh4ArG-Qg"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_6cvboIt2EeOaDoh4ArG-Qg" name="CloneVM" subject="_0x4nEIt1EeOaDoh4ArG-Qg"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_-QINsIt2EeOaDoh4ArG-Qg" name="Modify software" subject="_0x4nEIt1EeOaDoh4ArG-Qg"/>
       <packagedElement xmi:type="uml:Association" xmi:id="_4FcWMJDeEeO_F6mXGJ9tdA" name="A_createvm_cloudprovisioningadministrator" memberEnd="_4FcWMZDeEeO_F6mXGJ9tdA _4FcWNJDeEeO_F6mXGJ9tdA">
         <ownedEnd xmi:type="uml:Property" xmi:id="_4FcWMZDeEeO_F6mXGJ9tdA" name="createvm" type="_NrwqsIt2EeOaDoh4ArG-Qg" association="_4FcWMJDeEeO_F6mXGJ9tdA">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4FcWMpDeEeO_F6mXGJ9tdA" value="1"/>
@@ -481,13 +481,13 @@
       </packagedElement>
       <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_WscigK_dEeOOC9Au7rHU_g">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Ws2yMK_dEeOOC9Au7rHU_g" source="http://www.eclipse.org/uml2/2.0.0/UML">
-          <references xmi:type="ecore:EPackage" href="MVC.profile.uml#_vYCdEa_eEeOOC9Au7rHU_g"/>
+          <references xmi:type="ecore:EPackage" href="MVC.profile.uml#_ltpf0MBPEeO5pYEdEFkd5A"/>
         </eAnnotations>
         <appliedProfile xmi:type="uml:Profile" href="MVC.profile.uml#_S8PPAK_XEeOOC9Au7rHU_g"/>
       </profileApplication>
       <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_qzIj8K_dEeOOC9Au7rHU_g">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qzctAK_dEeOOC9Au7rHU_g" source="http://www.eclipse.org/uml2/2.0.0/UML">
-          <references xmi:type="ecore:EPackage" href="MVC.profile.uml#_vYB2Aa_eEeOOC9Au7rHU_g"/>
+          <references xmi:type="ecore:EPackage" href="MVC.profile.uml#_ltnDkMBPEeO5pYEdEFkd5A"/>
         </eAnnotations>
         <appliedProfile xmi:type="uml:Profile" href="MVC.profile.uml#_GLroUJaWEeOyGuS94aT43g"/>
       </profileApplication>
@@ -523,13 +523,13 @@
       <packagedElement xmi:type="uml:Dependency" xmi:id="_2rU7IJeNEeOn6MdNd15vIw" name="depends on Cloud Provisioning Model" client="_8vedQJc9EeOroeIBBGKvlg" supplier="_T-wTcJaSEeOyGuS94aT43g"/>
       <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_GaNNoK_eEeOOC9Au7rHU_g">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GamPMK_eEeOOC9Au7rHU_g" source="http://www.eclipse.org/uml2/2.0.0/UML">
-          <references xmi:type="ecore:EPackage" href="MVC.profile.uml#_vYB2Aa_eEeOOC9Au7rHU_g"/>
+          <references xmi:type="ecore:EPackage" href="MVC.profile.uml#_ltnDkMBPEeO5pYEdEFkd5A"/>
         </eAnnotations>
         <appliedProfile xmi:type="uml:Profile" href="MVC.profile.uml#_GLroUJaWEeOyGuS94aT43g"/>
       </profileApplication>
       <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_GamPMa_eEeOOC9Au7rHU_g">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Ga9bkK_eEeOOC9Au7rHU_g" source="http://www.eclipse.org/uml2/2.0.0/UML">
-          <references xmi:type="ecore:EPackage" href="MVC.profile.uml#_vYCdEa_eEeOOC9Au7rHU_g"/>
+          <references xmi:type="ecore:EPackage" href="MVC.profile.uml#_ltpf0MBPEeO5pYEdEFkd5A"/>
         </eAnnotations>
         <appliedProfile xmi:type="uml:Profile" href="MVC.profile.uml#_S8PPAK_XEeOOC9Au7rHU_g"/>
       </profileApplication>
@@ -670,13 +670,13 @@
       <packagedElement xmi:type="uml:Dependency" xmi:id="_-JDLcK77EeO5UoDFZFQEkw" name="instantiates" client="_1EInkJdQEeObq5oedQz6Gw" supplier="_8fsS4K75EeO5UoDFZFQEkw"/>
       <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_JlTQoK_eEeOOC9Au7rHU_g">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JloAwK_eEeOOC9Au7rHU_g" source="http://www.eclipse.org/uml2/2.0.0/UML">
-          <references xmi:type="ecore:EPackage" href="MVC.profile.uml#_vYB2Aa_eEeOOC9Au7rHU_g"/>
+          <references xmi:type="ecore:EPackage" href="MVC.profile.uml#_ltnDkMBPEeO5pYEdEFkd5A"/>
         </eAnnotations>
         <appliedProfile xmi:type="uml:Profile" href="MVC.profile.uml#_GLroUJaWEeOyGuS94aT43g"/>
       </profileApplication>
       <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Jlon0K_eEeOOC9Au7rHU_g">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Jl8J0K_eEeOOC9Au7rHU_g" source="http://www.eclipse.org/uml2/2.0.0/UML">
-          <references xmi:type="ecore:EPackage" href="MVC.profile.uml#_vYCdEa_eEeOOC9Au7rHU_g"/>
+          <references xmi:type="ecore:EPackage" href="MVC.profile.uml#_ltpf0MBPEeO5pYEdEFkd5A"/>
         </eAnnotations>
         <appliedProfile xmi:type="uml:Profile" href="MVC.profile.uml#_S8PPAK_XEeOOC9Au7rHU_g"/>
       </profileApplication>
@@ -687,13 +687,13 @@
       </packagedElement>
       <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_noYs8K_iEeOOC9Au7rHU_g">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_noxHcK_iEeOOC9Au7rHU_g" source="http://www.eclipse.org/uml2/2.0.0/UML">
-          <references xmi:type="ecore:EPackage" href="MVC.profile.uml#_vYB2Aa_eEeOOC9Au7rHU_g"/>
+          <references xmi:type="ecore:EPackage" href="MVC.profile.uml#_ltnDkMBPEeO5pYEdEFkd5A"/>
         </eAnnotations>
         <appliedProfile xmi:type="uml:Profile" href="MVC.profile.uml#_GLroUJaWEeOyGuS94aT43g"/>
       </profileApplication>
       <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_noxHca_iEeOOC9Au7rHU_g">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_npF3kK_iEeOOC9Au7rHU_g" source="http://www.eclipse.org/uml2/2.0.0/UML">
-          <references xmi:type="ecore:EPackage" href="MVC.profile.uml#_vYCdEa_eEeOOC9Au7rHU_g"/>
+          <references xmi:type="ecore:EPackage" href="MVC.profile.uml#_ltpf0MBPEeO5pYEdEFkd5A"/>
         </eAnnotations>
         <appliedProfile xmi:type="uml:Profile" href="MVC.profile.uml#_S8PPAK_XEeOOC9Au7rHU_g"/>
       </profileApplication>
@@ -996,17 +996,17 @@
       </slot>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_gQLxcJhWEeOitcKOzJTkGg" name="GVE">
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_mbW6QJhWEeOitcKOzJTkGg" name="CreateModel"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_xoqgMJhWEeOitcKOzJTkGg" name="OpenModel"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_Bbm0gJhXEeOitcKOzJTkGg" name="SaveModel"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_K9_JsJhXEeOitcKOzJTkGg" name="AddElementsToModel"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_QEiz0JhXEeOitcKOzJTkGg" name="ModifyElementPropertiesOnModel">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_mbW6QJhWEeOitcKOzJTkGg" name="CreateModel" subject="_0x4nEIt1EeOaDoh4ArG-Qg"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_xoqgMJhWEeOitcKOzJTkGg" name="OpenModel" subject="_0x4nEIt1EeOaDoh4ArG-Qg"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_Bbm0gJhXEeOitcKOzJTkGg" name="SaveModel" subject="_0x4nEIt1EeOaDoh4ArG-Qg"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_K9_JsJhXEeOitcKOzJTkGg" name="AddElementsToModel" subject="_0x4nEIt1EeOaDoh4ArG-Qg"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_QEiz0JhXEeOitcKOzJTkGg" name="ModifyElementPropertiesOnModel" subject="_0x4nEIt1EeOaDoh4ArG-Qg">
         <ownedComment xmi:type="uml:Comment" xmi:id="_SIN7wJhXEeOitcKOzJTkGg">
           <body>ModifyElementPropertiesOnModel
 </body>
         </ownedComment>
       </packagedElement>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_Z7Dl8JhXEeOitcKOzJTkGg" name="ValidateModel"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_Z7Dl8JhXEeOitcKOzJTkGg" name="ValidateModel" subject="_0x4nEIt1EeOaDoh4ArG-Qg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_gufooJhXEeOitcKOzJTkGg" name="A_cloudprovisioningadministrator_createmodel" memberEnd="_gufooZhXEeOitcKOzJTkGg _gufopJhXEeOitcKOzJTkGg">
       <ownedEnd xmi:type="uml:Property" xmi:id="_gufooZhXEeOitcKOzJTkGg" name="cloudprovisioningadministrator" type="_0x4nEIt1EeOaDoh4ArG-Qg" association="_gufooJhXEeOitcKOzJTkGg">
@@ -1069,16 +1069,16 @@
       </ownedEnd>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_Y5qk8JhYEeOitcKOzJTkGg" name="CPS-GVE">
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_5d6TQJhYEeOitcKOzJTkGg" name="CreateVM"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_7g10UJhYEeOitcKOzJTkGg" name="CreateVMFromTemplate">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_5d6TQJhYEeOitcKOzJTkGg" name="CreateVM" subject="_0x4nEIt1EeOaDoh4ArG-Qg"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_7g10UJhYEeOitcKOzJTkGg" name="CreateVMFromTemplate" subject="_0x4nEIt1EeOaDoh4ArG-Qg">
         <ownedComment xmi:type="uml:Comment" xmi:id="_9UGhsJhYEeOitcKOzJTkGg">
           <body>CreateVMFromTemplate</body>
         </ownedComment>
       </packagedElement>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_A14mYJhZEeOitcKOzJTkGg" name="DeleteExistingVM"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_D4CIwJhZEeOitcKOzJTkGg" name="ModifyHardware"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_Guv3MJhZEeOitcKOzJTkGg" name="CreateEnvironment"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_JLiCsJhZEeOitcKOzJTkGg" name="ModifySoftware"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_A14mYJhZEeOitcKOzJTkGg" name="DeleteExistingVM" subject="_0x4nEIt1EeOaDoh4ArG-Qg"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_D4CIwJhZEeOitcKOzJTkGg" name="ModifyHardware" subject="_0x4nEIt1EeOaDoh4ArG-Qg"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_Guv3MJhZEeOitcKOzJTkGg" name="CreateEnvironment" subject="_0x4nEIt1EeOaDoh4ArG-Qg"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_JLiCsJhZEeOitcKOzJTkGg" name="ModifySoftware" subject="_0x4nEIt1EeOaDoh4ArG-Qg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_ycOjwJhZEeOitcKOzJTkGg" name="A_cloudprovisioningadministrator_createvm" memberEnd="_ycOjwZhZEeOitcKOzJTkGg _ycOjxJhZEeOitcKOzJTkGg">
       <ownedEnd xmi:type="uml:Property" xmi:id="_ycOjwZhZEeOitcKOzJTkGg" name="cloudprovisioningadministrator" type="_0x4nEIt1EeOaDoh4ArG-Qg" association="_ycOjwJhZEeOitcKOzJTkGg">
@@ -1152,28 +1152,45 @@
     <packagedElement xmi:type="uml:Package" xmi:id="_xu6tYK74EeO5UoDFZFQEkw" clientDependency="_RaDCYK75EeO5UoDFZFQEkw" name="Repository">
       <packagedElement xmi:type="uml:Dependency" xmi:id="_RaDCYK75EeO5UoDFZFQEkw" name="depends on" client="_xu6tYK74EeO5UoDFZFQEkw" supplier="_u_ocoK74EeO5UoDFZFQEkw"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Interaction" xmi:id="_aGeoYMBPEeO5pYEdEFkd5A" name="Interaction1">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Oe85sMBREeO5pYEdEFkd5A" name="" type="_0x4nEIt1EeOaDoh4ArG-Qg"/>
+      <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_HSPl8MBSEeO5pYEdEFkd5A" name="ActionExecSpec0" covered="_K2vSUMBQEeO5pYEdEFkd5A" finish="_HSPl8cBSEeO5pYEdEFkd5A" start="_Mr-DsMBSEeO5pYEdEFkd5A"/>
+      <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_GM7jscBSEeO5pYEdEFkd5A" name="ActionExecSpec" covered="_WQyeUMBREeO5pYEdEFkd5A" finish="_GM8KwMBSEeO5pYEdEFkd5A" start="_Mr-DscBSEeO5pYEdEFkd5A"/>
+      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_HSPl8cBSEeO5pYEdEFkd5A" name="ActionExecSpec0Finish" covered="_K2vSUMBQEeO5pYEdEFkd5A" execution="_HSPl8MBSEeO5pYEdEFkd5A"/>
+      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_GM8KwMBSEeO5pYEdEFkd5A" name="ActionExecSpecFinish" covered="_WQyeUMBREeO5pYEdEFkd5A" execution="_GM7jscBSEeO5pYEdEFkd5A"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Mr-DscBSEeO5pYEdEFkd5A" name="MessageRecv0" covered="_WQyeUMBREeO5pYEdEFkd5A"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Mr-DsMBSEeO5pYEdEFkd5A" name="MessageSend0" covered="_K2vSUMBQEeO5pYEdEFkd5A"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_K2vSUMBQEeO5pYEdEFkd5A" name="Lifeline" represents="_Oe85sMBREeO5pYEdEFkd5A" coveredBy="_HSPl8cBSEeO5pYEdEFkd5A _HSPl8MBSEeO5pYEdEFkd5A _Mr-DsMBSEeO5pYEdEFkd5A"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_WQyeUMBREeO5pYEdEFkd5A" name="Window" coveredBy="_GM8KwMBSEeO5pYEdEFkd5A _GM7jscBSEeO5pYEdEFkd5A _Mr-DscBSEeO5pYEdEFkd5A"/>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_GW0Z8JaZEeOKqrK20qbl7Q">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GYE-MJaZEeOKqrK20qbl7Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="MVC.profile.uml#_vYB2Aa_eEeOOC9Au7rHU_g"/>
+        <references xmi:type="ecore:EPackage" href="MVC.profile.uml#_ltnDkMBPEeO5pYEdEFkd5A"/>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="MVC.profile.uml#_GLroUJaWEeOyGuS94aT43g"/>
     </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_jOfD0MBREeO5pYEdEFkd5A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jPABMMBREeO5pYEdEFkd5A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="MVC.profile.uml#_ltpf0MBPEeO5pYEdEFkd5A"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="MVC.profile.uml#_S8PPAK_XEeOOC9Au7rHU_g"/>
+    </profileApplication>
   </uml:Model>
-  <Profile:Controller xmi:id="_lGISwJdQEeObq5oedQz6Gw" base_Class="_DETRUJc-EeOroeIBBGKvlg"/>
-  <Profile:UIElement xmi:id="_0LUJMJdQEeObq5oedQz6Gw" base_Class="_yzXe0JdQEeObq5oedQz6Gw"/>
-  <Profile:UIElement xmi:id="_rK3ZYJdxEeOn6MdNd15vIw" base_Class="_1EInkJdQEeObq5oedQz6Gw"/>
-  <Profile:UIElement xmi:id="_sCuOcJdxEeOn6MdNd15vIw" base_Class="_3i8zYJdQEeObq5oedQz6Gw"/>
-  <Profile:UIElement xmi:id="_tAGcsJdxEeOn6MdNd15vIw" base_Class="_n3TF8JdoEeObq5oedQz6Gw"/>
-  <Profile:UIElement xmi:id="_6Mc5YK8DEeOJl6blt6F-Sw" base_Class="_dtJ9UK76EeO5UoDFZFQEkw"/>
-  <Profile:ModelEntity xmi:id="_Mvc6gK8EEeOJl6blt6F-Sw" base_Class="_joviIJDWEeO_F6mXGJ9tdA"/>
-  <Profile:ValueObject xmi:id="_f-zrUK8EEeOJl6blt6F-Sw" base_Enumeration="_edok0JD6EeO_F6mXGJ9tdA"/>
-  <Profile:ValueObject xmi:id="_hHt0IK8EEeOJl6blt6F-Sw" base_Enumeration="_Ao3UoJHjEeOoBY9-SSD0YA"/>
-  <Profile:ValueObject xmi:id="_h4o6wK8EEeOJl6blt6F-Sw" base_Enumeration="_A7ResJDwEeO_F6mXGJ9tdA"/>
-  <Profile:ValueObject xmi:id="_iz1XsK8EEeOJl6blt6F-Sw" base_Enumeration="_A_bFgJLKEeO7iZO5xA5ZWw"/>
-  <Profile:ValueObject xmi:id="_j3YfYK8EEeOJl6blt6F-Sw" base_Enumeration="_DNs68JLKEeO7iZO5xA5ZWw"/>
-  <Profile:ValueObject xmi:id="_k-LvYK8EEeOJl6blt6F-Sw" base_Enumeration="_aaItcJDqEeO_F6mXGJ9tdA"/>
-  <Profile:ModelEntity xmi:id="_mwYFwK8EEeOJl6blt6F-Sw" base_Class="_9OB6QJDWEeO_F6mXGJ9tdA"/>
-  <Profile:ModelEntity xmi:id="_oUe80K8EEeOJl6blt6F-Sw" base_Class="_fqfOoJc-EeOroeIBBGKvlg"/>
+  <GVEApp:Controller xmi:id="_lGISwJdQEeObq5oedQz6Gw" base_Class="_DETRUJc-EeOroeIBBGKvlg"/>
+  <GVEApp:UIElement xmi:id="_0LUJMJdQEeObq5oedQz6Gw" base_Class="_yzXe0JdQEeObq5oedQz6Gw"/>
+  <GVEApp:UIElement xmi:id="_rK3ZYJdxEeOn6MdNd15vIw" base_Class="_1EInkJdQEeObq5oedQz6Gw"/>
+  <GVEApp:UIElement xmi:id="_sCuOcJdxEeOn6MdNd15vIw" base_Class="_3i8zYJdQEeObq5oedQz6Gw"/>
+  <GVEApp:UIElement xmi:id="_tAGcsJdxEeOn6MdNd15vIw" base_Class="_n3TF8JdoEeObq5oedQz6Gw"/>
+  <GVEApp:UIElement xmi:id="_6Mc5YK8DEeOJl6blt6F-Sw" base_Class="_dtJ9UK76EeO5UoDFZFQEkw"/>
+  <GVEApp:ModelEntity xmi:id="_Mvc6gK8EEeOJl6blt6F-Sw" base_Class="_joviIJDWEeO_F6mXGJ9tdA"/>
+  <GVEApp:ValueObject xmi:id="_f-zrUK8EEeOJl6blt6F-Sw" base_Enumeration="_edok0JD6EeO_F6mXGJ9tdA"/>
+  <GVEApp:ValueObject xmi:id="_hHt0IK8EEeOJl6blt6F-Sw" base_Enumeration="_Ao3UoJHjEeOoBY9-SSD0YA"/>
+  <GVEApp:ValueObject xmi:id="_h4o6wK8EEeOJl6blt6F-Sw" base_Enumeration="_A7ResJDwEeO_F6mXGJ9tdA"/>
+  <GVEApp:ValueObject xmi:id="_iz1XsK8EEeOJl6blt6F-Sw" base_Enumeration="_A_bFgJLKEeO7iZO5xA5ZWw"/>
+  <GVEApp:ValueObject xmi:id="_j3YfYK8EEeOJl6blt6F-Sw" base_Enumeration="_DNs68JLKEeO7iZO5xA5ZWw"/>
+  <GVEApp:ValueObject xmi:id="_k-LvYK8EEeOJl6blt6F-Sw" base_Enumeration="_aaItcJDqEeO_F6mXGJ9tdA"/>
+  <GVEApp:ModelEntity xmi:id="_mwYFwK8EEeOJl6blt6F-Sw" base_Class="_9OB6QJDWEeO_F6mXGJ9tdA"/>
+  <GVEApp:ModelEntity xmi:id="_oUe80K8EEeOJl6blt6F-Sw" base_Class="_fqfOoJc-EeOroeIBBGKvlg"/>
   <GVEApp:Contract xmi:id="_VL4VYK_iEeOOC9Au7rHU_g" base_Interface="__imqQK75EeO5UoDFZFQEkw"/>
   <GVEApp:ProcessObject xmi:id="_XPFjQK_iEeOOC9Au7rHU_g" base_Class="_8fsS4K75EeO5UoDFZFQEkw"/>
   <GVEApp:ProcessObject xmi:id="_X5-6YK_iEeOOC9Au7rHU_g" base_Class="_SoTv0K76EeO5UoDFZFQEkw"/>
@@ -1183,4 +1200,5 @@
   <GVEApp:Contract xmi:id="_hgx1gK_iEeOOC9Au7rHU_g" base_Interface="_OJG5QK79EeO5UoDFZFQEkw"/>
   <GVEApp:Repository xmi:id="_oiTXgK_iEeOOC9Au7rHU_g" base_Class="_8j07MJdvEeOn6MdNd15vIw"/>
   <GVEApp:Contract xmi:id="_p-tEEK_iEeOOC9Au7rHU_g" base_Interface="_K1Zs0K79EeO5UoDFZFQEkw"/>
+  <GVEApp:UIElement xmi:id="_lSCP8MBREeO5pYEdEFkd5A" base_Lifeline="_WQyeUMBREeO5pYEdEFkd5A"/>
 </xmi:XMI>

@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <uml:Profile xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_GLroUJaWEeOyGuS94aT43g" name="Profile" metaclassReference="_gWO-wJaYEeOKqrK20qbl7Q _PFHKUK8EEeOJl6blt6F-Sw _N29GUK_OEeOOC9Au7rHU_g _dJOWgK_OEeOOC9Au7rHU_g" metamodelReference="_GLroUZaWEeOyGuS94aT43g">
   <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Nv610JaWEeOyGuS94aT43g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_ltnDkMBPEeO5pYEdEFkd5A" name="Profile" nsURI="http:///schemas/Profile/_ltmcgMBPEeO5pYEdEFkd5A/11" nsPrefix="Profile">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ltnDkcBPEeO5pYEdEFkd5A" source="http://www.eclipse.org/uml2/4.0.0/UML" references="_S8PPAK_XEeOOC9Au7rHU_g"/>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ltqt8MBPEeO5pYEdEFkd5A" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ltqt8cBPEeO5pYEdEFkd5A" key="Version" value="0.0.12"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ltqt8sBPEeO5pYEdEFkd5A" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ltqt88BPEeO5pYEdEFkd5A" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ltqt9MBPEeO5pYEdEFkd5A" key="Date" value="2014-04-09"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ltqt9cBPEeO5pYEdEFkd5A" key="Author" value=""/>
+      </eAnnotations>
+    </contents>
     <contents xmi:type="ecore:EPackage" xmi:id="_vYB2Aa_eEeOOC9Au7rHU_g" name="Profile" nsURI="http:///schemas/Profile/_vYB2AK_eEeOOC9Au7rHU_g/10" nsPrefix="Profile">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vYB2Aq_eEeOOC9Au7rHU_g" source="http://www.eclipse.org/uml2/4.0.0/UML" references="_S8PPAK_XEeOOC9Au7rHU_g"/>
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vYDEJq_eEeOOC9Au7rHU_g" source="PapyrusVersion">
@@ -300,8 +310,81 @@
   <packagedElement xmi:type="uml:Extension" xmi:id="_lwNaca_OEeOOC9Au7rHU_g" name="E_Name_Property1" memberEnd="_lwNacq_OEeOOC9Au7rHU_g _lwNacK_OEeOOC9Au7rHU_g">
     <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_lwNacq_OEeOOC9Au7rHU_g" name="extension_Name" type="_hCGFgK_OEeOOC9Au7rHU_g" aggregation="composite" association="_lwNaca_OEeOOC9Au7rHU_g"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Profile" xmi:id="_S8PPAK_XEeOOC9Au7rHU_g" name="GVEApp">
+  <packagedElement xmi:type="uml:Profile" xmi:id="_S8PPAK_XEeOOC9Au7rHU_g" name="GVEApp" metaclassReference="_e4tBQMBPEeO5pYEdEFkd5A">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_FL5PIK_YEeOOC9Au7rHU_g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <contents xmi:type="ecore:EPackage" xmi:id="_ltpf0MBPEeO5pYEdEFkd5A" name="GVEApp" nsURI="http://Profile/schemas/GVEApp/_lto4wMBPEeO5pYEdEFkd5A/4" nsPrefix="GVEApp">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ltrVB8BPEeO5pYEdEFkd5A" source="PapyrusVersion">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ltrVCMBPEeO5pYEdEFkd5A" key="Version" value="0.0.12"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ltrVCcBPEeO5pYEdEFkd5A" key="Comment" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ltrVCsBPEeO5pYEdEFkd5A" key="Copyright" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ltrVC8BPEeO5pYEdEFkd5A" key="Date" value="2014-04-09"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ltrVDMBPEeO5pYEdEFkd5A" key="Author" value=""/>
+        </eAnnotations>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_ltpf0cBPEeO5pYEdEFkd5A" name="Repository">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ltpf0sBPEeO5pYEdEFkd5A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_i-eu8Jc-EeOroeIBBGKvlg"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_ltpf08BPEeO5pYEdEFkd5A" name="base_Class" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_ltpf1cBPEeO5pYEdEFkd5A" name="base_Lifeline" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Lifeline"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_ltpf18BPEeO5pYEdEFkd5A" name="ValueObject">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ltpf2MBPEeO5pYEdEFkd5A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Ppg34K8EEeOJl6blt6F-Sw"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_ltpf2cBPEeO5pYEdEFkd5A" name="base_Enumeration" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Enumeration"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_ltpf28BPEeO5pYEdEFkd5A" name="Contract">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ltpf3MBPEeO5pYEdEFkd5A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Pb9VQK_OEeOOC9Au7rHU_g"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_ltpf3cBPEeO5pYEdEFkd5A" name="base_Interface" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Interface"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_ltpf38BPEeO5pYEdEFkd5A" name="ModelEntity">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ltpf4MBPEeO5pYEdEFkd5A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_dKW4oJaYEeOKqrK20qbl7Q"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_ltpf4cBPEeO5pYEdEFkd5A" name="base_Class" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_ltpf48BPEeO5pYEdEFkd5A" name="Name" ordered="false" lowerBound="1" eType="_ltpf58BPEeO5pYEdEFkd5A"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_ltpf5cBPEeO5pYEdEFkd5A" name="base_Lifeline" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Lifeline"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_ltpf58BPEeO5pYEdEFkd5A" name="Name">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ltpf6MBPEeO5pYEdEFkd5A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_hCGFgK_OEeOOC9Au7rHU_g"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_ltpf6cBPEeO5pYEdEFkd5A" name="base_Property" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Property"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_ltpf68BPEeO5pYEdEFkd5A" name="UIElement">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ltpf7MBPEeO5pYEdEFkd5A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_zOxLAJaYEeOKqrK20qbl7Q"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_ltpf7cBPEeO5pYEdEFkd5A" name="base_Class" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_ltpf78BPEeO5pYEdEFkd5A" name="base_Lifeline" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Lifeline"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_ltpf8cBPEeO5pYEdEFkd5A" name="Controller">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ltpf8sBPEeO5pYEdEFkd5A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_laMn4JaYEeOKqrK20qbl7Q"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_ltpf88BPEeO5pYEdEFkd5A" name="base_Class" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_ltpf9cBPEeO5pYEdEFkd5A" name="base_Lifeline" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Lifeline"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_ltpf98BPEeO5pYEdEFkd5A" name="ProcessObject">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ltpf-MBPEeO5pYEdEFkd5A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_iI3GAK_eEeOOC9Au7rHU_g"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_ltpf-cBPEeO5pYEdEFkd5A" name="base_Class" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_ltpf-8BPEeO5pYEdEFkd5A" name="base_Lifeline" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Lifeline"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+      </contents>
       <contents xmi:type="ecore:EPackage" xmi:id="_vYCdEa_eEeOOC9Au7rHU_g" name="GVEApp" nsURI="http://Profile/schemas/GVEApp/_vYCdEK_eEeOOC9Au7rHU_g/3" nsPrefix="GVEApp">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vYESQ6_eEeOOC9Au7rHU_g" source="PapyrusVersion">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vYESRK_eEeOOC9Au7rHU_g" key="Version" value="0.0.11"/>
@@ -517,9 +600,15 @@
         </eClassifiers>
       </contents>
     </eAnnotations>
+    <elementImport xmi:type="uml:ElementImport" xmi:id="_e4tBQMBPEeO5pYEdEFkd5A" alias="Lifeline">
+      <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Lifeline"/>
+    </elementImport>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_i-eu8Jc-EeOroeIBBGKvlg" name="Repository">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_lDTtcJc-EeOroeIBBGKvlg" name="base_Class" association="_lDUUgJc-EeOroeIBBGKvlg">
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_imI8UMBPEeO5pYEdEFkd5A" name="base_Lifeline" association="_imI8UcBPEeO5pYEdEFkd5A">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Lifeline"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_Ppg34K8EEeOJl6blt6F-Sw" name="ValueObject">
@@ -543,10 +632,16 @@
           <value xsi:nil="true"/>
         </defaultValue>
       </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_kv3B4MBPEeO5pYEdEFkd5A" name="base_Lifeline" association="_kv3B4cBPEeO5pYEdEFkd5A">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Lifeline"/>
+      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_zOxLAJaYEeOKqrK20qbl7Q" name="UIElement">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_6uym4JaYEeOKqrK20qbl7Q" name="base_Class" association="_6uym4ZaYEeOKqrK20qbl7Q">
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_jPwhEMBPEeO5pYEdEFkd5A" name="base_Lifeline" association="_jPwhEcBPEeO5pYEdEFkd5A">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Lifeline"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_hCGFgK_OEeOOC9Au7rHU_g" name="Name">
@@ -558,14 +653,35 @@
       <ownedAttribute xmi:type="uml:Property" xmi:id="_6LcpQJaYEeOKqrK20qbl7Q" name="base_Class" association="_6LcpQZaYEeOKqrK20qbl7Q">
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
       </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_j0YREMBPEeO5pYEdEFkd5A" name="base_Lifeline" association="_j0Y4IMBPEeO5pYEdEFkd5A">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Lifeline"/>
+      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_iI3GAK_eEeOOC9Au7rHU_g" name="ProcessObject">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_rwo4kK_eEeOOC9Au7rHU_g" name="base_Class" association="_rwo4ka_eEeOOC9Au7rHU_g">
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
       </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_iD3VsMBPEeO5pYEdEFkd5A" name="base_Lifeline" association="_iD38wMBPEeO5pYEdEFkd5A">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Lifeline"/>
+      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Extension" xmi:id="_rwo4ka_eEeOOC9Au7rHU_g" name="E_ProcessObject_Class1" memberEnd="_rwo4kq_eEeOOC9Au7rHU_g _rwo4kK_eEeOOC9Au7rHU_g">
       <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_rwo4kq_eEeOOC9Au7rHU_g" name="extension_ProcessObject" type="_iI3GAK_eEeOOC9Au7rHU_g" aggregation="composite" association="_rwo4ka_eEeOOC9Au7rHU_g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_iD38wMBPEeO5pYEdEFkd5A" name="E_ProcessObject_Lifeline1" memberEnd="_iD38wcBPEeO5pYEdEFkd5A _iD3VsMBPEeO5pYEdEFkd5A">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_iD38wcBPEeO5pYEdEFkd5A" name="extension_ProcessObject" type="_iI3GAK_eEeOOC9Au7rHU_g" aggregation="composite" association="_iD38wMBPEeO5pYEdEFkd5A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_imI8UcBPEeO5pYEdEFkd5A" name="E_Repository_Lifeline1" memberEnd="_imI8UsBPEeO5pYEdEFkd5A _imI8UMBPEeO5pYEdEFkd5A">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_imI8UsBPEeO5pYEdEFkd5A" name="extension_Repository" type="_i-eu8Jc-EeOroeIBBGKvlg" aggregation="composite" association="_imI8UcBPEeO5pYEdEFkd5A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_jPwhEcBPEeO5pYEdEFkd5A" name="E_UIElement_Lifeline1" memberEnd="_jPwhEsBPEeO5pYEdEFkd5A _jPwhEMBPEeO5pYEdEFkd5A">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_jPwhEsBPEeO5pYEdEFkd5A" name="extension_UIElement" type="_zOxLAJaYEeOKqrK20qbl7Q" aggregation="composite" association="_jPwhEcBPEeO5pYEdEFkd5A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_j0Y4IMBPEeO5pYEdEFkd5A" name="E_Controller_Lifeline1" memberEnd="_j0Y4IcBPEeO5pYEdEFkd5A _j0YREMBPEeO5pYEdEFkd5A">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_j0Y4IcBPEeO5pYEdEFkd5A" name="extension_Controller" type="_laMn4JaYEeOKqrK20qbl7Q" aggregation="composite" association="_j0Y4IMBPEeO5pYEdEFkd5A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_kv3B4cBPEeO5pYEdEFkd5A" name="E_ModelEntity_Lifeline1" memberEnd="_kv3B4sBPEeO5pYEdEFkd5A _kv3B4MBPEeO5pYEdEFkd5A">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_kv3B4sBPEeO5pYEdEFkd5A" name="extension_ModelEntity" type="_dKW4oJaYEeOKqrK20qbl7Q" aggregation="composite" association="_kv3B4cBPEeO5pYEdEFkd5A"/>
     </packagedElement>
   </packagedElement>
 </uml:Profile>
