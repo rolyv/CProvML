@@ -1,7 +1,0 @@
-# Tracing options for the CPGMF.diagram plug-in
-
-# Common issues
-CPGMF.diagram/debug=false
-
-# Visual IDs
-CPGMF.diagram/debug/visualID=false
