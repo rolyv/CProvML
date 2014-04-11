@@ -1,7 +1,0 @@
-eclipse.preferences.version=1
-gmf_dashboard/domainGenerationModel=platform\:/resource/CPGMF/model/CPmodeling.genmodel
-gmf_dashboard/domainModel=platform\:/resource/CPGMF/model/CPmodeling.ecore
-gmf_dashboard/generationModel=platform\:/resource/CPGMF/model/CPmodeling.gmfgen
-gmf_dashboard/graphicalDefinitionModel=platform\:/resource/CPGMF/model/CPmodeling.gmfgraph
-gmf_dashboard/mappingModel=platform\:/resource/CPGMF/model/CPmodeling.gmfmap
-gmf_dashboard/toolingDefinitionModel=platform\:/resource/CPGMF/model/CPmodeling.gmftool
