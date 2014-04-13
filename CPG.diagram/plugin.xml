@@ -426,9 +426,29 @@
             name="Valid Instance memory"
             mode="Batch"
             severity="ERROR" statusCode="200">
-            <![CDATA[self.Memory > 0]]>
-            <description><![CDATA[This check detects if instance memory is non-positive]]></description>
-            <message><![CDATA[Instance memory must be greater than 0.]]></message>
+            <![CDATA[self.Memory > 0 and self.Memory <= 245]]>
+            <description><![CDATA[This check detects if instance memory is valid]]></description>
+            <message><![CDATA[Instance memory must be between 1 and 245 GB]]></message>
+            <target class="cloudProvisioning.Instance"/>
+         </constraint>
+                  <constraint id="instanceStorage"
+            lang="OCL"
+            name="Valid Instance storage"
+            mode="Batch"
+            severity="ERROR" statusCode="200">
+            <![CDATA[self.Storage > 0 and self.Storage <= 2048]]>
+            <description><![CDATA[This check detects if instance storage is valid]]></description>
+            <message><![CDATA[Instance storage must be between 1 and 2048 GB]]></message>
+            <target class="cloudProvisioning.Instance"/>
+         </constraint>
+                  <constraint id="vcpuCheck"
+            lang="OCL"
+            name="Valid VCPU count"
+            mode="Batch"
+            severity="ERROR" statusCode="200">
+            <![CDATA[self.NumVCPUs > 0 and self.NumVCPUs <= 32]]>
+            <description><![CDATA[This check detects when VCPU is invalid]]></description>
+            <message><![CDATA[Number of VCPUs must be between 1 and 32]]></message>
             <target class="cloudProvisioning.Instance"/>
          </constraint>
                   </constraints>
@@ -444,6 +464,8 @@
                   <constraint ref="CPG.diagram.environmentName"/>
                   <constraint ref="CPG.diagram.instanceName"/>
                   <constraint ref="CPG.diagram.instanceMemory"/>
+                  <constraint ref="CPG.diagram.instanceStorage"/>
+                  <constraint ref="CPG.diagram.vcpuCheck"/>
                </binding>
 
    </extension>

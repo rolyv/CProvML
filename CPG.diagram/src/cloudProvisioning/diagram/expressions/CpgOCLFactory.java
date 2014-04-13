@@ -35,10 +35,12 @@ public class CpgOCLFactory {
 	 * @generated
 	 */
 	protected CpgOCLFactory() {
-		this.expressions = new cloudProvisioning.diagram.expressions.CpgAbstractExpression[3];
+		this.expressions = new cloudProvisioning.diagram.expressions.CpgAbstractExpression[5];
 		this.expressionBodies = new String[] { "self.Name.size() > 0", //$NON-NLS-1$
 				"self.Name.size() > 0", //$NON-NLS-1$
-				"self.Memory > 0", //$NON-NLS-1$
+				"self.Memory > 0 and self.Memory <= 245", //$NON-NLS-1$
+				"self.Storage > 0 and self.Storage <= 2048", //$NON-NLS-1$
+				"self.NumVCPUs > 0 and self.NumVCPUs <= 32", //$NON-NLS-1$
 		};
 	}
 

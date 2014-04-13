@@ -94,11 +94,11 @@
     </audits>
     <audits
         name="Valid Instance memory"
-        description="This check detects if instance memory is non-positive"
+        description="This check detects if instance memory is valid"
         id="instanceMemory"
-        message="Instance memory must be greater than 0.">
+        message="Instance memory must be between 1 and 245 GB">
       <rule
-          body="self.Memory > 0"/>
+          body="self.Memory > 0 and self.Memory &lt;= 245"/>
       <target
           xsi:type="gmfmap:DomainElementTarget">
         <element
@@ -107,11 +107,24 @@
     </audits>
     <audits
         name="Valid Instance storage"
-        description="This check detects if instance storage is non-positive"
+        description="This check detects if instance storage is valid"
         id="instanceStorage"
-        message="Instance storage must be greater than 0.">
+        message="Instance storage must be between 1 and 2048 GB">
       <rule
-          body="self.Storage > 0"/>
+          body="self.Storage > 0 and self.Storage &lt;= 2048"/>
+      <target
+          xsi:type="gmfmap:DomainElementTarget">
+        <element
+            href="cpg.ecore#//Instance"/>
+      </target>
+    </audits>
+    <audits
+        name="Valid VCPU count"
+        description="This check detects when VCPU is invalid"
+        id="vcpuCheck"
+        message="Number of VCPUs must be between 1 and 32">
+      <rule
+          body="self.NumVCPUs > 0 and self.NumVCPUs &lt;= 32"/>
       <target
           xsi:type="gmfmap:DomainElementTarget">
         <element

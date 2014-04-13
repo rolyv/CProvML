@@ -10,7 +10,7 @@
         name="CPG Audits"
         description="CPG Audits"
         path="//@audits/@categories.0"
-        audits="//@audits/@rules.0 //@audits/@rules.1 //@audits/@rules.2"/>
+        audits="//@audits/@rules.0 //@audits/@rules.1 //@audits/@rules.2 //@audits/@rules.3 //@audits/@rules.4"/>
     <rules
         name="Missing environment name check"
         description="This check will detect when an environment name is not set"
@@ -41,10 +41,38 @@
     </rules>
     <rules
         name="Valid Instance memory"
-        description="This check detects if instance memory is non-positive"
+        description="This check detects if instance memory is valid"
         id="instanceMemory"
         rule="//@expressionProviders/@providers.0/@expressions.2"
-        message="Instance memory must be greater than 0."
+        message="Instance memory must be between 1 and 245 GB"
+        category="//@audits/@categories.0">
+      <target
+          xsi:type="gmfgen:GenDomainElementTarget"
+          contextSelector="//@audits/@clientContexts.0">
+        <element
+            href="cpg.genmodel#//cloudProvisioning/Instance"/>
+      </target>
+    </rules>
+    <rules
+        name="Valid Instance storage"
+        description="This check detects if instance storage is valid"
+        id="instanceStorage"
+        rule="//@expressionProviders/@providers.0/@expressions.3"
+        message="Instance storage must be between 1 and 2048 GB"
+        category="//@audits/@categories.0">
+      <target
+          xsi:type="gmfgen:GenDomainElementTarget"
+          contextSelector="//@audits/@clientContexts.0">
+        <element
+            href="cpg.genmodel#//cloudProvisioning/Instance"/>
+      </target>
+    </rules>
+    <rules
+        name="Valid VCPU count"
+        description="This check detects when VCPU is invalid"
+        id="vcpuCheck"
+        rule="//@expressionProviders/@providers.0/@expressions.4"
+        message="Number of VCPUs must be between 1 and 32"
         category="//@audits/@categories.0">
       <target
           xsi:type="gmfgen:GenDomainElementTarget"
@@ -54,7 +82,7 @@
       </target>
     </rules>
     <clientContexts
-        ruleTargets="//@audits/@rules.0/@target //@audits/@rules.1/@target //@audits/@rules.2/@target"/>
+        ruleTargets="//@audits/@rules.0/@target //@audits/@rules.1/@target //@audits/@rules.2/@target //@audits/@rules.3/@target //@audits/@rules.4/@target"/>
   </audits>
   <diagram
       visualID="1000"
@@ -495,7 +523,13 @@
           body="self.Name.size() > 0"/>
       <expressions
           xsi:type="gmfgen:GenConstraint"
-          body="self.Memory > 0"/>
+          body="self.Memory > 0 and self.Memory &lt;= 245"/>
+      <expressions
+          xsi:type="gmfgen:GenConstraint"
+          body="self.Storage > 0 and self.Storage &lt;= 2048"/>
+      <expressions
+          xsi:type="gmfgen:GenConstraint"
+          body="self.NumVCPUs > 0 and self.NumVCPUs &lt;= 32"/>
     </providers>
   </expressionProviders>
   <labelParsers
