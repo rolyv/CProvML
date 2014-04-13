@@ -131,5 +131,31 @@
             href="cpg.ecore#//Instance"/>
       </target>
     </audits>
+    <audits
+        name="Unique environment name"
+        description="This check detects environments with the same name"
+        id="uniqueEnvironmentName"
+        message="Environment names must be unique">
+      <rule
+          body="Environment.allInstances()->forAll(e1, e2 | e1 &lt;> e2 implies e1.Name &lt;> e2.Name)"/>
+      <target
+          xsi:type="gmfmap:DomainElementTarget">
+        <element
+            href="cpg.ecore#//Environment"/>
+      </target>
+    </audits>
+    <audits
+        name="Unique instance names per environment"
+        description="This check detects duplicate instance names"
+        id="uniqueInstanceName"
+        message="Instance names must be unique for a given environment">
+      <rule
+          body="self.instances->forAll(i1,i2 | i1 &lt;> i2 implies i1.Name &lt;> i2.Name)"/>
+      <target
+          xsi:type="gmfmap:DomainElementTarget">
+        <element
+            href="cpg.ecore#//Environment"/>
+      </target>
+    </audits>
   </audits>
 </gmfmap:Mapping>

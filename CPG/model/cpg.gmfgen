@@ -10,7 +10,7 @@
         name="CPG Audits"
         description="CPG Audits"
         path="//@audits/@categories.0"
-        audits="//@audits/@rules.0 //@audits/@rules.1 //@audits/@rules.2 //@audits/@rules.3 //@audits/@rules.4"/>
+        audits="//@audits/@rules.0 //@audits/@rules.1 //@audits/@rules.2 //@audits/@rules.3 //@audits/@rules.4 //@audits/@rules.5 //@audits/@rules.6"/>
     <rules
         name="Missing environment name check"
         description="This check will detect when an environment name is not set"
@@ -81,8 +81,36 @@
             href="cpg.genmodel#//cloudProvisioning/Instance"/>
       </target>
     </rules>
+    <rules
+        name="Unique environment name"
+        description="This check detects environments with the same name"
+        id="uniqueEnvironmentName"
+        rule="//@expressionProviders/@providers.0/@expressions.5"
+        message="Environment names must be unique"
+        category="//@audits/@categories.0">
+      <target
+          xsi:type="gmfgen:GenDomainElementTarget"
+          contextSelector="//@audits/@clientContexts.0">
+        <element
+            href="cpg.genmodel#//cloudProvisioning/Environment"/>
+      </target>
+    </rules>
+    <rules
+        name="Unique instance names per environment"
+        description="This check detects duplicate instance names"
+        id="uniqueInstanceName"
+        rule="//@expressionProviders/@providers.0/@expressions.6"
+        message="Instance names must be unique for a given environment"
+        category="//@audits/@categories.0">
+      <target
+          xsi:type="gmfgen:GenDomainElementTarget"
+          contextSelector="//@audits/@clientContexts.0">
+        <element
+            href="cpg.genmodel#//cloudProvisioning/Environment"/>
+      </target>
+    </rules>
     <clientContexts
-        ruleTargets="//@audits/@rules.0/@target //@audits/@rules.1/@target //@audits/@rules.2/@target //@audits/@rules.3/@target //@audits/@rules.4/@target"/>
+        ruleTargets="//@audits/@rules.0/@target //@audits/@rules.1/@target //@audits/@rules.2/@target //@audits/@rules.3/@target //@audits/@rules.4/@target //@audits/@rules.5/@target //@audits/@rules.6/@target"/>
   </audits>
   <diagram
       visualID="1000"
@@ -530,6 +558,12 @@
       <expressions
           xsi:type="gmfgen:GenConstraint"
           body="self.NumVCPUs > 0 and self.NumVCPUs &lt;= 32"/>
+      <expressions
+          xsi:type="gmfgen:GenConstraint"
+          body="Environment.allInstances()->forAll(e1, e2 | e1 &lt;> e2 implies e1.Name &lt;> e2.Name)"/>
+      <expressions
+          xsi:type="gmfgen:GenConstraint"
+          body="self.instances->forAll(i1,i2 | i1 &lt;> i2 implies i1.Name &lt;> i2.Name)"/>
     </providers>
   </expressionProviders>
   <labelParsers

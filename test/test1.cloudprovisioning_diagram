@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:edu.fiu.cen5064.group1.cloudProvisioning="http://cen5064/group1/cloudProvisioning" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_X4rB4MNhEeOYNcUQJPj0Eg" type="Cpg" name="test1.cloudprovisioning_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_Z-Z_UMNhEeOYNcUQJPj0Eg" type="2002" fontName="Ubuntu">
+    <children xmi:type="notation:DecorationNode" xmi:id="_Z-bNcMNhEeOYNcUQJPj0Eg" type="5003"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_Z-b0gMNhEeOYNcUQJPj0Eg" type="7001"/>
+    <element xmi:type="edu.fiu.cen5064.group1.cloudProvisioning:Environment" href="test1.cloudprovisioning#//@environments.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Z-Z_UcNhEeOYNcUQJPj0Eg" x="139" y="103" width="422" height="138"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_ad_eUMNhEeOYNcUQJPj0Eg" type="2002" fontName="Ubuntu">
+    <children xmi:type="notation:DecorationNode" xmi:id="_ad_eUsNhEeOYNcUQJPj0Eg" type="5003"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_ad_eU8NhEeOYNcUQJPj0Eg" type="7001">
+      <children xmi:type="notation:Shape" xmi:id="_w19JYMNiEeO-dc7IfASYpw" type="3001" fontName="Ubuntu">
+        <children xmi:type="notation:DecorationNode" xmi:id="_w19wcMNiEeO-dc7IfASYpw" type="5004"/>
+        <element xmi:type="edu.fiu.cen5064.group1.cloudProvisioning:Instance" href="test1.cloudprovisioning#//@environments.1/@instances.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_w19JYcNiEeO-dc7IfASYpw" x="20" y="29"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_xsfv0MNiEeO-dc7IfASYpw" type="3001" fontName="Ubuntu">
+        <children xmi:type="notation:DecorationNode" xmi:id="_xsgW4MNiEeO-dc7IfASYpw" type="5004"/>
+        <element xmi:type="edu.fiu.cen5064.group1.cloudProvisioning:Instance" href="test1.cloudprovisioning#//@environments.1/@instances.1"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xsfv0cNiEeO-dc7IfASYpw" x="33" y="103"/>
+      </children>
+    </children>
+    <element xmi:type="edu.fiu.cen5064.group1.cloudProvisioning:Environment" href="test1.cloudprovisioning#//@environments.1"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ad_eUcNhEeOYNcUQJPj0Eg" x="129" y="277" width="512" height="268"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_X4rB4cNhEeOYNcUQJPj0Eg"/>
+  <element xmi:type="edu.fiu.cen5064.group1.cloudProvisioning:Canvas" href="test1.cloudprovisioning#/"/>
+</notation:Diagram>

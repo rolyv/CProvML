@@ -451,6 +451,26 @@
             <message><![CDATA[Number of VCPUs must be between 1 and 32]]></message>
             <target class="cloudProvisioning.Instance"/>
          </constraint>
+                  <constraint id="uniqueEnvironmentName"
+            lang="OCL"
+            name="Unique environment name"
+            mode="Batch"
+            severity="ERROR" statusCode="200">
+            <![CDATA[Environment.allInstances()->forAll(e1, e2 | e1 <> e2 implies e1.Name <> e2.Name)]]>
+            <description><![CDATA[This check detects environments with the same name]]></description>
+            <message><![CDATA[Environment names must be unique]]></message>
+            <target class="cloudProvisioning.Environment"/>
+         </constraint>
+                  <constraint id="uniqueInstanceName"
+            lang="OCL"
+            name="Unique instance names per environment"
+            mode="Batch"
+            severity="ERROR" statusCode="200">
+            <![CDATA[self.instances->forAll(i1,i2 | i1 <> i2 implies i1.Name <> i2.Name)]]>
+            <description><![CDATA[This check detects duplicate instance names]]></description>
+            <message><![CDATA[Instance names must be unique for a given environment]]></message>
+            <target class="cloudProvisioning.Environment"/>
+         </constraint>
                   </constraints>
       </constraintProvider>
    </extension>
@@ -466,6 +486,8 @@
                   <constraint ref="CPG.diagram.instanceMemory"/>
                   <constraint ref="CPG.diagram.instanceStorage"/>
                   <constraint ref="CPG.diagram.vcpuCheck"/>
+                  <constraint ref="CPG.diagram.uniqueEnvironmentName"/>
+                  <constraint ref="CPG.diagram.uniqueInstanceName"/>
                </binding>
 
    </extension>
