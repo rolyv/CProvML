@@ -1,0 +1,8 @@
+eclipse.preferences.version=1
+gmf_dashboard/domainGenerationModel=platform\:/resource/CPG/model/cpg.genmodel
+gmf_dashboard/domainModel=platform\:/resource/CPG/model/cpg.ecore
+gmf_dashboard/generationModel=platform\:/resource/CPG/model/cpg.gmfgen
+gmf_dashboard/graphicalDefinitionModel=platform\:/resource/CPG/model/cpg.gmfgraph
+gmf_dashboard/mappingModel=platform\:/resource/CPG/model/cpg.gmfmap
+gmf_dashboard/option_rcp=*
+gmf_dashboard/toolingDefinitionModel=platform\:/resource/CPG/model/cpg.gmftool

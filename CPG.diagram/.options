@@ -1,0 +1,7 @@
+# Tracing options for the CPG.diagram plug-in
+
+# Common issues
+CPG.diagram/debug=false
+
+# Visual IDs
+CPG.diagram/debug/visualID=false
