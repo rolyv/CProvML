@@ -120,10 +120,6 @@ public class CpgVisualIDRegistry {
 		switch (containerVisualID) {
 		case cloudProvisioning.diagram.edit.parts.CanvasEditPart.VISUAL_ID:
 			if (cloudProvisioning.CloudProvisioningPackage.eINSTANCE
-					.getInstance().isSuperTypeOf(domainElement.eClass())) {
-				return cloudProvisioning.diagram.edit.parts.InstanceEditPart.VISUAL_ID;
-			}
-			if (cloudProvisioning.CloudProvisioningPackage.eINSTANCE
 					.getEnvironment().isSuperTypeOf(domainElement.eClass())) {
 				return cloudProvisioning.diagram.edit.parts.EnvironmentEditPart.VISUAL_ID;
 			}
@@ -131,7 +127,7 @@ public class CpgVisualIDRegistry {
 		case cloudProvisioning.diagram.edit.parts.EnvironmentEnvironmentCompartmentEditPart.VISUAL_ID:
 			if (cloudProvisioning.CloudProvisioningPackage.eINSTANCE
 					.getInstance().isSuperTypeOf(domainElement.eClass())) {
-				return cloudProvisioning.diagram.edit.parts.Instance2EditPart.VISUAL_ID;
+				return cloudProvisioning.diagram.edit.parts.InstanceEditPart.VISUAL_ID;
 			}
 			break;
 		}
@@ -162,15 +158,7 @@ public class CpgVisualIDRegistry {
 		}
 		switch (containerVisualID) {
 		case cloudProvisioning.diagram.edit.parts.CanvasEditPart.VISUAL_ID:
-			if (cloudProvisioning.diagram.edit.parts.InstanceEditPart.VISUAL_ID == nodeVisualID) {
-				return true;
-			}
 			if (cloudProvisioning.diagram.edit.parts.EnvironmentEditPart.VISUAL_ID == nodeVisualID) {
-				return true;
-			}
-			break;
-		case cloudProvisioning.diagram.edit.parts.InstanceEditPart.VISUAL_ID:
-			if (cloudProvisioning.diagram.edit.parts.InstanceNameEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
@@ -182,13 +170,13 @@ public class CpgVisualIDRegistry {
 				return true;
 			}
 			break;
-		case cloudProvisioning.diagram.edit.parts.Instance2EditPart.VISUAL_ID:
-			if (cloudProvisioning.diagram.edit.parts.InstanceName2EditPart.VISUAL_ID == nodeVisualID) {
+		case cloudProvisioning.diagram.edit.parts.InstanceEditPart.VISUAL_ID:
+			if (cloudProvisioning.diagram.edit.parts.InstanceNameEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
 		case cloudProvisioning.diagram.edit.parts.EnvironmentEnvironmentCompartmentEditPart.VISUAL_ID:
-			if (cloudProvisioning.diagram.edit.parts.Instance2EditPart.VISUAL_ID == nodeVisualID) {
+			if (cloudProvisioning.diagram.edit.parts.InstanceEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
@@ -250,7 +238,6 @@ public class CpgVisualIDRegistry {
 		case cloudProvisioning.diagram.edit.parts.CanvasEditPart.VISUAL_ID:
 			return false;
 		case cloudProvisioning.diagram.edit.parts.InstanceEditPart.VISUAL_ID:
-		case cloudProvisioning.diagram.edit.parts.Instance2EditPart.VISUAL_ID:
 			return true;
 		default:
 			break;

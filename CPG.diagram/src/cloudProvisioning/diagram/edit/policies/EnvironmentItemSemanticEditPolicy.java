@@ -62,7 +62,7 @@ public class EnvironmentItemSemanticEditPolicy extends
 					Node cnode = (Node) cit.next();
 					switch (cloudProvisioning.diagram.part.CpgVisualIDRegistry
 							.getVisualID(cnode)) {
-					case cloudProvisioning.diagram.edit.parts.Instance2EditPart.VISUAL_ID:
+					case cloudProvisioning.diagram.edit.parts.InstanceEditPart.VISUAL_ID:
 						cmd.add(new DestroyElementCommand(
 								new DestroyElementRequest(getEditingDomain(),
 										cnode.getElement(), false))); // directlyOwned: true

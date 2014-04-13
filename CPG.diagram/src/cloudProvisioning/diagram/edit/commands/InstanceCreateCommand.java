@@ -53,7 +53,7 @@ public class InstanceCreateCommand extends EditElementCommand {
 		cloudProvisioning.Instance newElement = cloudProvisioning.CloudProvisioningFactory.eINSTANCE
 				.createInstance();
 
-		cloudProvisioning.Canvas owner = (cloudProvisioning.Canvas) getElementToEdit();
+		cloudProvisioning.Environment owner = (cloudProvisioning.Environment) getElementToEdit();
 		owner.getInstances().add(newElement);
 
 		doConfigure(newElement, monitor, info);

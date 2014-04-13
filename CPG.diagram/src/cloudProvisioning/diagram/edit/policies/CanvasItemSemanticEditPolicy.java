@@ -24,11 +24,6 @@ public class CanvasItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	protected Command getCreateCommand(CreateElementRequest req) {
-		if (cloudProvisioning.diagram.providers.CpgElementTypes.Instance_2001 == req
-				.getElementType()) {
-			return getGEFWrapper(new cloudProvisioning.diagram.edit.commands.InstanceCreateCommand(
-					req));
-		}
 		if (cloudProvisioning.diagram.providers.CpgElementTypes.Environment_2002 == req
 				.getElementType()) {
 			return getGEFWrapper(new cloudProvisioning.diagram.edit.commands.EnvironmentCreateCommand(

@@ -53,7 +53,7 @@ public class InstanceNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5001;
+	public static final int VISUAL_ID = 5004;
 
 	/**
 	 * @generated
@@ -306,7 +306,7 @@ public class InstanceNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = cloudProvisioning.diagram.providers.CpgParserProvider
 					.getParser(
-							cloudProvisioning.diagram.providers.CpgElementTypes.Instance_2001,
+							cloudProvisioning.diagram.providers.CpgElementTypes.Instance_3001,
 							getParserElement(),
 							cloudProvisioning.diagram.part.CpgVisualIDRegistry
 									.getType(cloudProvisioning.diagram.edit.parts.InstanceNameEditPart.VISUAL_ID));

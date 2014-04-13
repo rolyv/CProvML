@@ -33,8 +33,7 @@ public class CpgModelingAssistantProvider extends ModelingAssistantProvider {
 		IGraphicalEditPart editPart = (IGraphicalEditPart) host
 				.getAdapter(IGraphicalEditPart.class);
 		if (editPart instanceof cloudProvisioning.diagram.edit.parts.CanvasEditPart) {
-			ArrayList<IElementType> types = new ArrayList<IElementType>(2);
-			types.add(cloudProvisioning.diagram.providers.CpgElementTypes.Instance_2001);
+			ArrayList<IElementType> types = new ArrayList<IElementType>(1);
 			types.add(cloudProvisioning.diagram.providers.CpgElementTypes.Environment_2002);
 			return types;
 		}

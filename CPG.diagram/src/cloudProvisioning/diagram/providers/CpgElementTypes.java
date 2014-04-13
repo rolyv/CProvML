@@ -49,10 +49,6 @@ public class CpgElementTypes {
 	/**
 	 * @generated
 	 */
-	public static final IElementType Instance_2001 = getElementType("CPG.diagram.Instance_2001"); //$NON-NLS-1$
-	/**
-	 * @generated
-	 */
 	public static final IElementType Environment_2002 = getElementType("CPG.diagram.Environment_2002"); //$NON-NLS-1$
 	/**
 	 * @generated
@@ -174,10 +170,6 @@ public class CpgElementTypes {
 					cloudProvisioning.CloudProvisioningPackage.eINSTANCE
 							.getCanvas());
 
-			elements.put(Instance_2001,
-					cloudProvisioning.CloudProvisioningPackage.eINSTANCE
-							.getInstance());
-
 			elements.put(Environment_2002,
 					cloudProvisioning.CloudProvisioningPackage.eINSTANCE
 							.getEnvironment());
@@ -203,7 +195,6 @@ public class CpgElementTypes {
 		if (KNOWN_ELEMENT_TYPES == null) {
 			KNOWN_ELEMENT_TYPES = new HashSet<IElementType>();
 			KNOWN_ELEMENT_TYPES.add(Canvas_1000);
-			KNOWN_ELEMENT_TYPES.add(Instance_2001);
 			KNOWN_ELEMENT_TYPES.add(Environment_2002);
 			KNOWN_ELEMENT_TYPES.add(Instance_3001);
 		}
@@ -217,11 +208,9 @@ public class CpgElementTypes {
 		switch (visualID) {
 		case cloudProvisioning.diagram.edit.parts.CanvasEditPart.VISUAL_ID:
 			return Canvas_1000;
-		case cloudProvisioning.diagram.edit.parts.InstanceEditPart.VISUAL_ID:
-			return Instance_2001;
 		case cloudProvisioning.diagram.edit.parts.EnvironmentEditPart.VISUAL_ID:
 			return Environment_2002;
-		case cloudProvisioning.diagram.edit.parts.Instance2EditPart.VISUAL_ID:
+		case cloudProvisioning.diagram.edit.parts.InstanceEditPart.VISUAL_ID:
 			return Instance_3001;
 		}
 		return null;

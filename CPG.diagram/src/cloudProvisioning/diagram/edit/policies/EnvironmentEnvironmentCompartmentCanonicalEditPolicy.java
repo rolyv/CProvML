@@ -75,7 +75,7 @@ public class EnvironmentEnvironmentCompartmentCanonicalEditPolicy extends
 	 * @generated
 	 */
 	private boolean isMyDiagramElement(View view) {
-		return cloudProvisioning.diagram.edit.parts.Instance2EditPart.VISUAL_ID == cloudProvisioning.diagram.part.CpgVisualIDRegistry
+		return cloudProvisioning.diagram.edit.parts.InstanceEditPart.VISUAL_ID == cloudProvisioning.diagram.part.CpgVisualIDRegistry
 				.getVisualID(view);
 	}
 

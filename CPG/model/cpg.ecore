@@ -15,7 +15,8 @@
         eType="#//Instance" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Instance">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        defaultValueLiteral="instance0"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="NumVCPUs" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="CPUSize" eType="#//CPUSize"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="NetworkPerformance" eType="#//NetworkPerformance"/>

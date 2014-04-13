@@ -7,26 +7,6 @@
     xmlns:gmftool="http://www.eclipse.org/gmf/2005/ToolDefinition">
   <nodes>
     <containmentFeature
-        href="cpg.ecore#//Canvas/instances"/>
-    <ownedChild>
-      <domainMetaElement
-          href="cpg.ecore#//Instance"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="cpg.gmfgraph#InstanceName"/>
-        <features
-            href="cpg.ecore#//Instance/Name"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="cpg.gmftool#//@palette/@tools.0/@tools.1"/>
-      <diagramNode
-          href="cpg.gmfgraph#Instance"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
         href="cpg.ecore#//Canvas/environments"/>
     <ownedChild>
       <domainMetaElement
@@ -44,13 +24,29 @@
       <diagramNode
           href="cpg.gmfgraph#Environment"/>
       <children
-          compartment="//@nodes.1/@ownedChild/@compartments.0"
-          referencedChild="//@nodes.0/@ownedChild">
+          compartment="//@nodes.0/@ownedChild/@compartments.0"
+          referencedChild="//@nodes.0/@ownedChild/@children.0/@ownedChild">
         <containmentFeature
             href="cpg.ecore#//Environment/instances"/>
+        <ownedChild>
+          <domainMetaElement
+              href="cpg.ecore#//Instance"/>
+          <labelMappings
+              xsi:type="gmfmap:FeatureLabelMapping">
+            <diagramLabel
+                href="cpg.gmfgraph#InstanceName"/>
+            <features
+                href="cpg.ecore#//Instance/Name"/>
+          </labelMappings>
+          <tool
+              xsi:type="gmftool:CreationTool"
+              href="cpg.gmftool#//@palette/@tools.0/@tools.1"/>
+          <diagramNode
+              href="cpg.gmfgraph#Instance"/>
+        </ownedChild>
       </children>
       <compartments
-          children="//@nodes.1/@ownedChild/@children.0">
+          children="//@nodes.0/@ownedChild/@children.0">
         <compartment
             href="cpg.gmfgraph#EnvironmentCompartment"/>
       </compartments>

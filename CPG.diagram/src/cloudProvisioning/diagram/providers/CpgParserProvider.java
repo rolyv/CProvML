@@ -22,25 +22,6 @@ public class CpgParserProvider extends AbstractProvider implements
 	/**
 	 * @generated
 	 */
-	private IParser instanceName_5001Parser;
-
-	/**
-	 * @generated
-	 */
-	private IParser getInstanceName_5001Parser() {
-		if (instanceName_5001Parser == null) {
-			EAttribute[] features = new EAttribute[] { cloudProvisioning.CloudProvisioningPackage.eINSTANCE
-					.getInstance_Name() };
-			cloudProvisioning.diagram.parsers.MessageFormatParser parser = new cloudProvisioning.diagram.parsers.MessageFormatParser(
-					features);
-			instanceName_5001Parser = parser;
-		}
-		return instanceName_5001Parser;
-	}
-
-	/**
-	 * @generated
-	 */
 	private IParser environmentName_5003Parser;
 
 	/**
@@ -81,11 +62,9 @@ public class CpgParserProvider extends AbstractProvider implements
 	 */
 	protected IParser getParser(int visualID) {
 		switch (visualID) {
-		case cloudProvisioning.diagram.edit.parts.InstanceNameEditPart.VISUAL_ID:
-			return getInstanceName_5001Parser();
 		case cloudProvisioning.diagram.edit.parts.EnvironmentNameEditPart.VISUAL_ID:
 			return getEnvironmentName_5003Parser();
-		case cloudProvisioning.diagram.edit.parts.InstanceName2EditPart.VISUAL_ID:
+		case cloudProvisioning.diagram.edit.parts.InstanceNameEditPart.VISUAL_ID:
 			return getInstanceName_5004Parser();
 		}
 		return null;

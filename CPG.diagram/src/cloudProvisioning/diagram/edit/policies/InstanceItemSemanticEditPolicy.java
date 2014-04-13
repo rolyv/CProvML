@@ -18,7 +18,7 @@ public class InstanceItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public InstanceItemSemanticEditPolicy() {
-		super(cloudProvisioning.diagram.providers.CpgElementTypes.Instance_2001);
+		super(cloudProvisioning.diagram.providers.CpgElementTypes.Instance_3001);
 	}
 
 	/**
