@@ -61,6 +61,14 @@ public class InstanceItemProvider
 			super.getPropertyDescriptors(object);
 
 			addNamePropertyDescriptor(object);
+			addNumVCPUsPropertyDescriptor(object);
+			addCPUSizePropertyDescriptor(object);
+			addNetworkPerformancePropertyDescriptor(object);
+			addMemoryPropertyDescriptor(object);
+			addStoragePropertyDescriptor(object);
+			addOperatingSystemPropertyDescriptor(object);
+			addArchitecturePropertyDescriptor(object);
+			addApplicationsPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -79,6 +87,182 @@ public class InstanceItemProvider
 				 getString("_UI_Instance_Name_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_Instance_Name_feature", "_UI_Instance_type"),
 				 CloudProvisioningPackage.Literals.INSTANCE__NAME,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Num VCP Us feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addNumVCPUsPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Instance_NumVCPUs_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Instance_NumVCPUs_feature", "_UI_Instance_type"),
+				 CloudProvisioningPackage.Literals.INSTANCE__NUM_VCP_US,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the CPU Size feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addCPUSizePropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Instance_CPUSize_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Instance_CPUSize_feature", "_UI_Instance_type"),
+				 CloudProvisioningPackage.Literals.INSTANCE__CPU_SIZE,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Network Performance feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addNetworkPerformancePropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Instance_NetworkPerformance_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Instance_NetworkPerformance_feature", "_UI_Instance_type"),
+				 CloudProvisioningPackage.Literals.INSTANCE__NETWORK_PERFORMANCE,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Memory feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addMemoryPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Instance_Memory_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Instance_Memory_feature", "_UI_Instance_type"),
+				 CloudProvisioningPackage.Literals.INSTANCE__MEMORY,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.REAL_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Storage feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addStoragePropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Instance_Storage_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Instance_Storage_feature", "_UI_Instance_type"),
+				 CloudProvisioningPackage.Literals.INSTANCE__STORAGE,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.REAL_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Operating System feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addOperatingSystemPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Instance_OperatingSystem_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Instance_OperatingSystem_feature", "_UI_Instance_type"),
+				 CloudProvisioningPackage.Literals.INSTANCE__OPERATING_SYSTEM,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Architecture feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addArchitecturePropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Instance_Architecture_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Instance_Architecture_feature", "_UI_Instance_type"),
+				 CloudProvisioningPackage.Literals.INSTANCE__ARCHITECTURE,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Applications feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addApplicationsPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Instance_Applications_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Instance_Applications_feature", "_UI_Instance_type"),
+				 CloudProvisioningPackage.Literals.INSTANCE__APPLICATIONS,
 				 true,
 				 false,
 				 false,
@@ -125,6 +309,14 @@ public class InstanceItemProvider
 
 		switch (notification.getFeatureID(Instance.class)) {
 			case CloudProvisioningPackage.INSTANCE__NAME:
+			case CloudProvisioningPackage.INSTANCE__NUM_VCP_US:
+			case CloudProvisioningPackage.INSTANCE__CPU_SIZE:
+			case CloudProvisioningPackage.INSTANCE__NETWORK_PERFORMANCE:
+			case CloudProvisioningPackage.INSTANCE__MEMORY:
+			case CloudProvisioningPackage.INSTANCE__STORAGE:
+			case CloudProvisioningPackage.INSTANCE__OPERATING_SYSTEM:
+			case CloudProvisioningPackage.INSTANCE__ARCHITECTURE:
+			case CloudProvisioningPackage.INSTANCE__APPLICATIONS:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

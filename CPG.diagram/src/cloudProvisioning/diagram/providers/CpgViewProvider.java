@@ -375,7 +375,7 @@ public class CpgViewProvider extends AbstractProvider implements IViewProvider {
 		ViewUtil.setStructuralFeatureValue(node,
 				NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5002 = createLabel(
+		Node label5004 = createLabel(
 				node,
 				cloudProvisioning.diagram.part.CpgVisualIDRegistry
 						.getType(cloudProvisioning.diagram.edit.parts.InstanceName2EditPart.VISUAL_ID));

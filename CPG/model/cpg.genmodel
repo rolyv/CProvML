@@ -5,6 +5,40 @@
     operationReflection="true" importOrganizing="true">
   <foreignModel>cpg.ecore</foreignModel>
   <genPackages prefix="CloudProvisioning" disposableProviderFactory="true" ecorePackage="cpg.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="cpg.ecore#//OperatingSystem">
+      <genEnumLiterals ecoreEnumLiteral="cpg.ecore#//OperatingSystem/WindowsServer2008"/>
+      <genEnumLiterals ecoreEnumLiteral="cpg.ecore#//OperatingSystem/WindowServer2012"/>
+      <genEnumLiterals ecoreEnumLiteral="cpg.ecore#//OperatingSystem/Ubuntu12_04_3"/>
+      <genEnumLiterals ecoreEnumLiteral="cpg.ecore#//OperatingSystem/Ubuntu13_10"/>
+      <genEnumLiterals ecoreEnumLiteral="cpg.ecore#//OperatingSystem/RHEL6_5"/>
+      <genEnumLiterals ecoreEnumLiteral="cpg.ecore#//OperatingSystem/SUSE11"/>
+      <genEnumLiterals ecoreEnumLiteral="cpg.ecore#//OperatingSystem/Windows7"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="cpg.ecore#//Architecture">
+      <genEnumLiterals ecoreEnumLiteral="cpg.ecore#//Architecture/x86"/>
+      <genEnumLiterals ecoreEnumLiteral="cpg.ecore#//Architecture/x86_64"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="cpg.ecore#//NetworkPerformance">
+      <genEnumLiterals ecoreEnumLiteral="cpg.ecore#//NetworkPerformance/VeryLow"/>
+      <genEnumLiterals ecoreEnumLiteral="cpg.ecore#//NetworkPerformance/Low"/>
+      <genEnumLiterals ecoreEnumLiteral="cpg.ecore#//NetworkPerformance/Moderate"/>
+      <genEnumLiterals ecoreEnumLiteral="cpg.ecore#//NetworkPerformance/High"/>
+      <genEnumLiterals ecoreEnumLiteral="cpg.ecore#//NetworkPerformance/TenGigabit"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="cpg.ecore#//Application">
+      <genEnumLiterals ecoreEnumLiteral="cpg.ecore#//Application/SqlServer2008"/>
+      <genEnumLiterals ecoreEnumLiteral="cpg.ecore#//Application/MySQL"/>
+      <genEnumLiterals ecoreEnumLiteral="cpg.ecore#//Application/VisualStudio2012"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="cpg.ecore#//CPUSize">
+      <genEnumLiterals ecoreEnumLiteral="cpg.ecore#//CPUSize/Small"/>
+      <genEnumLiterals ecoreEnumLiteral="cpg.ecore#//CPUSize/Medium"/>
+      <genEnumLiterals ecoreEnumLiteral="cpg.ecore#//CPUSize/Large"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="cpg.ecore#//Template">
+      <genEnumLiterals ecoreEnumLiteral="cpg.ecore#//Template/Linux_64_2_32_7_5_H"/>
+      <genEnumLiterals ecoreEnumLiteral="cpg.ecore#//Template/Windows_64_8_68_8_H"/>
+    </genEnums>
     <genClasses ecoreClass="cpg.ecore#//Canvas">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cpg.ecore#//Canvas/environments"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cpg.ecore#//Canvas/instances"/>
@@ -15,6 +49,14 @@
     </genClasses>
     <genClasses ecoreClass="cpg.ecore#//Instance">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cpg.ecore#//Instance/Name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cpg.ecore#//Instance/NumVCPUs"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cpg.ecore#//Instance/CPUSize"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cpg.ecore#//Instance/NetworkPerformance"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cpg.ecore#//Instance/Memory"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cpg.ecore#//Instance/Storage"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cpg.ecore#//Instance/OperatingSystem"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cpg.ecore#//Instance/Architecture"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cpg.ecore#//Instance/Applications"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

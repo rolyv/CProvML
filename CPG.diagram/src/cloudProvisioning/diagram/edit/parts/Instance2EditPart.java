@@ -250,6 +250,38 @@ public class Instance2EditPart extends ShapeNodeEditPart {
 		 * @generated
 		 */
 		private WrappingLabel fFigureInstanceNameFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureInstanceNumVCPUsFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureInstanceCPUSizeFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureInstanceNetworkPerformanceFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureInstanceMemoryFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureInstanceStorageFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureInstanceOperatingSystemFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureInstanceArchitectureFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureInstanceApplicationsFigure;
 
 		/**
 		 * @generated
@@ -281,6 +313,54 @@ public class Instance2EditPart extends ShapeNodeEditPart {
 
 			this.add(fFigureInstanceNameFigure);
 
+			fFigureInstanceNumVCPUsFigure = new WrappingLabel();
+
+			fFigureInstanceNumVCPUsFigure.setText("<...>");
+
+			this.add(fFigureInstanceNumVCPUsFigure);
+
+			fFigureInstanceCPUSizeFigure = new WrappingLabel();
+
+			fFigureInstanceCPUSizeFigure.setText("<...>");
+
+			this.add(fFigureInstanceCPUSizeFigure);
+
+			fFigureInstanceNetworkPerformanceFigure = new WrappingLabel();
+
+			fFigureInstanceNetworkPerformanceFigure.setText("<...>");
+
+			this.add(fFigureInstanceNetworkPerformanceFigure);
+
+			fFigureInstanceMemoryFigure = new WrappingLabel();
+
+			fFigureInstanceMemoryFigure.setText("<...>");
+
+			this.add(fFigureInstanceMemoryFigure);
+
+			fFigureInstanceStorageFigure = new WrappingLabel();
+
+			fFigureInstanceStorageFigure.setText("<...>");
+
+			this.add(fFigureInstanceStorageFigure);
+
+			fFigureInstanceOperatingSystemFigure = new WrappingLabel();
+
+			fFigureInstanceOperatingSystemFigure.setText("<...>");
+
+			this.add(fFigureInstanceOperatingSystemFigure);
+
+			fFigureInstanceArchitectureFigure = new WrappingLabel();
+
+			fFigureInstanceArchitectureFigure.setText("<...>");
+
+			this.add(fFigureInstanceArchitectureFigure);
+
+			fFigureInstanceApplicationsFigure = new WrappingLabel();
+
+			fFigureInstanceApplicationsFigure.setText("<...>");
+
+			this.add(fFigureInstanceApplicationsFigure);
+
 		}
 
 		/**
@@ -288,6 +368,62 @@ public class Instance2EditPart extends ShapeNodeEditPart {
 		 */
 		public WrappingLabel getFigureInstanceNameFigure() {
 			return fFigureInstanceNameFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureInstanceNumVCPUsFigure() {
+			return fFigureInstanceNumVCPUsFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureInstanceCPUSizeFigure() {
+			return fFigureInstanceCPUSizeFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureInstanceNetworkPerformanceFigure() {
+			return fFigureInstanceNetworkPerformanceFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureInstanceMemoryFigure() {
+			return fFigureInstanceMemoryFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureInstanceStorageFigure() {
+			return fFigureInstanceStorageFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureInstanceOperatingSystemFigure() {
+			return fFigureInstanceOperatingSystemFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureInstanceArchitectureFigure() {
+			return fFigureInstanceArchitectureFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureInstanceApplicationsFigure() {
+			return fFigureInstanceApplicationsFigure;
 		}
 
 	}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:edu.fiu.cen5064.group1.cloudProvisioning="http://cen5064/group1/cloudProvisioning" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_cbB2wMM1EeOpF7Yec75z0Q" type="Cpg" name="default.cloudprovisioning_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_c-XNUMM1EeOpF7Yec75z0Q" type="2002" fontName="Ubuntu">
+    <children xmi:type="notation:DecorationNode" xmi:id="_c-ZCgMM1EeOpF7Yec75z0Q" type="5003"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_c-ZCgcM1EeOpF7Yec75z0Q" type="7001">
+      <children xmi:type="notation:Shape" xmi:id="_dyhOIMM1EeOpF7Yec75z0Q" type="3001" fontName="Ubuntu">
+        <children xmi:type="notation:DecorationNode" xmi:id="_dyh1MMM1EeOpF7Yec75z0Q" type="5004"/>
+        <element xmi:type="edu.fiu.cen5064.group1.cloudProvisioning:Instance" href="default.cloudprovisioning#//@environments.0/@instances.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dyhOIcM1EeOpF7Yec75z0Q" x="20" y="7"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_ixTcUMM1EeOpF7Yec75z0Q" type="3001" fontName="Ubuntu">
+        <children xmi:type="notation:DecorationNode" xmi:id="_ixUDYMM1EeOpF7Yec75z0Q" type="5004"/>
+        <element xmi:type="edu.fiu.cen5064.group1.cloudProvisioning:Instance" href="default.cloudprovisioning#//@environments.0/@instances.1"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ixTcUcM1EeOpF7Yec75z0Q" x="22" y="70"/>
+      </children>
+    </children>
+    <element xmi:type="edu.fiu.cen5064.group1.cloudProvisioning:Environment" href="default.cloudprovisioning#//@environments.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_c-XNUcM1EeOpF7Yec75z0Q" x="54" y="162" width="427" height="223"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_cbB2wcM1EeOpF7Yec75z0Q"/>
+  <element xmi:type="edu.fiu.cen5064.group1.cloudProvisioning:Canvas" href="default.cloudprovisioning#/"/>
+</notation:Diagram>

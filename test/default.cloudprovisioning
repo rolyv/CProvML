@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<edu.fiu.cen5064.group1.cloudProvisioning:Canvas xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:edu.fiu.cen5064.group1.cloudProvisioning="http://cen5064/group1/cloudProvisioning">
+  <environments>
+    <instances Name="inst0"/>
+    <instances/>
+  </environments>
+</edu.fiu.cen5064.group1.cloudProvisioning:Canvas>
