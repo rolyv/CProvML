@@ -4,13 +4,68 @@
     xmlns:xmi="http://www.omg.org/XMI"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:gmfgen="http://www.eclipse.org/gmf/2009/GenModel">
+  <audits>
+    <categories
+        id="audits"
+        name="CPG Audits"
+        description="CPG Audits"
+        path="//@audits/@categories.0"
+        audits="//@audits/@rules.0 //@audits/@rules.1 //@audits/@rules.2"/>
+    <rules
+        name="Missing environment name check"
+        description="This check will detect when an environment name is not set"
+        id="environmentName"
+        rule="//@expressionProviders/@providers.0/@expressions.0"
+        message="Environment name must be specified."
+        category="//@audits/@categories.0">
+      <target
+          xsi:type="gmfgen:GenDomainElementTarget"
+          contextSelector="//@audits/@clientContexts.0">
+        <element
+            href="cpg.genmodel#//cloudProvisioning/Environment"/>
+      </target>
+    </rules>
+    <rules
+        name="Missing instance name check"
+        description="This check will detect when instance name is not specified"
+        id="instanceName"
+        rule="//@expressionProviders/@providers.0/@expressions.1"
+        message="Instance name must be specified"
+        category="//@audits/@categories.0">
+      <target
+          xsi:type="gmfgen:GenDomainElementTarget"
+          contextSelector="//@audits/@clientContexts.0">
+        <element
+            href="cpg.genmodel#//cloudProvisioning/Instance"/>
+      </target>
+    </rules>
+    <rules
+        name="Valid Instance memory"
+        description="This check detects if instance memory is non-positive"
+        id="instanceMemory"
+        rule="//@expressionProviders/@providers.0/@expressions.2"
+        message="Instance memory must be greater than 0."
+        category="//@audits/@categories.0">
+      <target
+          xsi:type="gmfgen:GenDomainElementTarget"
+          contextSelector="//@audits/@clientContexts.0">
+        <element
+            href="cpg.genmodel#//cloudProvisioning/Instance"/>
+      </target>
+    </rules>
+    <clientContexts
+        ruleTargets="//@audits/@rules.0/@target //@audits/@rules.1/@target //@audits/@rules.2/@target"/>
+  </audits>
   <diagram
       visualID="1000"
       editPartClassName="CanvasEditPart"
       itemSemanticEditPolicyClassName="CanvasItemSemanticEditPolicy"
       canonicalEditPolicyClassName="CanvasCanonicalEditPolicy"
       iconProviderPriority="Low"
-      validationProviderPriority="Low">
+      validationProviderPriority="Low"
+      validationEnabled="true"
+      validationDecorators="true"
+      validationDecoratorProviderPriority="Medium">
     <diagramRunTimeClass
         href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Diagram"/>
     <elementType
@@ -25,6 +80,7 @@
         visualID="3001"
         editPartClassName="InstanceEditPart"
         itemSemanticEditPolicyClassName="InstanceItemSemanticEditPolicy"
+        notationViewFactoryClassName="InstanceViewFactory"
         canonicalEditPolicyClassName="InstanceCanonicalEditPolicy"
         graphicalNodeEditPolicyClassName="InstanceGraphicalNodeEditPolicy"
         createCommandClassName="InstanceCreateCommand"
@@ -51,6 +107,7 @@
           visualID="5004"
           editPartClassName="InstanceNameEditPart"
           itemSemanticEditPolicyClassName="InstanceNameItemSemanticEditPolicy"
+          notationViewFactoryClassName="InstanceNameViewFactory"
           elementIcon="true">
         <diagramRunTimeClass
             href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
@@ -70,6 +127,7 @@
         visualID="2002"
         editPartClassName="EnvironmentEditPart"
         itemSemanticEditPolicyClassName="EnvironmentItemSemanticEditPolicy"
+        notationViewFactoryClassName="EnvironmentViewFactory"
         canonicalEditPolicyClassName="EnvironmentCanonicalEditPolicy"
         compartments="//@diagram/@compartments.0"
         graphicalNodeEditPolicyClassName="EnvironmentGraphicalNodeEditPolicy"
@@ -95,6 +153,7 @@
           visualID="5003"
           editPartClassName="EnvironmentNameEditPart"
           itemSemanticEditPolicyClassName="EnvironmentNameItemSemanticEditPolicy"
+          notationViewFactoryClassName="EnvironmentNameViewFactory"
           elementIcon="true">
         <diagramRunTimeClass
             href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
@@ -114,6 +173,7 @@
         visualID="7001"
         editPartClassName="EnvironmentEnvironmentCompartmentEditPart"
         itemSemanticEditPolicyClassName="EnvironmentEnvironmentCompartmentItemSemanticEditPolicy"
+        notationViewFactoryClassName="EnvironmentEnvironmentCompartmentViewFactory"
         canonicalEditPolicyClassName="EnvironmentEnvironmentCompartmentCanonicalEditPolicy"
         childNodes="//@diagram/@childNodes.0"
         title="EnvironmentCompartment"
@@ -424,6 +484,20 @@
   </application>
   <domainGenModel
       href="cpg.genmodel#/"/>
+  <expressionProviders>
+    <providers
+        xsi:type="gmfgen:GenExpressionInterpreter">
+      <expressions
+          xsi:type="gmfgen:GenConstraint"
+          body="self.Name.size() > 0"/>
+      <expressions
+          xsi:type="gmfgen:GenConstraint"
+          body="self.Name.size() > 0"/>
+      <expressions
+          xsi:type="gmfgen:GenConstraint"
+          body="self.Memory > 0"/>
+    </providers>
+  </expressionProviders>
   <labelParsers
       extensibleViaService="true">
     <implementations

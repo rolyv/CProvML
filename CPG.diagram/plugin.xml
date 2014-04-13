@@ -100,6 +100,15 @@
    </extension>
 
 
+   <extension id="validationDecoratorProvider" name="ValidationDecorations" point="org.eclipse.gmf.runtime.diagram.ui.decoratorProviders">
+      <?gmfgen generated="true"?>
+      <decoratorProvider class="cloudProvisioning.diagram.providers.CpgValidationDecoratorProvider">
+         <Priority name="Medium"/>
+         <object class="org.eclipse.gmf.runtime.diagram.ui.editparts.IPrimaryEditPart(org.eclipse.gmf.runtime.diagram.ui)" id="PRIMARY_VIEW"/>
+         <context decoratorTargets="PRIMARY_VIEW"/>
+      </decoratorProvider>
+   </extension>
+
    <extension point="org.eclipse.core.runtime.preferences" id="prefs">
       <?gmfgen generated="true"?>
       <initializer class="cloudProvisioning.diagram.preferences.DiagramPreferenceInitializer"/>
@@ -384,6 +393,62 @@
          </action>
       </actionSet>
    </extension>
+   <extension point="org.eclipse.emf.validation.constraintProviders">
+      <?gmfgen generated="true"?>
+            <category id="audits" mandatory="false" name="CPG Audits">
+         <![CDATA[CPG Audits]]>
+      </category>
+      <constraintProvider cache="true">
+         <package namespaceUri="http://cen5064/group1/cloudProvisioning"/>
+               <constraints categories="audits">
+                  <constraint id="environmentName"
+            lang="OCL"
+            name="Missing environment name check"
+            mode="Batch"
+            severity="ERROR" statusCode="200">
+            <![CDATA[self.Name.size() > 0]]>
+            <description><![CDATA[This check will detect when an environment name is not set]]></description>
+            <message><![CDATA[Environment name must be specified.]]></message>
+            <target class="cloudProvisioning.Environment"/>
+         </constraint>
+                  <constraint id="instanceName"
+            lang="OCL"
+            name="Missing instance name check"
+            mode="Batch"
+            severity="ERROR" statusCode="200">
+            <![CDATA[self.Name.size() > 0]]>
+            <description><![CDATA[This check will detect when instance name is not specified]]></description>
+            <message><![CDATA[Instance name must be specified]]></message>
+            <target class="cloudProvisioning.Instance"/>
+         </constraint>
+                  <constraint id="instanceMemory"
+            lang="OCL"
+            name="Valid Instance memory"
+            mode="Batch"
+            severity="ERROR" statusCode="200">
+            <![CDATA[self.Memory > 0]]>
+            <description><![CDATA[This check detects if instance memory is non-positive]]></description>
+            <message><![CDATA[Instance memory must be greater than 0.]]></message>
+            <target class="cloudProvisioning.Instance"/>
+         </constraint>
+                  </constraints>
+      </constraintProvider>
+   </extension>
+
+   <extension point="org.eclipse.emf.validation.constraintBindings">
+      <?gmfgen generated="true"?>
+      <clientContext default="false" id="CPG.diagramDefaultCtx">
+         <selector class="cloudProvisioning.diagram.providers.CpgValidationProvider$DefaultCtx"/>
+      </clientContext>
+      <binding context="CPG.diagramDefaultCtx">
+                  <constraint ref="CPG.diagram.environmentName"/>
+                  <constraint ref="CPG.diagram.instanceName"/>
+                  <constraint ref="CPG.diagram.instanceMemory"/>
+               </binding>
+
+   </extension>
+
+
    <extension point="org.eclipse.ui.commands" id="update-cmd">
       <?gmfgen generated="true"?>
       <command

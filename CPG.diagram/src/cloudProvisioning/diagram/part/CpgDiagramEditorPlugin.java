@@ -59,6 +59,11 @@ public class CpgDiagramEditorPlugin extends AbstractUIPlugin {
 	/**
 	 * @generated
 	 */
+	private cloudProvisioning.diagram.expressions.CpgOCLFactory oclFactory;
+
+	/**
+	 * @generated
+	 */
 	public CpgDiagramEditorPlugin() {
 	}
 
@@ -80,6 +85,7 @@ public class CpgDiagramEditorPlugin extends AbstractUIPlugin {
 		adapterFactory.dispose();
 		adapterFactory = null;
 		initializers = null;
+		oclFactory = null;
 		instance = null;
 		super.stop(context);
 	}
@@ -210,6 +216,21 @@ public class CpgDiagramEditorPlugin extends AbstractUIPlugin {
 	public void setElementInitializers(
 			cloudProvisioning.diagram.providers.ElementInitializers i) {
 		this.initializers = i;
+	}
+
+	/**
+	 * @generated
+	 */
+	public cloudProvisioning.diagram.expressions.CpgOCLFactory getCpgOCLFactory() {
+		return oclFactory;
+	}
+
+	/**
+	 * @generated
+	 */
+	public void setCpgOCLFactory(
+			cloudProvisioning.diagram.expressions.CpgOCLFactory f) {
+		this.oclFactory = f;
 	}
 
 	/**
