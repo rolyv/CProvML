@@ -8,14 +8,63 @@
     		<instances>
     		<xsl:for-each select="instances">
 		      <instance 
-		        Name="{@Name}" 
-		        NumVCPUs="{@NumVCPUs}"
-		        CPUSize="{@CPUSize}" 
-		        NetworkPerformance="{@NetworkPerformance}"
-		        Memory="{@Memory}"
-		        Storage="{@Storage}"
-		        OperatingSystem="{@OperatingSystem}"
-		        Architecture="{@Architecture}">
+		        Name="{@Name}">
+		        <xsl:attribute name="NumVCPUs">
+		        	<xsl:choose>
+		        		<xsl:when test="@NumVCPUs!=''">
+		        			<xsl:value-of select="@NumVCPUs" />
+		        		</xsl:when>
+		        		<xsl:otherwise>0</xsl:otherwise>
+		        	</xsl:choose>
+		        </xsl:attribute>
+		        <xsl:attribute name="CPUSize">
+		        	<xsl:choose>
+		        		<xsl:when test="@CPUSize!=''">
+		        			<xsl:value-of select="@CPUSize" />
+		        		</xsl:when>
+		        		<xsl:otherwise>Small</xsl:otherwise>
+		        	</xsl:choose>
+		        </xsl:attribute>
+		        <xsl:attribute name="NetworkPerformance">
+		        	<xsl:choose>
+		        		<xsl:when test="@NetworkPerformance!=''">
+		        			<xsl:value-of select="@NetworkPerformance" />
+		        		</xsl:when>
+		        		<xsl:otherwise>VeryLow</xsl:otherwise>
+		        	</xsl:choose>
+		        </xsl:attribute>
+		        <xsl:attribute name="Memory">
+		        	<xsl:choose>
+		        		<xsl:when test="@Memory!=''">
+		        			<xsl:value-of select="@Memory" />
+		        		</xsl:when>
+		        		<xsl:otherwise>0.0</xsl:otherwise>
+		        	</xsl:choose>
+		        </xsl:attribute>
+		        <xsl:attribute name="Storage">
+		        	<xsl:choose>
+		        		<xsl:when test="@Storage!=''">
+		        			<xsl:value-of select="@Storage" />
+		        		</xsl:when>
+		        		<xsl:otherwise>0.0</xsl:otherwise>
+		        	</xsl:choose>
+		        </xsl:attribute>
+		        <xsl:attribute name="OperatingSystem">
+		        	<xsl:choose>
+		        		<xsl:when test="@OperatingSystem!=''">
+		        			<xsl:value-of select="@OperatingSystem" />
+		        		</xsl:when>
+		        		<xsl:otherwise>WindowsServer2008</xsl:otherwise>
+		        	</xsl:choose>
+		        </xsl:attribute>
+		        <xsl:attribute name="Architecture">
+		        	<xsl:choose>
+		        		<xsl:when test="@Architecture!=''">
+		        			<xsl:value-of select="@Architecture" />		        			
+	        			</xsl:when>
+	        			<xsl:otherwise>x86</xsl:otherwise>
+		        	</xsl:choose>
+		        </xsl:attribute>
 	        	<applications>
 		        <xsl:for-each select="Applications">
 		          <application><xsl:value-of select="."/></application>

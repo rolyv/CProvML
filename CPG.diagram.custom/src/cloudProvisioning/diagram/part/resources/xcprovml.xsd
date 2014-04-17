@@ -1,84 +1,68 @@
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   
-  <xs:attribute name="NumVCPUs">
-    <xs:simpleType>
+  <xs:simpleType name="NumVCPUs">
 	<xs:restriction base="xs:integer">
 	  <xs:minInclusive value="1"/>
 	  <xs:maxInclusive value="32"/>
 	</xs:restriction>
-    </xs:simpleType>
-  </xs:attribute>
-
-  <xs:attribute name="Memory">
-    <xs:simpleType>
+  </xs:simpleType>
+  
+  <xs:simpleType name="Memory">
 	<xs:restriction base="xs:double">
 	  <xs:minInclusive value="1"/>
 	  <xs:maxInclusive value="245"/>
 	</xs:restriction>
-    </xs:simpleType>
-  </xs:attribute>
-  
-  <xs:attribute name="Storage">
-    <xs:simpleType>
-	<xs:restriction base="xs:double">
-	  <xs:minInclusive value="1"/>
-	  <xs:maxInclusive value="2048"/>
-	</xs:restriction>
-    </xs:simpleType>
-  </xs:attribute>
-  
-  <xs:attribute name="CPUSize">
-  	<xs:simpleType>
-  		<xs:restriction base="xs:string">
+  </xs:simpleType>
+	  
+	<xs:simpleType name="Storage">
+		<xs:restriction base="xs:double">
+		  <xs:minInclusive value="1"/>
+		  <xs:maxInclusive value="2048"/>
+		</xs:restriction>
+	</xs:simpleType>
+	  
+	<xs:simpleType name="CPUSize">
+		<xs:restriction base="xs:string">
 	      <xs:enumeration value="Small"/>
 	      <xs:enumeration value="Medium"/>
 	      <xs:enumeration value="Large"/>
 	    </xs:restriction>
-  	</xs:simpleType>
-  </xs:attribute>
-  
-  <xs:attribute name="NetworkPerformance">
-  	<xs:simpleType>
-  		<xs:restriction base="xs:string">
+	</xs:simpleType>
+	  
+	<xs:simpleType name="NetworkPerformance">
+		<xs:restriction base="xs:string">
 	      <xs:enumeration value="VeryLow"/>
 	      <xs:enumeration value="Low"/>
 	      <xs:enumeration value="Moderate"/>
 	      <xs:enumeration value="High"/>
 	      <xs:enumeration value="TenGigabit"/>
 	    </xs:restriction>
-  	</xs:simpleType>
-  </xs:attribute>
+	</xs:simpleType>
+	  
+  <xs:simpleType name="OperatingSystem">
+  	<xs:restriction base="xs:string">
+  		<xs:enumeration value="WindowsServer2008"/>
+		<xs:enumeration value="WindowServer2012"/>
+		<xs:enumeration value="Ubuntu12_04_3"/>
+		<xs:enumeration value="Ubuntu13_10"/>
+		<xs:enumeration value="RHEL6_5"/>
+		<xs:enumeration value="SUSE11"/>
+		<xs:enumeration value="Windows7"/>
+	</xs:restriction>
+  </xs:simpleType>
   
-  <xs:attribute name="OperatingSystem">
-  	<xs:simpleType>
-  		<xs:restriction base="xs:string">
-  			<xs:enumeration value="WindowsServer2008"/>
-		    <xs:enumeration value="WindowServer2012"/>
-		    <xs:enumeration value="Ubuntu12_04_3"/>
-		    <xs:enumeration value="Ubuntu13_10"/>
-		    <xs:enumeration value="RHEL6_5"/>
-		    <xs:enumeration value="SUSE11"/>
-		    <xs:enumeration value="Windows7"/>
-	    </xs:restriction>
-  	</xs:simpleType>
-  </xs:attribute>
-  
-  <xs:attribute name="Architecture">
-  	<xs:simpleType>
-  		<xs:restriction base="xs:string">
-  			<xs:enumeration value="x86"/>
+	<xs:simpleType name="Architecture">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="x86"/>
 		    <xs:enumeration value="x86_64"/>
 	    </xs:restriction>
-  	</xs:simpleType>
-  </xs:attribute>
+	</xs:simpleType>
   
-  <xs:attribute name="Name">
-  	<xs:simpleType>
+  	<xs:simpleType name="Name">
   		<xs:restriction base="xs:string">
   			<xs:minLength value="1" />
   		</xs:restriction>
   	</xs:simpleType>
-  </xs:attribute>
   
   <xs:element name="environments">
     <xs:complexType>
@@ -100,21 +84,21 @@
                             </xs:complexType>
                           </xs:element>
                         </xs:sequence>
-                        <xs:attribute ref="Name" use="required"/>
-                        <xs:attribute ref="NumVCPUs" use="required" />
-                        <xs:attribute ref="CPUSize" use="required"/>
-                        <xs:attribute ref="NetworkPerformance" use="required"/>
-                        <xs:attribute ref="Memory" use="required"/>
-                        <xs:attribute ref="Storage" use="required"/>
-                        <xs:attribute ref="OperatingSystem" use="required"/>
-                        <xs:attribute ref="Architecture" use="required"/>
+                        <xs:attribute name="Name" type="Name" use="required"/>
+                        <xs:attribute name="NumVCPUs" type="NumVCPUs" use="required" />
+                        <xs:attribute name="CPUSize" type="CPUSize" use="required"/>
+                        <xs:attribute name="NetworkPerformance" type="NetworkPerformance" use="required"/>
+                        <xs:attribute name="Memory" type="Memory" use="required"/>
+                        <xs:attribute name="Storage" type="Storage" use="required"/>
+                        <xs:attribute name="OperatingSystem" type="OperatingSystem" use="required"/>
+                        <xs:attribute name="Architecture" type="Architecture" use="required"/>
                       </xs:complexType>
                     </xs:element>
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
-            <xs:attribute ref="Name" use="required"/>
+            <xs:attribute name="Name" type="Name" use="required"/>
           </xs:complexType>
         </xs:element>
       </xs:sequence>
