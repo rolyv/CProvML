@@ -3,11 +3,9 @@ package cloudProvisioning.diagram.edit.policies;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Set;
 
 import org.eclipse.core.runtime.IAdaptable;
 import org.eclipse.emf.ecore.EObject;
@@ -32,11 +30,6 @@ public class CanvasCanonicalEditPolicy extends CanonicalEditPolicy {
 	/**
 	 * @generated
 	 */
-	private Set<EStructuralFeature> myFeaturesToSynchronize;
-
-	/**
-	 * @generated
-	 */
 	protected void refreshOnActivate() {
 		// Need to activate editpart children before invoking the canonical refresh for EditParts to add event listeners
 		List<?> c = getHost().getChildren();
@@ -49,17 +42,9 @@ public class CanvasCanonicalEditPolicy extends CanonicalEditPolicy {
 	/**
 	 * @generated
 	 */
-	protected Set getFeaturesToSynchronize() {
-		if (myFeaturesToSynchronize == null) {
-			myFeaturesToSynchronize = new HashSet<EStructuralFeature>();
-			myFeaturesToSynchronize
-					.add(cloudProvisioning.CloudProvisioningPackage.eINSTANCE
-							.getCanvas_Instances());
-			myFeaturesToSynchronize
-					.add(cloudProvisioning.CloudProvisioningPackage.eINSTANCE
-							.getCanvas_Environments());
-		}
-		return myFeaturesToSynchronize;
+	protected EStructuralFeature getFeatureToSynchronize() {
+		return cloudProvisioning.CloudProvisioningPackage.eINSTANCE
+				.getCanvas_Environments();
 	}
 
 	/**
@@ -90,10 +75,8 @@ public class CanvasCanonicalEditPolicy extends CanonicalEditPolicy {
 	 * @generated
 	 */
 	private boolean isMyDiagramElement(View view) {
-		int visualID = cloudProvisioning.diagram.part.CpgVisualIDRegistry
+		return cloudProvisioning.diagram.edit.parts.EnvironmentEditPart.VISUAL_ID == cloudProvisioning.diagram.part.CpgVisualIDRegistry
 				.getVisualID(view);
-		return visualID == cloudProvisioning.diagram.edit.parts.InstanceEditPart.VISUAL_ID
-				|| visualID == cloudProvisioning.diagram.edit.parts.EnvironmentEditPart.VISUAL_ID;
 	}
 
 	/**

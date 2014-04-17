@@ -7,26 +7,6 @@
     xmlns:gmftool="http://www.eclipse.org/gmf/2005/ToolDefinition">
   <nodes>
     <containmentFeature
-        href="cpg.ecore#//Canvas/instances"/>
-    <ownedChild>
-      <domainMetaElement
-          href="cpg.ecore#//Instance"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="cpg.gmfgraph#InstanceName"/>
-        <features
-            href="cpg.ecore#//Instance/Name"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="cpg.gmftool#//@palette/@tools.0/@tools.1"/>
-      <diagramNode
-          href="cpg.gmfgraph#Instance"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
         href="cpg.ecore#//Canvas/environments"/>
     <ownedChild>
       <domainMetaElement
@@ -44,13 +24,29 @@
       <diagramNode
           href="cpg.gmfgraph#Environment"/>
       <children
-          compartment="//@nodes.1/@ownedChild/@compartments.0"
-          referencedChild="//@nodes.0/@ownedChild">
+          compartment="//@nodes.0/@ownedChild/@compartments.0"
+          referencedChild="//@nodes.0/@ownedChild/@children.0/@ownedChild">
         <containmentFeature
             href="cpg.ecore#//Environment/instances"/>
+        <ownedChild>
+          <domainMetaElement
+              href="cpg.ecore#//Instance"/>
+          <labelMappings
+              xsi:type="gmfmap:FeatureLabelMapping">
+            <diagramLabel
+                href="cpg.gmfgraph#InstanceName"/>
+            <features
+                href="cpg.ecore#//Instance/Name"/>
+          </labelMappings>
+          <tool
+              xsi:type="gmftool:CreationTool"
+              href="cpg.gmftool#//@palette/@tools.0/@tools.1"/>
+          <diagramNode
+              href="cpg.gmfgraph#Instance"/>
+        </ownedChild>
       </children>
       <compartments
-          children="//@nodes.1/@ownedChild/@children.0">
+          children="//@nodes.0/@ownedChild/@children.0">
         <compartment
             href="cpg.gmfgraph#EnvironmentCompartment"/>
       </compartments>
@@ -66,4 +62,100 @@
     <palette
         href="cpg.gmftool#//@palette"/>
   </diagram>
+  <audits
+      id="audits"
+      name="CPG Audits"
+      description="CPG Audits">
+    <audits
+        name="Missing environment name check"
+        description="This check will detect when an environment name is not set"
+        id="environmentName"
+        message="Environment name must be specified.">
+      <rule
+          body="self.Name.size() > 0"/>
+      <target
+          xsi:type="gmfmap:DomainElementTarget">
+        <element
+            href="cpg.ecore#//Environment"/>
+      </target>
+    </audits>
+    <audits
+        name="Missing instance name check"
+        description="This check will detect when instance name is not specified"
+        id="instanceName"
+        message="Instance name must be specified">
+      <rule
+          body="self.Name.size() > 0"/>
+      <target
+          xsi:type="gmfmap:DomainElementTarget">
+        <element
+            href="cpg.ecore#//Instance"/>
+      </target>
+    </audits>
+    <audits
+        name="Valid Instance memory"
+        description="This check detects if instance memory is valid"
+        id="instanceMemory"
+        message="Instance memory must be between 1 and 245 GB">
+      <rule
+          body="self.Memory > 0 and self.Memory &lt;= 245"/>
+      <target
+          xsi:type="gmfmap:DomainElementTarget">
+        <element
+            href="cpg.ecore#//Instance"/>
+      </target>
+    </audits>
+    <audits
+        name="Valid Instance storage"
+        description="This check detects if instance storage is valid"
+        id="instanceStorage"
+        message="Instance storage must be between 1 and 2048 GB">
+      <rule
+          body="self.Storage > 0 and self.Storage &lt;= 2048"/>
+      <target
+          xsi:type="gmfmap:DomainElementTarget">
+        <element
+            href="cpg.ecore#//Instance"/>
+      </target>
+    </audits>
+    <audits
+        name="Valid VCPU count"
+        description="This check detects when VCPU is invalid"
+        id="vcpuCheck"
+        message="Number of VCPUs must be between 1 and 32">
+      <rule
+          body="self.NumVCPUs > 0 and self.NumVCPUs &lt;= 32"/>
+      <target
+          xsi:type="gmfmap:DomainElementTarget">
+        <element
+            href="cpg.ecore#//Instance"/>
+      </target>
+    </audits>
+    <audits
+        name="Unique environment name"
+        description="This check detects environments with the same name"
+        id="uniqueEnvironmentName"
+        message="Environment names must be unique">
+      <rule
+          body="Environment.allInstances()->forAll(e1, e2 | e1 &lt;> e2 implies e1.Name &lt;> e2.Name)"/>
+      <target
+          xsi:type="gmfmap:DomainElementTarget">
+        <element
+            href="cpg.ecore#//Environment"/>
+      </target>
+    </audits>
+    <audits
+        name="Unique instance names per environment"
+        description="This check detects duplicate instance names"
+        id="uniqueInstanceName"
+        message="Instance names must be unique for a given environment">
+      <rule
+          body="self.instances->forAll(i1,i2 | i1 &lt;> i2 implies i1.Name &lt;> i2.Name)"/>
+      <target
+          xsi:type="gmfmap:DomainElementTarget">
+        <element
+            href="cpg.ecore#//Environment"/>
+      </target>
+    </audits>
+  </audits>
 </gmfmap:Mapping>

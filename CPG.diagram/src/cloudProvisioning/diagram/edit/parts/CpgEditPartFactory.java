@@ -25,14 +25,6 @@ public class CpgEditPartFactory implements EditPartFactory {
 				return new cloudProvisioning.diagram.edit.parts.CanvasEditPart(
 						view);
 
-			case cloudProvisioning.diagram.edit.parts.InstanceEditPart.VISUAL_ID:
-				return new cloudProvisioning.diagram.edit.parts.InstanceEditPart(
-						view);
-
-			case cloudProvisioning.diagram.edit.parts.InstanceNameEditPart.VISUAL_ID:
-				return new cloudProvisioning.diagram.edit.parts.InstanceNameEditPart(
-						view);
-
 			case cloudProvisioning.diagram.edit.parts.EnvironmentEditPart.VISUAL_ID:
 				return new cloudProvisioning.diagram.edit.parts.EnvironmentEditPart(
 						view);
@@ -41,12 +33,12 @@ public class CpgEditPartFactory implements EditPartFactory {
 				return new cloudProvisioning.diagram.edit.parts.EnvironmentNameEditPart(
 						view);
 
-			case cloudProvisioning.diagram.edit.parts.Instance2EditPart.VISUAL_ID:
-				return new cloudProvisioning.diagram.edit.parts.Instance2EditPart(
+			case cloudProvisioning.diagram.edit.parts.InstanceEditPart.VISUAL_ID:
+				return new cloudProvisioning.diagram.edit.parts.InstanceEditPart(
 						view);
 
-			case cloudProvisioning.diagram.edit.parts.InstanceName2EditPart.VISUAL_ID:
-				return new cloudProvisioning.diagram.edit.parts.InstanceName2EditPart(
+			case cloudProvisioning.diagram.edit.parts.InstanceNameEditPart.VISUAL_ID:
+				return new cloudProvisioning.diagram.edit.parts.InstanceNameEditPart(
 						view);
 
 			case cloudProvisioning.diagram.edit.parts.EnvironmentEnvironmentCompartmentEditPart.VISUAL_ID:

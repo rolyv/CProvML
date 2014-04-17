@@ -45,6 +45,38 @@
         <element xmi:type="ecore:EAttribute" href="cpg.ecore#//Instance/Name"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_CNnY0cKfEeO3BcZdVHzJ2A"/>
       </children>
+      <children xmi:type="notation:Node" xmi:id="_RZQSwMMyEeOeofuZG5TJxA" type="3001">
+        <element xmi:type="ecore:EAttribute" href="cpg.ecore#//Instance/NumVCPUs"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_RZQSwcMyEeOeofuZG5TJxA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_XYBXQMMyEeOeofuZG5TJxA" type="3001">
+        <element xmi:type="ecore:EAttribute" href="cpg.ecore#//Instance/CPUSize"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_XYBXQcMyEeOeofuZG5TJxA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_ZU6hwMMyEeOeofuZG5TJxA" type="3001">
+        <element xmi:type="ecore:EAttribute" href="cpg.ecore#//Instance/NetworkPerformance"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_ZU6hwcMyEeOeofuZG5TJxA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_ajoXoMMyEeOeofuZG5TJxA" type="3001">
+        <element xmi:type="ecore:EAttribute" href="cpg.ecore#//Instance/Memory"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_ajoXocMyEeOeofuZG5TJxA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_b39tUMMyEeOeofuZG5TJxA" type="3001">
+        <element xmi:type="ecore:EAttribute" href="cpg.ecore#//Instance/Storage"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_b39tUcMyEeOeofuZG5TJxA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_dA0y0MMyEeOeofuZG5TJxA" type="3001">
+        <element xmi:type="ecore:EAttribute" href="cpg.ecore#//Instance/OperatingSystem"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_dA0y0cMyEeOeofuZG5TJxA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_d-CpAMMyEeOeofuZG5TJxA" type="3001">
+        <element xmi:type="ecore:EAttribute" href="cpg.ecore#//Instance/Architecture"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_d-CpAcMyEeOeofuZG5TJxA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_fEFrEMMyEeOeofuZG5TJxA" type="3001">
+        <element xmi:type="ecore:EAttribute" href="cpg.ecore#//Instance/Applications"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_fEFrEcMyEeOeofuZG5TJxA"/>
+      </children>
       <styles xmi:type="notation:SortingStyle" xmi:id="_Ag9pwsKfEeO3BcZdVHzJ2A"/>
       <styles xmi:type="notation:FilteringStyle" xmi:id="_Ag9pw8KfEeO3BcZdVHzJ2A"/>
     </children>
@@ -59,6 +91,172 @@
     <element xmi:type="ecore:EClass" href="cpg.ecore#//Instance"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ag9CscKfEeO3BcZdVHzJ2A" x="316" y="323"/>
   </children>
+  <children xmi:type="notation:Shape" xmi:id="_bfpJYMMxEeOeofuZG5TJxA" type="2005" fontName="Ubuntu">
+    <children xmi:type="notation:DecorationNode" xmi:id="_bfpwcMMxEeOeofuZG5TJxA" type="5005"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_bfpwccMxEeOeofuZG5TJxA" type="7011">
+      <children xmi:type="notation:Node" xmi:id="_nRltcMMxEeOeofuZG5TJxA" type="3009">
+        <element xmi:type="ecore:EEnumLiteral" href="cpg.ecore#//OperatingSystem/WindowsServer2008"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_nRltccMxEeOeofuZG5TJxA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_pnxhsMMxEeOeofuZG5TJxA" type="3009">
+        <element xmi:type="ecore:EEnumLiteral" href="cpg.ecore#//OperatingSystem/WindowServer2012"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_pnxhscMxEeOeofuZG5TJxA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_qj82EMMxEeOeofuZG5TJxA" type="3009">
+        <element xmi:type="ecore:EEnumLiteral" href="cpg.ecore#//OperatingSystem/Ubuntu12_04_3"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_qj82EcMxEeOeofuZG5TJxA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_sMBAEMMxEeOeofuZG5TJxA" type="3009">
+        <element xmi:type="ecore:EEnumLiteral" href="cpg.ecore#//OperatingSystem/Ubuntu13_10"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_sMBAEcMxEeOeofuZG5TJxA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_tEe5IMMxEeOeofuZG5TJxA" type="3009">
+        <element xmi:type="ecore:EEnumLiteral" href="cpg.ecore#//OperatingSystem/RHEL6_5"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_tEe5IcMxEeOeofuZG5TJxA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_uJA4QMMxEeOeofuZG5TJxA" type="3009">
+        <element xmi:type="ecore:EEnumLiteral" href="cpg.ecore#//OperatingSystem/SUSE11"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_uJBfUMMxEeOeofuZG5TJxA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_va26oMMxEeOeofuZG5TJxA" type="3009">
+        <element xmi:type="ecore:EEnumLiteral" href="cpg.ecore#//OperatingSystem/Windows7"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_va26ocMxEeOeofuZG5TJxA"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_bfpwcsMxEeOeofuZG5TJxA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_bfpwc8MxEeOeofuZG5TJxA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_bfpwdMMxEeOeofuZG5TJxA" type="7012">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_bfpwdcMxEeOeofuZG5TJxA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_bfpwdsMxEeOeofuZG5TJxA"/>
+    </children>
+    <element xmi:type="ecore:EEnum" href="cpg.ecore#//OperatingSystem"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bfpJYcMxEeOeofuZG5TJxA" x="48"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_xhpA8MMxEeOeofuZG5TJxA" type="2005" fontName="Ubuntu">
+    <children xmi:type="notation:DecorationNode" xmi:id="_xhpA8sMxEeOeofuZG5TJxA" type="5005"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_xhpA88MxEeOeofuZG5TJxA" type="7011">
+      <children xmi:type="notation:Node" xmi:id="_yovL4MMxEeOeofuZG5TJxA" type="3009">
+        <element xmi:type="ecore:EEnumLiteral" href="cpg.ecore#//Architecture/x86"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_yovy8MMxEeOeofuZG5TJxA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_z-JfoMMxEeOeofuZG5TJxA" type="3009">
+        <element xmi:type="ecore:EEnumLiteral" href="cpg.ecore#//Architecture/x86_64"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_z-JfocMxEeOeofuZG5TJxA"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_xhpA9MMxEeOeofuZG5TJxA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_xhpA9cMxEeOeofuZG5TJxA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_xhpA9sMxEeOeofuZG5TJxA" type="7012">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_xhpA98MxEeOeofuZG5TJxA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_xhpA-MMxEeOeofuZG5TJxA"/>
+    </children>
+    <element xmi:type="ecore:EEnum" href="cpg.ecore#//Architecture"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xhpA8cMxEeOeofuZG5TJxA" x="251" y="3"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_6SZr8MMxEeOeofuZG5TJxA" type="2005" fontName="Ubuntu">
+    <children xmi:type="notation:DecorationNode" xmi:id="_6SZr8sMxEeOeofuZG5TJxA" type="5005"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_6SZr88MxEeOeofuZG5TJxA" type="7011">
+      <children xmi:type="notation:Node" xmi:id="_76RosMMxEeOeofuZG5TJxA" type="3009">
+        <element xmi:type="ecore:EEnumLiteral" href="cpg.ecore#//NetworkPerformance/VeryLow"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_76RoscMxEeOeofuZG5TJxA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_--YS4MMxEeOeofuZG5TJxA" type="3009">
+        <element xmi:type="ecore:EEnumLiteral" href="cpg.ecore#//NetworkPerformance/Low"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_--YS4cMxEeOeofuZG5TJxA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_A1bUEMMyEeOeofuZG5TJxA" type="3009">
+        <element xmi:type="ecore:EEnumLiteral" href="cpg.ecore#//NetworkPerformance/Moderate"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_A1bUEcMyEeOeofuZG5TJxA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_BuEzUMMyEeOeofuZG5TJxA" type="3009">
+        <element xmi:type="ecore:EEnumLiteral" href="cpg.ecore#//NetworkPerformance/High"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_BuEzUcMyEeOeofuZG5TJxA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_CVf_sMMyEeOeofuZG5TJxA" type="3009">
+        <element xmi:type="ecore:EEnumLiteral" href="cpg.ecore#//NetworkPerformance/TenGigabit"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_CVf_scMyEeOeofuZG5TJxA"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_6SZr9MMxEeOeofuZG5TJxA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_6SZr9cMxEeOeofuZG5TJxA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_6SZr9sMxEeOeofuZG5TJxA" type="7012">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_6SZr98MxEeOeofuZG5TJxA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_6SZr-MMxEeOeofuZG5TJxA"/>
+    </children>
+    <element xmi:type="ecore:EEnum" href="cpg.ecore#//NetworkPerformance"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6SZr8cMxEeOeofuZG5TJxA" x="396" y="15"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_DNFH8MMyEeOeofuZG5TJxA" type="2005" fontName="Ubuntu">
+    <children xmi:type="notation:DecorationNode" xmi:id="_DNFH8sMyEeOeofuZG5TJxA" type="5005"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_DNFH88MyEeOeofuZG5TJxA" type="7011">
+      <children xmi:type="notation:Node" xmi:id="_D_rCgMMyEeOeofuZG5TJxA" type="3009">
+        <element xmi:type="ecore:EEnumLiteral" href="cpg.ecore#//Application/SqlServer2008"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_D_rCgcMyEeOeofuZG5TJxA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_Fq08wMMyEeOeofuZG5TJxA" type="3009">
+        <element xmi:type="ecore:EEnumLiteral" href="cpg.ecore#//Application/MySQL"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Fq08wcMyEeOeofuZG5TJxA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_GUXB8MMyEeOeofuZG5TJxA" type="3009">
+        <element xmi:type="ecore:EEnumLiteral" href="cpg.ecore#//Application/VisualStudio2012"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_GUXB8cMyEeOeofuZG5TJxA"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_DNFvAMMyEeOeofuZG5TJxA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_DNFvAcMyEeOeofuZG5TJxA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_DNFvAsMyEeOeofuZG5TJxA" type="7012">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_DNFvA8MyEeOeofuZG5TJxA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_DNFvBMMyEeOeofuZG5TJxA"/>
+    </children>
+    <element xmi:type="ecore:EEnum" href="cpg.ecore#//Application"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DNFH8cMyEeOeofuZG5TJxA" x="597" y="17"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_HYAQQMMyEeOeofuZG5TJxA" type="2005" fontName="Ubuntu">
+    <children xmi:type="notation:DecorationNode" xmi:id="_HYAQQsMyEeOeofuZG5TJxA" type="5005"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_HYAQQ8MyEeOeofuZG5TJxA" type="7011">
+      <children xmi:type="notation:Node" xmi:id="_J0gu8MMyEeOeofuZG5TJxA" type="3009">
+        <element xmi:type="ecore:EEnumLiteral" href="cpg.ecore#//CPUSize/Small"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_J0gu8cMyEeOeofuZG5TJxA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_KXVvMMMyEeOeofuZG5TJxA" type="3009">
+        <element xmi:type="ecore:EEnumLiteral" href="cpg.ecore#//CPUSize/Medium"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_KXVvMcMyEeOeofuZG5TJxA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_LA3NUMMyEeOeofuZG5TJxA" type="3009">
+        <element xmi:type="ecore:EEnumLiteral" href="cpg.ecore#//CPUSize/Large"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_LA3NUcMyEeOeofuZG5TJxA"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_HYAQRMMyEeOeofuZG5TJxA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_HYAQRcMyEeOeofuZG5TJxA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_HYAQRsMyEeOeofuZG5TJxA" type="7012">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_HYAQR8MyEeOeofuZG5TJxA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_HYAQSMMyEeOeofuZG5TJxA"/>
+    </children>
+    <element xmi:type="ecore:EEnum" href="cpg.ecore#//CPUSize"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HYAQQcMyEeOeofuZG5TJxA" x="766" y="12"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_MBNQAMMyEeOeofuZG5TJxA" type="2005" fontName="Ubuntu">
+    <children xmi:type="notation:DecorationNode" xmi:id="_MBNQAsMyEeOeofuZG5TJxA" type="5005"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_MBN3EMMyEeOeofuZG5TJxA" type="7011">
+      <children xmi:type="notation:Node" xmi:id="_Mt6lAMMyEeOeofuZG5TJxA" type="3009">
+        <element xmi:type="ecore:EEnumLiteral" href="cpg.ecore#//Template/Linux_64_2_32_7_5_H"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Mt6lAcMyEeOeofuZG5TJxA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_O6DFYMMyEeOeofuZG5TJxA" type="3009">
+        <element xmi:type="ecore:EEnumLiteral" href="cpg.ecore#//Template/Windows_64_8_68_8_H"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_O6DFYcMyEeOeofuZG5TJxA"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_MBN3EcMyEeOeofuZG5TJxA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_MBN3EsMyEeOeofuZG5TJxA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_MBN3E8MyEeOeofuZG5TJxA" type="7012">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_MBN3FMMyEeOeofuZG5TJxA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_MBN3FcMyEeOeofuZG5TJxA"/>
+    </children>
+    <element xmi:type="ecore:EEnum" href="cpg.ecore#//Template"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MBNQAcMyEeOeofuZG5TJxA" x="658" y="162"/>
+  </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_zkyuQcKeEeO3BcZdVHzJ2A"/>
   <element xmi:type="ecore:EPackage" href="cpg.ecore#/"/>
   <edges xmi:type="notation:Connector" xmi:id="_bRtIYMKfEeO3BcZdVHzJ2A" type="4003" source="_0epucMKeEeO3BcZdVHzJ2A" target="_1ToOoMKeEeO3BcZdVHzJ2A">
@@ -66,7 +264,7 @@
       <layoutConstraint xmi:type="notation:Location" xmi:id="_bRtvc8KfEeO3BcZdVHzJ2A" x="12" y="-26"/>
     </children>
     <children xmi:type="notation:DecorationNode" xmi:id="_bRtvdMKfEeO3BcZdVHzJ2A" type="6004">
-      <layoutConstraint xmi:type="notation:Location" xmi:id="_bRtvdcKfEeO3BcZdVHzJ2A" x="6" y="30"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_bRtvdcKfEeO3BcZdVHzJ2A" x="7" y="14"/>
     </children>
     <styles xmi:type="notation:FontStyle" xmi:id="_bRtvcMKfEeO3BcZdVHzJ2A" fontName="Ubuntu"/>
     <element xmi:type="ecore:EReference" href="cpg.ecore#//Canvas/environments"/>
@@ -90,7 +288,7 @@
       <layoutConstraint xmi:type="notation:Location" xmi:id="_jBCyocKfEeO3BcZdVHzJ2A" x="1" y="-46"/>
     </children>
     <children xmi:type="notation:DecorationNode" xmi:id="_jBCyosKfEeO3BcZdVHzJ2A" type="6004">
-      <layoutConstraint xmi:type="notation:Location" xmi:id="_jBCyo8KfEeO3BcZdVHzJ2A" x="4" y="22"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_jBCyo8KfEeO3BcZdVHzJ2A" x="-14" y="25"/>
     </children>
     <styles xmi:type="notation:FontStyle" xmi:id="_jBCLkcKfEeO3BcZdVHzJ2A" fontName="Ubuntu"/>
     <element xmi:type="ecore:EReference" href="cpg.ecore#//Environment/instances"/>

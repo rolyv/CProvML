@@ -2,14 +2,21 @@
  */
 package cloudProvisioning.impl;
 
+import cloudProvisioning.Application;
+import cloudProvisioning.Architecture;
+import cloudProvisioning.CPUSize;
 import cloudProvisioning.Canvas;
 import cloudProvisioning.CloudProvisioningFactory;
 import cloudProvisioning.CloudProvisioningPackage;
 import cloudProvisioning.Environment;
 import cloudProvisioning.Instance;
 
+import cloudProvisioning.NetworkPerformance;
+import cloudProvisioning.OperatingSystem;
+import cloudProvisioning.Template;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
@@ -42,6 +49,48 @@ public class CloudProvisioningPackageImpl extends EPackageImpl implements CloudP
 	 * @generated
 	 */
 	private EClass instanceEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum operatingSystemEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum architectureEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum networkPerformanceEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum applicationEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum cpuSizeEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum templateEEnum = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -181,6 +230,132 @@ public class CloudProvisioningPackageImpl extends EPackageImpl implements CloudP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getInstance_NumVCPUs() {
+		return (EAttribute)instanceEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getInstance_CPUSize() {
+		return (EAttribute)instanceEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getInstance_NetworkPerformance() {
+		return (EAttribute)instanceEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getInstance_Memory() {
+		return (EAttribute)instanceEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getInstance_Storage() {
+		return (EAttribute)instanceEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getInstance_OperatingSystem() {
+		return (EAttribute)instanceEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getInstance_Architecture() {
+		return (EAttribute)instanceEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getInstance_Applications() {
+		return (EAttribute)instanceEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EEnum getOperatingSystem() {
+		return operatingSystemEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EEnum getArchitecture() {
+		return architectureEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EEnum getNetworkPerformance() {
+		return networkPerformanceEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EEnum getApplication() {
+		return applicationEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EEnum getCPUSize() {
+		return cpuSizeEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EEnum getTemplate() {
+		return templateEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public CloudProvisioningFactory getCloudProvisioningFactory() {
 		return (CloudProvisioningFactory)getEFactoryInstance();
 	}
@@ -214,6 +389,22 @@ public class CloudProvisioningPackageImpl extends EPackageImpl implements CloudP
 
 		instanceEClass = createEClass(INSTANCE);
 		createEAttribute(instanceEClass, INSTANCE__NAME);
+		createEAttribute(instanceEClass, INSTANCE__NUM_VCP_US);
+		createEAttribute(instanceEClass, INSTANCE__CPU_SIZE);
+		createEAttribute(instanceEClass, INSTANCE__NETWORK_PERFORMANCE);
+		createEAttribute(instanceEClass, INSTANCE__MEMORY);
+		createEAttribute(instanceEClass, INSTANCE__STORAGE);
+		createEAttribute(instanceEClass, INSTANCE__OPERATING_SYSTEM);
+		createEAttribute(instanceEClass, INSTANCE__ARCHITECTURE);
+		createEAttribute(instanceEClass, INSTANCE__APPLICATIONS);
+
+		// Create enums
+		operatingSystemEEnum = createEEnum(OPERATING_SYSTEM);
+		architectureEEnum = createEEnum(ARCHITECTURE);
+		networkPerformanceEEnum = createEEnum(NETWORK_PERFORMANCE);
+		applicationEEnum = createEEnum(APPLICATION);
+		cpuSizeEEnum = createEEnum(CPU_SIZE);
+		templateEEnum = createEEnum(TEMPLATE);
 	}
 
 	/**
@@ -256,6 +447,49 @@ public class CloudProvisioningPackageImpl extends EPackageImpl implements CloudP
 
 		initEClass(instanceEClass, Instance.class, "Instance", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getInstance_Name(), ecorePackage.getEString(), "Name", null, 0, 1, Instance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getInstance_NumVCPUs(), ecorePackage.getEInt(), "NumVCPUs", null, 0, 1, Instance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getInstance_CPUSize(), this.getCPUSize(), "CPUSize", null, 0, 1, Instance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getInstance_NetworkPerformance(), this.getNetworkPerformance(), "NetworkPerformance", null, 0, 1, Instance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getInstance_Memory(), ecorePackage.getEFloat(), "Memory", null, 0, 1, Instance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getInstance_Storage(), ecorePackage.getEFloat(), "Storage", null, 0, 1, Instance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getInstance_OperatingSystem(), this.getOperatingSystem(), "OperatingSystem", null, 0, 1, Instance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getInstance_Architecture(), this.getArchitecture(), "Architecture", null, 0, 1, Instance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getInstance_Applications(), this.getApplication(), "Applications", null, 0, -1, Instance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		// Initialize enums and add enum literals
+		initEEnum(operatingSystemEEnum, OperatingSystem.class, "OperatingSystem");
+		addEEnumLiteral(operatingSystemEEnum, OperatingSystem.WINDOWS_SERVER2008);
+		addEEnumLiteral(operatingSystemEEnum, OperatingSystem.WINDOW_SERVER2012);
+		addEEnumLiteral(operatingSystemEEnum, OperatingSystem.UBUNTU12_04_3);
+		addEEnumLiteral(operatingSystemEEnum, OperatingSystem.UBUNTU13_10);
+		addEEnumLiteral(operatingSystemEEnum, OperatingSystem.RHEL6_5);
+		addEEnumLiteral(operatingSystemEEnum, OperatingSystem.SUSE11);
+		addEEnumLiteral(operatingSystemEEnum, OperatingSystem.WINDOWS7);
+
+		initEEnum(architectureEEnum, Architecture.class, "Architecture");
+		addEEnumLiteral(architectureEEnum, Architecture.X86);
+		addEEnumLiteral(architectureEEnum, Architecture.X86_64);
+
+		initEEnum(networkPerformanceEEnum, NetworkPerformance.class, "NetworkPerformance");
+		addEEnumLiteral(networkPerformanceEEnum, NetworkPerformance.VERY_LOW);
+		addEEnumLiteral(networkPerformanceEEnum, NetworkPerformance.LOW);
+		addEEnumLiteral(networkPerformanceEEnum, NetworkPerformance.MODERATE);
+		addEEnumLiteral(networkPerformanceEEnum, NetworkPerformance.HIGH);
+		addEEnumLiteral(networkPerformanceEEnum, NetworkPerformance.TEN_GIGABIT);
+
+		initEEnum(applicationEEnum, Application.class, "Application");
+		addEEnumLiteral(applicationEEnum, Application.SQL_SERVER2008);
+		addEEnumLiteral(applicationEEnum, Application.MY_SQL);
+		addEEnumLiteral(applicationEEnum, Application.VISUAL_STUDIO2012);
+
+		initEEnum(cpuSizeEEnum, CPUSize.class, "CPUSize");
+		addEEnumLiteral(cpuSizeEEnum, CPUSize.SMALL);
+		addEEnumLiteral(cpuSizeEEnum, CPUSize.MEDIUM);
+		addEEnumLiteral(cpuSizeEEnum, CPUSize.LARGE);
+
+		initEEnum(templateEEnum, Template.class, "Template");
+		addEEnumLiteral(templateEEnum, Template.LINUX_64_232_75H);
+		addEEnumLiteral(templateEEnum, Template.WINDOWS_64_868_8H);
 
 		// Create resource
 		createResource(eNS_URI);

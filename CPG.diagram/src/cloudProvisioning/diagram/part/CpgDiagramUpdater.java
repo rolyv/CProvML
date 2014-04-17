@@ -39,18 +39,6 @@ public class CpgDiagramUpdater {
 		cloudProvisioning.Canvas modelElement = (cloudProvisioning.Canvas) view
 				.getElement();
 		LinkedList<cloudProvisioning.diagram.part.CpgNodeDescriptor> result = new LinkedList<cloudProvisioning.diagram.part.CpgNodeDescriptor>();
-		for (Iterator<?> it = modelElement.getInstances().iterator(); it
-				.hasNext();) {
-			cloudProvisioning.Instance childElement = (cloudProvisioning.Instance) it
-					.next();
-			int visualID = cloudProvisioning.diagram.part.CpgVisualIDRegistry
-					.getNodeVisualID(view, childElement);
-			if (visualID == cloudProvisioning.diagram.edit.parts.InstanceEditPart.VISUAL_ID) {
-				result.add(new cloudProvisioning.diagram.part.CpgNodeDescriptor(
-						childElement, visualID));
-				continue;
-			}
-		}
 		for (Iterator<?> it = modelElement.getEnvironments().iterator(); it
 				.hasNext();) {
 			cloudProvisioning.Environment childElement = (cloudProvisioning.Environment) it
@@ -87,7 +75,7 @@ public class CpgDiagramUpdater {
 					.next();
 			int visualID = cloudProvisioning.diagram.part.CpgVisualIDRegistry
 					.getNodeVisualID(view, childElement);
-			if (visualID == cloudProvisioning.diagram.edit.parts.Instance2EditPart.VISUAL_ID) {
+			if (visualID == cloudProvisioning.diagram.edit.parts.InstanceEditPart.VISUAL_ID) {
 				result.add(new cloudProvisioning.diagram.part.CpgNodeDescriptor(
 						childElement, visualID));
 				continue;
@@ -105,11 +93,9 @@ public class CpgDiagramUpdater {
 				.getVisualID(view)) {
 		case cloudProvisioning.diagram.edit.parts.CanvasEditPart.VISUAL_ID:
 			return getCanvas_1000ContainedLinks(view);
-		case cloudProvisioning.diagram.edit.parts.InstanceEditPart.VISUAL_ID:
-			return getInstance_2001ContainedLinks(view);
 		case cloudProvisioning.diagram.edit.parts.EnvironmentEditPart.VISUAL_ID:
 			return getEnvironment_2002ContainedLinks(view);
-		case cloudProvisioning.diagram.edit.parts.Instance2EditPart.VISUAL_ID:
+		case cloudProvisioning.diagram.edit.parts.InstanceEditPart.VISUAL_ID:
 			return getInstance_3001ContainedLinks(view);
 		}
 		return Collections.emptyList();
@@ -122,11 +108,9 @@ public class CpgDiagramUpdater {
 			View view) {
 		switch (cloudProvisioning.diagram.part.CpgVisualIDRegistry
 				.getVisualID(view)) {
-		case cloudProvisioning.diagram.edit.parts.InstanceEditPart.VISUAL_ID:
-			return getInstance_2001IncomingLinks(view);
 		case cloudProvisioning.diagram.edit.parts.EnvironmentEditPart.VISUAL_ID:
 			return getEnvironment_2002IncomingLinks(view);
-		case cloudProvisioning.diagram.edit.parts.Instance2EditPart.VISUAL_ID:
+		case cloudProvisioning.diagram.edit.parts.InstanceEditPart.VISUAL_ID:
 			return getInstance_3001IncomingLinks(view);
 		}
 		return Collections.emptyList();
@@ -139,11 +123,9 @@ public class CpgDiagramUpdater {
 			View view) {
 		switch (cloudProvisioning.diagram.part.CpgVisualIDRegistry
 				.getVisualID(view)) {
-		case cloudProvisioning.diagram.edit.parts.InstanceEditPart.VISUAL_ID:
-			return getInstance_2001OutgoingLinks(view);
 		case cloudProvisioning.diagram.edit.parts.EnvironmentEditPart.VISUAL_ID:
 			return getEnvironment_2002OutgoingLinks(view);
-		case cloudProvisioning.diagram.edit.parts.Instance2EditPart.VISUAL_ID:
+		case cloudProvisioning.diagram.edit.parts.InstanceEditPart.VISUAL_ID:
 			return getInstance_3001OutgoingLinks(view);
 		}
 		return Collections.emptyList();
@@ -153,14 +135,6 @@ public class CpgDiagramUpdater {
 	 * @generated
 	 */
 	public static List<cloudProvisioning.diagram.part.CpgLinkDescriptor> getCanvas_1000ContainedLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<cloudProvisioning.diagram.part.CpgLinkDescriptor> getInstance_2001ContainedLinks(
 			View view) {
 		return Collections.emptyList();
 	}
@@ -184,14 +158,6 @@ public class CpgDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<cloudProvisioning.diagram.part.CpgLinkDescriptor> getInstance_2001IncomingLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
 	public static List<cloudProvisioning.diagram.part.CpgLinkDescriptor> getEnvironment_2002IncomingLinks(
 			View view) {
 		return Collections.emptyList();
@@ -201,14 +167,6 @@ public class CpgDiagramUpdater {
 	 * @generated
 	 */
 	public static List<cloudProvisioning.diagram.part.CpgLinkDescriptor> getInstance_3001IncomingLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<cloudProvisioning.diagram.part.CpgLinkDescriptor> getInstance_2001OutgoingLinks(
 			View view) {
 		return Collections.emptyList();
 	}

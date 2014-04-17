@@ -1,74 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<gmfgraph:Canvas
-    xmi:version="2.0"
-    xmlns:xmi="http://www.omg.org/XMI"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:gmfgraph="http://www.eclipse.org/gmf/2006/GraphicalDefinition"
-    name="cloudProvisioning">
-  <figures
-      name="Default">
-    <descriptors
-        name="EnvironmentFigure">
-      <actualFigure
-          xsi:type="gmfgraph:Rectangle"
-          name="EnvironmentFigure">
-        <layout
-            xsi:type="gmfgraph:BorderLayout"/>
-        <children
-            xsi:type="gmfgraph:Label"
-            name="EnvironmentNameFigure"
-            text="&lt;...>">
-          <layoutData
-              xsi:type="gmfgraph:BorderLayoutData"
-              alignment="BEGINNING"
-              vertical="true"/>
+<gmfgraph:Canvas xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmfgraph="http://www.eclipse.org/gmf/2006/GraphicalDefinition" name="cloudProvisioning">
+  <figures name="Default">
+    <descriptors name="EnvironmentFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="EnvironmentFigure">
+        <layout xsi:type="gmfgraph:BorderLayout"/>
+        <children xsi:type="gmfgraph:Label" name="EnvironmentNameFigure" text="&lt;...>">
+          <layoutData xsi:type="gmfgraph:BorderLayoutData" alignment="BEGINNING" vertical="true"/>
         </children>
-        <children
-            xsi:type="gmfgraph:Rectangle"
-            name="EnvironmentCompartmentFigure">
-          <layoutData
-              xsi:type="gmfgraph:BorderLayoutData"
-              vertical="true"/>
+        <children xsi:type="gmfgraph:Rectangle" name="EnvironmentCompartmentFigure">
+          <layoutData xsi:type="gmfgraph:BorderLayoutData" vertical="true"/>
         </children>
       </actualFigure>
-      <accessors
-          figure="//@figures.0/@descriptors.0/@actualFigure/@children.0"/>
-      <accessors
-          figure="//@figures.0/@descriptors.0/@actualFigure/@children.1"/>
+      <accessors figure="//@figures.0/@descriptors.0/@actualFigure/@children.0"/>
+      <accessors figure="//@figures.0/@descriptors.0/@actualFigure/@children.1"/>
     </descriptors>
-    <descriptors
-        name="InstanceFigure">
-      <actualFigure
-          xsi:type="gmfgraph:Rectangle"
-          name="InstanceFigure">
-        <layout
-            xsi:type="gmfgraph:FlowLayout"/>
-        <children
-            xsi:type="gmfgraph:Label"
-            name="InstanceNameFigure"
-            text="&lt;...>"/>
+    <descriptors name="InstanceFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="InstanceFigure">
+        <layout xsi:type="gmfgraph:FlowLayout"/>
+        <children xsi:type="gmfgraph:Label" name="InstanceNameFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="InstanceNumVCPUsFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="InstanceCPUSizeFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="InstanceNetworkPerformanceFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="InstanceMemoryFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="InstanceStorageFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="InstanceOperatingSystemFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="InstanceArchitectureFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="InstanceApplicationsFigure" text="&lt;...>"/>
       </actualFigure>
-      <accessors
-          figure="//@figures.0/@descriptors.1/@actualFigure/@children.0"/>
+      <accessors figure="//@figures.0/@descriptors.1/@actualFigure/@children.0"/>
+      <accessors figure="//@figures.0/@descriptors.1/@actualFigure/@children.1"/>
+      <accessors figure="//@figures.0/@descriptors.1/@actualFigure/@children.2"/>
+      <accessors figure="//@figures.0/@descriptors.1/@actualFigure/@children.3"/>
+      <accessors figure="//@figures.0/@descriptors.1/@actualFigure/@children.4"/>
+      <accessors figure="//@figures.0/@descriptors.1/@actualFigure/@children.5"/>
+      <accessors figure="//@figures.0/@descriptors.1/@actualFigure/@children.6"/>
+      <accessors figure="//@figures.0/@descriptors.1/@actualFigure/@children.7"/>
+      <accessors figure="//@figures.0/@descriptors.1/@actualFigure/@children.8"/>
     </descriptors>
   </figures>
-  <nodes
-      name="Environment"
-      figure="EnvironmentFigure"/>
-  <nodes
-      name="Instance"
-      figure="InstanceFigure"/>
-  <compartments
-      name="EnvironmentCompartment"
-      figure="EnvironmentFigure"
-      collapsible="true"
-      accessor="//@figures.0/@descriptors.0/@accessors.1"/>
-  <labels
-      name="EnvironmentName"
-      figure="EnvironmentFigure"
-      accessor="//@figures.0/@descriptors.0/@accessors.0"/>
-  <labels
-      name="InstanceName"
-      figure="InstanceFigure"
-      accessor="//@figures.0/@descriptors.1/@accessors.0"/>
+  <nodes name="Environment" figure="EnvironmentFigure"/>
+  <nodes name="Instance" figure="InstanceFigure"/>
+  <compartments name="EnvironmentCompartment" figure="EnvironmentFigure" collapsible="true" accessor="//@figures.0/@descriptors.0/@accessors.1"/>
+  <labels name="EnvironmentName" figure="EnvironmentFigure" accessor="//@figures.0/@descriptors.0/@accessors.0"/>
+  <labels name="InstanceName" figure="InstanceFigure" accessor="//@figures.0/@descriptors.1/@accessors.0"/>
+  <labels name="InstanceNumVCPUs" figure="InstanceFigure" accessor="//@figures.0/@descriptors.1/@accessors.1"/>
+  <labels name="InstanceCPUSize" figure="InstanceFigure" accessor="//@figures.0/@descriptors.1/@accessors.2"/>
+  <labels name="InstanceNetworkPerformance" figure="InstanceFigure" accessor="//@figures.0/@descriptors.1/@accessors.3"/>
+  <labels name="InstanceMemory" figure="InstanceFigure" accessor="//@figures.0/@descriptors.1/@accessors.4"/>
+  <labels name="InstanceStorage" figure="InstanceFigure" accessor="//@figures.0/@descriptors.1/@accessors.5"/>
+  <labels name="InstanceOperatingSystem" figure="InstanceFigure" accessor="//@figures.0/@descriptors.1/@accessors.6"/>
+  <labels name="InstanceArchitecture" figure="InstanceFigure" accessor="//@figures.0/@descriptors.1/@accessors.7"/>
+  <labels name="InstanceApplications" figure="InstanceFigure" accessor="//@figures.0/@descriptors.1/@accessors.8"/>
 </gmfgraph:Canvas>

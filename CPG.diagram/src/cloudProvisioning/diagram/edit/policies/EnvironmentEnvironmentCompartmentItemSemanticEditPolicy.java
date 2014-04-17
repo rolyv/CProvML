@@ -23,7 +23,7 @@ public class EnvironmentEnvironmentCompartmentItemSemanticEditPolicy extends
 	protected Command getCreateCommand(CreateElementRequest req) {
 		if (cloudProvisioning.diagram.providers.CpgElementTypes.Instance_3001 == req
 				.getElementType()) {
-			return getGEFWrapper(new cloudProvisioning.diagram.edit.commands.Instance2CreateCommand(
+			return getGEFWrapper(new cloudProvisioning.diagram.edit.commands.InstanceCreateCommand(
 					req));
 		}
 		return super.getCreateCommand(req);

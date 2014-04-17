@@ -4,13 +4,124 @@
     xmlns:xmi="http://www.omg.org/XMI"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:gmfgen="http://www.eclipse.org/gmf/2009/GenModel">
+  <audits>
+    <categories
+        id="audits"
+        name="CPG Audits"
+        description="CPG Audits"
+        path="//@audits/@categories.0"
+        audits="//@audits/@rules.0 //@audits/@rules.1 //@audits/@rules.2 //@audits/@rules.3 //@audits/@rules.4 //@audits/@rules.5 //@audits/@rules.6"/>
+    <rules
+        name="Missing environment name check"
+        description="This check will detect when an environment name is not set"
+        id="environmentName"
+        rule="//@expressionProviders/@providers.0/@expressions.0"
+        message="Environment name must be specified."
+        category="//@audits/@categories.0">
+      <target
+          xsi:type="gmfgen:GenDomainElementTarget"
+          contextSelector="//@audits/@clientContexts.0">
+        <element
+            href="cpg.genmodel#//cloudProvisioning/Environment"/>
+      </target>
+    </rules>
+    <rules
+        name="Missing instance name check"
+        description="This check will detect when instance name is not specified"
+        id="instanceName"
+        rule="//@expressionProviders/@providers.0/@expressions.1"
+        message="Instance name must be specified"
+        category="//@audits/@categories.0">
+      <target
+          xsi:type="gmfgen:GenDomainElementTarget"
+          contextSelector="//@audits/@clientContexts.0">
+        <element
+            href="cpg.genmodel#//cloudProvisioning/Instance"/>
+      </target>
+    </rules>
+    <rules
+        name="Valid Instance memory"
+        description="This check detects if instance memory is valid"
+        id="instanceMemory"
+        rule="//@expressionProviders/@providers.0/@expressions.2"
+        message="Instance memory must be between 1 and 245 GB"
+        category="//@audits/@categories.0">
+      <target
+          xsi:type="gmfgen:GenDomainElementTarget"
+          contextSelector="//@audits/@clientContexts.0">
+        <element
+            href="cpg.genmodel#//cloudProvisioning/Instance"/>
+      </target>
+    </rules>
+    <rules
+        name="Valid Instance storage"
+        description="This check detects if instance storage is valid"
+        id="instanceStorage"
+        rule="//@expressionProviders/@providers.0/@expressions.3"
+        message="Instance storage must be between 1 and 2048 GB"
+        category="//@audits/@categories.0">
+      <target
+          xsi:type="gmfgen:GenDomainElementTarget"
+          contextSelector="//@audits/@clientContexts.0">
+        <element
+            href="cpg.genmodel#//cloudProvisioning/Instance"/>
+      </target>
+    </rules>
+    <rules
+        name="Valid VCPU count"
+        description="This check detects when VCPU is invalid"
+        id="vcpuCheck"
+        rule="//@expressionProviders/@providers.0/@expressions.4"
+        message="Number of VCPUs must be between 1 and 32"
+        category="//@audits/@categories.0">
+      <target
+          xsi:type="gmfgen:GenDomainElementTarget"
+          contextSelector="//@audits/@clientContexts.0">
+        <element
+            href="cpg.genmodel#//cloudProvisioning/Instance"/>
+      </target>
+    </rules>
+    <rules
+        name="Unique environment name"
+        description="This check detects environments with the same name"
+        id="uniqueEnvironmentName"
+        rule="//@expressionProviders/@providers.0/@expressions.5"
+        message="Environment names must be unique"
+        category="//@audits/@categories.0">
+      <target
+          xsi:type="gmfgen:GenDomainElementTarget"
+          contextSelector="//@audits/@clientContexts.0">
+        <element
+            href="cpg.genmodel#//cloudProvisioning/Environment"/>
+      </target>
+    </rules>
+    <rules
+        name="Unique instance names per environment"
+        description="This check detects duplicate instance names"
+        id="uniqueInstanceName"
+        rule="//@expressionProviders/@providers.0/@expressions.6"
+        message="Instance names must be unique for a given environment"
+        category="//@audits/@categories.0">
+      <target
+          xsi:type="gmfgen:GenDomainElementTarget"
+          contextSelector="//@audits/@clientContexts.0">
+        <element
+            href="cpg.genmodel#//cloudProvisioning/Environment"/>
+      </target>
+    </rules>
+    <clientContexts
+        ruleTargets="//@audits/@rules.0/@target //@audits/@rules.1/@target //@audits/@rules.2/@target //@audits/@rules.3/@target //@audits/@rules.4/@target //@audits/@rules.5/@target //@audits/@rules.6/@target"/>
+  </audits>
   <diagram
       visualID="1000"
       editPartClassName="CanvasEditPart"
       itemSemanticEditPolicyClassName="CanvasItemSemanticEditPolicy"
       canonicalEditPolicyClassName="CanvasCanonicalEditPolicy"
       iconProviderPriority="Low"
-      validationProviderPriority="Low">
+      validationProviderPriority="Low"
+      validationEnabled="true"
+      validationDecorators="true"
+      validationDecoratorProviderPriority="Medium">
     <diagramRunTimeClass
         href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Diagram"/>
     <elementType
@@ -23,59 +134,13 @@
         href="cpg.genmodel#//cloudProvisioning/Canvas"/>
     <childNodes
         visualID="3001"
-        editPartClassName="Instance2EditPart"
-        itemSemanticEditPolicyClassName="Instance2ItemSemanticEditPolicy"
-        notationViewFactoryClassName="InstanceViewFactory"
-        canonicalEditPolicyClassName="Instance2CanonicalEditPolicy"
-        graphicalNodeEditPolicyClassName="Instance2GraphicalNodeEditPolicy"
-        createCommandClassName="Instance2CreateCommand"
-        containers="//@diagram/@compartments.0">
-      <diagramRunTimeClass
-          href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
-      <elementType
-          xsi:type="gmfgen:SpecializationType"
-          metamodelType="//@diagram/@topLevelNodes.0/@elementType"/>
-      <viewmap
-          xsi:type="gmfgen:InnerClassViewmap"
-          layoutType="FLOW_LAYOUT"
-          className="InstanceFigure"
-          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class InstanceFigure extends org.eclipse.draw2d.RectangleFigure {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureInstanceNameFigure; &#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public InstanceFigure() {&#xA;&#x9;&#x9;&#xA;&#x9;org.eclipse.draw2d.FlowLayout layoutThis = new org.eclipse.draw2d.FlowLayout();&#xA;&#x9;layoutThis.setStretchMinorAxis(false);&#xA;&#x9;layoutThis.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#xA;&#x9;layoutThis.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#x9;layoutThis.setMajorSpacing(5);&#xA;&#x9;layoutThis.setMinorSpacing(5);&#xA;&#x9;layoutThis.setHorizontal(true);&#xA;&#xA;&#x9;this.setLayoutManager(layoutThis);&#xA;&#xA;&#x9;&#x9;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureInstanceNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureInstanceNameFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureInstanceNameFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureInstanceNameFigure() {&#xA;&#x9;&#x9;return fFigureInstanceNameFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
-      <modelFacet>
-        <metaClass
-            href="cpg.genmodel#//cloudProvisioning/Instance"/>
-        <containmentMetaFeature
-            href="cpg.genmodel#//cloudProvisioning/Environment/instances"/>
-        <childMetaFeature
-            href="cpg.genmodel#//cloudProvisioning/Environment/instances"/>
-      </modelFacet>
-      <labels
-          visualID="5002"
-          editPartClassName="InstanceName2EditPart"
-          itemSemanticEditPolicyClassName="InstanceName2ItemSemanticEditPolicy"
-          notationViewFactoryClassName="InstanceNameViewFactory"
-          elementIcon="true">
-        <diagramRunTimeClass
-            href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
-        <viewmap
-            xsi:type="gmfgen:ParentAssignedViewmap"
-            getterName="getFigureInstanceNameFigure"
-            figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
-        <modelFacet
-            xsi:type="gmfgen:FeatureLabelModelFacet"
-            parser="//@labelParsers/@implementations.0">
-          <metaFeatures
-              href="cpg.genmodel#//cloudProvisioning/Instance/Name"/>
-        </modelFacet>
-      </labels>
-    </childNodes>
-    <topLevelNodes
-        visualID="2001"
         editPartClassName="InstanceEditPart"
         itemSemanticEditPolicyClassName="InstanceItemSemanticEditPolicy"
         notationViewFactoryClassName="InstanceViewFactory"
         canonicalEditPolicyClassName="InstanceCanonicalEditPolicy"
         graphicalNodeEditPolicyClassName="InstanceGraphicalNodeEditPolicy"
-        createCommandClassName="InstanceCreateCommand">
+        createCommandClassName="InstanceCreateCommand"
+        containers="//@diagram/@compartments.0">
       <diagramRunTimeClass
           href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
       <elementType
@@ -85,17 +150,17 @@
           xsi:type="gmfgen:InnerClassViewmap"
           layoutType="FLOW_LAYOUT"
           className="InstanceFigure"
-          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class InstanceFigure extends org.eclipse.draw2d.RectangleFigure {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureInstanceNameFigure; &#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public InstanceFigure() {&#xA;&#x9;&#x9;&#xA;&#x9;org.eclipse.draw2d.FlowLayout layoutThis = new org.eclipse.draw2d.FlowLayout();&#xA;&#x9;layoutThis.setStretchMinorAxis(false);&#xA;&#x9;layoutThis.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#xA;&#x9;layoutThis.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#x9;layoutThis.setMajorSpacing(5);&#xA;&#x9;layoutThis.setMinorSpacing(5);&#xA;&#x9;layoutThis.setHorizontal(true);&#xA;&#xA;&#x9;this.setLayoutManager(layoutThis);&#xA;&#xA;&#x9;&#x9;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureInstanceNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureInstanceNameFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureInstanceNameFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureInstanceNameFigure() {&#xA;&#x9;&#x9;return fFigureInstanceNameFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class InstanceFigure extends org.eclipse.draw2d.RectangleFigure {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureInstanceNameFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureInstanceNumVCPUsFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureInstanceCPUSizeFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureInstanceNetworkPerformanceFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureInstanceMemoryFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureInstanceStorageFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureInstanceOperatingSystemFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureInstanceArchitectureFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureInstanceApplicationsFigure; &#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public InstanceFigure() {&#xA;&#x9;&#x9;&#xA;&#x9;org.eclipse.draw2d.FlowLayout layoutThis = new org.eclipse.draw2d.FlowLayout();&#xA;&#x9;layoutThis.setStretchMinorAxis(false);&#xA;&#x9;layoutThis.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#xA;&#x9;layoutThis.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#x9;layoutThis.setMajorSpacing(5);&#xA;&#x9;layoutThis.setMinorSpacing(5);&#xA;&#x9;layoutThis.setHorizontal(true);&#xA;&#xA;&#x9;this.setLayoutManager(layoutThis);&#xA;&#xA;&#x9;&#x9;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureInstanceNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureInstanceNameFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureInstanceNameFigure);&#xA;&#xA;&#xA;&#xA;fFigureInstanceNumVCPUsFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureInstanceNumVCPUsFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureInstanceNumVCPUsFigure);&#xA;&#xA;&#xA;&#xA;fFigureInstanceCPUSizeFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureInstanceCPUSizeFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureInstanceCPUSizeFigure);&#xA;&#xA;&#xA;&#xA;fFigureInstanceNetworkPerformanceFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureInstanceNetworkPerformanceFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureInstanceNetworkPerformanceFigure);&#xA;&#xA;&#xA;&#xA;fFigureInstanceMemoryFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureInstanceMemoryFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureInstanceMemoryFigure);&#xA;&#xA;&#xA;&#xA;fFigureInstanceStorageFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureInstanceStorageFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureInstanceStorageFigure);&#xA;&#xA;&#xA;&#xA;fFigureInstanceOperatingSystemFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureInstanceOperatingSystemFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureInstanceOperatingSystemFigure);&#xA;&#xA;&#xA;&#xA;fFigureInstanceArchitectureFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureInstanceArchitectureFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureInstanceArchitectureFigure);&#xA;&#xA;&#xA;&#xA;fFigureInstanceApplicationsFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureInstanceApplicationsFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureInstanceApplicationsFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureInstanceNameFigure() {&#xA;&#x9;&#x9;return fFigureInstanceNameFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureInstanceNumVCPUsFigure() {&#xA;&#x9;&#x9;return fFigureInstanceNumVCPUsFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureInstanceCPUSizeFigure() {&#xA;&#x9;&#x9;return fFigureInstanceCPUSizeFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureInstanceNetworkPerformanceFigure() {&#xA;&#x9;&#x9;return fFigureInstanceNetworkPerformanceFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureInstanceMemoryFigure() {&#xA;&#x9;&#x9;return fFigureInstanceMemoryFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureInstanceStorageFigure() {&#xA;&#x9;&#x9;return fFigureInstanceStorageFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureInstanceOperatingSystemFigure() {&#xA;&#x9;&#x9;return fFigureInstanceOperatingSystemFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureInstanceArchitectureFigure() {&#xA;&#x9;&#x9;return fFigureInstanceArchitectureFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureInstanceApplicationsFigure() {&#xA;&#x9;&#x9;return fFigureInstanceApplicationsFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
       <modelFacet>
         <metaClass
             href="cpg.genmodel#//cloudProvisioning/Instance"/>
         <containmentMetaFeature
-            href="cpg.genmodel#//cloudProvisioning/Canvas/instances"/>
+            href="cpg.genmodel#//cloudProvisioning/Environment/instances"/>
         <childMetaFeature
-            href="cpg.genmodel#//cloudProvisioning/Canvas/instances"/>
+            href="cpg.genmodel#//cloudProvisioning/Environment/instances"/>
       </modelFacet>
       <labels
-          visualID="5001"
+          visualID="5004"
           editPartClassName="InstanceNameEditPart"
           itemSemanticEditPolicyClassName="InstanceNameItemSemanticEditPolicy"
           notationViewFactoryClassName="InstanceNameViewFactory"
@@ -113,7 +178,7 @@
               href="cpg.genmodel#//cloudProvisioning/Instance/Name"/>
         </modelFacet>
       </labels>
-    </topLevelNodes>
+    </childNodes>
     <topLevelNodes
         visualID="2002"
         editPartClassName="EnvironmentEditPart"
@@ -169,7 +234,7 @@
         childNodes="//@diagram/@childNodes.0"
         title="EnvironmentCompartment"
         needsTitle="false"
-        node="//@diagram/@topLevelNodes.1"
+        node="//@diagram/@topLevelNodes.0"
         listLayout="false">
       <diagramRunTimeClass
           href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
@@ -185,12 +250,12 @@
             xsi:type="gmfgen:ToolEntry"
             title="Environment"
             description="Create new Environment"
-            genNodes="//@diagram/@topLevelNodes.1"/>
+            genNodes="//@diagram/@topLevelNodes.0"/>
         <entries
             xsi:type="gmfgen:ToolEntry"
             title="Instance"
             description="Create new Instance"
-            genNodes="//@diagram/@topLevelNodes.0 //@diagram/@childNodes.0"/>
+            genNodes="//@diagram/@childNodes.0"/>
       </groups>
     </palette>
     <preferencePages
@@ -475,11 +540,37 @@
   </application>
   <domainGenModel
       href="cpg.genmodel#/"/>
+  <expressionProviders>
+    <providers
+        xsi:type="gmfgen:GenExpressionInterpreter">
+      <expressions
+          xsi:type="gmfgen:GenConstraint"
+          body="self.Name.size() > 0"/>
+      <expressions
+          xsi:type="gmfgen:GenConstraint"
+          body="self.Name.size() > 0"/>
+      <expressions
+          xsi:type="gmfgen:GenConstraint"
+          body="self.Memory > 0 and self.Memory &lt;= 245"/>
+      <expressions
+          xsi:type="gmfgen:GenConstraint"
+          body="self.Storage > 0 and self.Storage &lt;= 2048"/>
+      <expressions
+          xsi:type="gmfgen:GenConstraint"
+          body="self.NumVCPUs > 0 and self.NumVCPUs &lt;= 32"/>
+      <expressions
+          xsi:type="gmfgen:GenConstraint"
+          body="Environment.allInstances()->forAll(e1, e2 | e1 &lt;> e2 implies e1.Name &lt;> e2.Name)"/>
+      <expressions
+          xsi:type="gmfgen:GenConstraint"
+          body="self.instances->forAll(i1,i2 | i1 &lt;> i2 implies i1.Name &lt;> i2.Name)"/>
+    </providers>
+  </expressionProviders>
   <labelParsers
       extensibleViaService="true">
     <implementations
         xsi:type="gmfgen:PredefinedParser"
-        uses="//@diagram/@topLevelNodes.0/@labels.0/@modelFacet //@diagram/@childNodes.0/@labels.0/@modelFacet //@diagram/@topLevelNodes.1/@labels.0/@modelFacet"/>
+        uses="//@diagram/@childNodes.0/@labels.0/@modelFacet //@diagram/@topLevelNodes.0/@labels.0/@modelFacet"/>
   </labelParsers>
   <contextMenus
       context="//@diagram">

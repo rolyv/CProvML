@@ -100,6 +100,15 @@
    </extension>
 
 
+   <extension id="validationDecoratorProvider" name="ValidationDecorations" point="org.eclipse.gmf.runtime.diagram.ui.decoratorProviders">
+      <?gmfgen generated="true"?>
+      <decoratorProvider class="cloudProvisioning.diagram.providers.CpgValidationDecoratorProvider">
+         <Priority name="Medium"/>
+         <object class="org.eclipse.gmf.runtime.diagram.ui.editparts.IPrimaryEditPart(org.eclipse.gmf.runtime.diagram.ui)" id="PRIMARY_VIEW"/>
+         <context decoratorTargets="PRIMARY_VIEW"/>
+      </decoratorProvider>
+   </extension>
+
    <extension point="org.eclipse.core.runtime.preferences" id="prefs">
       <?gmfgen generated="true"?>
       <initializer class="cloudProvisioning.diagram.preferences.DiagramPreferenceInitializer"/>
@@ -205,7 +214,7 @@
       <viewProvider class="cloudProvisioning.diagram.providers.CpgViewProvider">
          <Priority name="Lowest"/>
          <context viewClass="org.eclipse.gmf.runtime.notation.Diagram" semanticHints="Cpg"/>
-         <context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="2001,2002,3001"/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="2002,3001"/>
       </viewProvider>
    </extension>
 
@@ -217,13 +226,13 @@
             <method name="getType()" value="Cpg"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-nodes">
-            <method name="getType()" value="2001,2002,3001"/>
+            <method name="getType()" value="2002,3001"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Edge" id="generated-links">
             <method name="getType()" value=""/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-labels">
-            <method name="getType()" value="5001,5003,5002"/>
+            <method name="getType()" value="5003,5004"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-compartments">
             <method name="getType()" value="7001"/>
@@ -237,10 +246,9 @@
       <modelingAssistantProvider class="cloudProvisioning.diagram.providers.CpgModelingAssistantProvider">
          <Priority name="Lowest"/>
          <object class="cloudProvisioning.diagram.edit.parts.CanvasEditPart" id="Canvas_1000"/>
-         <object class="cloudProvisioning.diagram.edit.parts.InstanceEditPart" id="Instance_2001"/>
          <object class="cloudProvisioning.diagram.edit.parts.EnvironmentEditPart" id="Environment_2002"/>
-         <object class="cloudProvisioning.diagram.edit.parts.Instance2EditPart" id="Instance_3001"/>
-         <context elements="Canvas_1000,Instance_2001,Environment_2002,Instance_3001"/>
+         <object class="cloudProvisioning.diagram.edit.parts.InstanceEditPart" id="Instance_3001"/>
+         <context elements="Canvas_1000,Environment_2002,Instance_3001"/>
       </modelingAssistantProvider>
    </extension>
 
@@ -272,16 +280,6 @@
       </metamodel>
       <metamodel nsURI="http://cen5064/group1/cloudProvisioning">
          <metamodelType
-               id="CPG.diagram.Instance_2001"
-               name="%metatype.name.Instance_2001"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
-               eclass="Instance"
-               edithelper="cloudProvisioning.diagram.edit.helpers.InstanceEditHelper">
-            <param name="semanticHint" value="2001"/>
-         </metamodelType>
-      </metamodel>
-      <metamodel nsURI="http://cen5064/group1/cloudProvisioning">
-         <metamodelType
                id="CPG.diagram.Environment_2002"
                name="%metatype.name.Environment_2002"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
@@ -291,13 +289,14 @@
          </metamodelType>
       </metamodel>
       <metamodel nsURI="http://cen5064/group1/cloudProvisioning">
-         <specializationType
+         <metamodelType
                id="CPG.diagram.Instance_3001"
                name="%metatype.name.Instance_3001"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="CPG.diagram.Instance_2001"/>
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Instance"
+               edithelper="cloudProvisioning.diagram.edit.helpers.InstanceEditHelper">
             <param name="semanticHint" value="3001"/>
-         </specializationType>
+         </metamodelType>
       </metamodel>
    </extension>
 
@@ -312,7 +311,6 @@
       </clientContext> 
       <binding context="CPG.diagram.TypeContext">
          <elementType ref="CPG.diagram.Canvas_1000"/>
-         <elementType ref="CPG.diagram.Instance_2001"/>
          <elementType ref="CPG.diagram.Environment_2002"/>
          <elementType ref="CPG.diagram.Instance_3001"/>
          <advice ref="org.eclipse.gmf.runtime.diagram.core.advice.notationDepdendents"/>
@@ -395,6 +393,106 @@
          </action>
       </actionSet>
    </extension>
+   <extension point="org.eclipse.emf.validation.constraintProviders">
+      <?gmfgen generated="true"?>
+            <category id="audits" mandatory="false" name="CPG Audits">
+         <![CDATA[CPG Audits]]>
+      </category>
+      <constraintProvider cache="true">
+         <package namespaceUri="http://cen5064/group1/cloudProvisioning"/>
+               <constraints categories="audits">
+                  <constraint id="environmentName"
+            lang="OCL"
+            name="Missing environment name check"
+            mode="Batch"
+            severity="ERROR" statusCode="200">
+            <![CDATA[self.Name.size() > 0]]>
+            <description><![CDATA[This check will detect when an environment name is not set]]></description>
+            <message><![CDATA[Environment name must be specified.]]></message>
+            <target class="cloudProvisioning.Environment"/>
+         </constraint>
+                  <constraint id="instanceName"
+            lang="OCL"
+            name="Missing instance name check"
+            mode="Batch"
+            severity="ERROR" statusCode="200">
+            <![CDATA[self.Name.size() > 0]]>
+            <description><![CDATA[This check will detect when instance name is not specified]]></description>
+            <message><![CDATA[Instance name must be specified]]></message>
+            <target class="cloudProvisioning.Instance"/>
+         </constraint>
+                  <constraint id="instanceMemory"
+            lang="OCL"
+            name="Valid Instance memory"
+            mode="Batch"
+            severity="ERROR" statusCode="200">
+            <![CDATA[self.Memory > 0 and self.Memory <= 245]]>
+            <description><![CDATA[This check detects if instance memory is valid]]></description>
+            <message><![CDATA[Instance memory must be between 1 and 245 GB]]></message>
+            <target class="cloudProvisioning.Instance"/>
+         </constraint>
+                  <constraint id="instanceStorage"
+            lang="OCL"
+            name="Valid Instance storage"
+            mode="Batch"
+            severity="ERROR" statusCode="200">
+            <![CDATA[self.Storage > 0 and self.Storage <= 2048]]>
+            <description><![CDATA[This check detects if instance storage is valid]]></description>
+            <message><![CDATA[Instance storage must be between 1 and 2048 GB]]></message>
+            <target class="cloudProvisioning.Instance"/>
+         </constraint>
+                  <constraint id="vcpuCheck"
+            lang="OCL"
+            name="Valid VCPU count"
+            mode="Batch"
+            severity="ERROR" statusCode="200">
+            <![CDATA[self.NumVCPUs > 0 and self.NumVCPUs <= 32]]>
+            <description><![CDATA[This check detects when VCPU is invalid]]></description>
+            <message><![CDATA[Number of VCPUs must be between 1 and 32]]></message>
+            <target class="cloudProvisioning.Instance"/>
+         </constraint>
+                  <constraint id="uniqueEnvironmentName"
+            lang="OCL"
+            name="Unique environment name"
+            mode="Batch"
+            severity="ERROR" statusCode="200">
+            <![CDATA[Environment.allInstances()->forAll(e1, e2 | e1 <> e2 implies e1.Name <> e2.Name)]]>
+            <description><![CDATA[This check detects environments with the same name]]></description>
+            <message><![CDATA[Environment names must be unique]]></message>
+            <target class="cloudProvisioning.Environment"/>
+         </constraint>
+                  <constraint id="uniqueInstanceName"
+            lang="OCL"
+            name="Unique instance names per environment"
+            mode="Batch"
+            severity="ERROR" statusCode="200">
+            <![CDATA[self.instances->forAll(i1,i2 | i1 <> i2 implies i1.Name <> i2.Name)]]>
+            <description><![CDATA[This check detects duplicate instance names]]></description>
+            <message><![CDATA[Instance names must be unique for a given environment]]></message>
+            <target class="cloudProvisioning.Environment"/>
+         </constraint>
+                  </constraints>
+      </constraintProvider>
+   </extension>
+
+   <extension point="org.eclipse.emf.validation.constraintBindings">
+      <?gmfgen generated="true"?>
+      <clientContext default="false" id="CPG.diagramDefaultCtx">
+         <selector class="cloudProvisioning.diagram.providers.CpgValidationProvider$DefaultCtx"/>
+      </clientContext>
+      <binding context="CPG.diagramDefaultCtx">
+                  <constraint ref="CPG.diagram.environmentName"/>
+                  <constraint ref="CPG.diagram.instanceName"/>
+                  <constraint ref="CPG.diagram.instanceMemory"/>
+                  <constraint ref="CPG.diagram.instanceStorage"/>
+                  <constraint ref="CPG.diagram.vcpuCheck"/>
+                  <constraint ref="CPG.diagram.uniqueEnvironmentName"/>
+                  <constraint ref="CPG.diagram.uniqueInstanceName"/>
+               </binding>
+
+   </extension>
+
+
    <extension point="org.eclipse.ui.commands" id="update-cmd">
       <?gmfgen generated="true"?>
       <command

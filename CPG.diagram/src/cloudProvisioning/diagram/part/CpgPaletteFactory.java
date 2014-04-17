@@ -1,6 +1,5 @@
 package cloudProvisioning.diagram.part;
 
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -57,16 +56,14 @@ public class CpgPaletteFactory {
 	 * @generated
 	 */
 	private ToolEntry createInstance2CreationTool() {
-		ArrayList<IElementType> types = new ArrayList<IElementType>(2);
-		types.add(cloudProvisioning.diagram.providers.CpgElementTypes.Instance_2001);
-		types.add(cloudProvisioning.diagram.providers.CpgElementTypes.Instance_3001);
 		NodeToolEntry entry = new NodeToolEntry(
 				cloudProvisioning.diagram.part.Messages.Instance2CreationTool_title,
 				cloudProvisioning.diagram.part.Messages.Instance2CreationTool_desc,
-				types);
+				Collections
+						.singletonList(cloudProvisioning.diagram.providers.CpgElementTypes.Instance_3001));
 		entry.setId("createInstance2CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(cloudProvisioning.diagram.providers.CpgElementTypes
-				.getImageDescriptor(cloudProvisioning.diagram.providers.CpgElementTypes.Instance_2001));
+				.getImageDescriptor(cloudProvisioning.diagram.providers.CpgElementTypes.Instance_3001));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
