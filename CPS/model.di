@@ -148,29 +148,7 @@
   </pageList>
   <sashModel currentSelection="//@sashModel/@windows.0/@children.0">
     <windows>
-      <children xsi:type="di:TabFolder">
-        <children>
-          <emfPageIdentifier href="model.notation#_aVFlcJDWEeO_F6mXGJ9tdA"/>
-        </children>
-        <children>
-          <emfPageIdentifier href="model.notation#_kNDm0MXhEeOVm6xmicb6jg"/>
-        </children>
-        <children>
-          <emfPageIdentifier href="model.notation#_sYoAQMXEEeONSLLzOzPhPA"/>
-        </children>
-        <children>
-          <emfPageIdentifier href="model.notation#_PnEWoMZXEeOYQoVIpzu9Xw"/>
-        </children>
-        <children>
-          <emfPageIdentifier href="model.notation#_VAHe8MZXEeOYQoVIpzu9Xw"/>
-        </children>
-        <children>
-          <emfPageIdentifier href="model.notation#_aO8UQMZXEeOYQoVIpzu9Xw"/>
-        </children>
-        <children>
-          <emfPageIdentifier href="model.notation#_tjEQUMZXEeOYQoVIpzu9Xw"/>
-        </children>
-      </children>
+      <children xsi:type="di:TabFolder"/>
     </windows>
   </sashModel>
 </di:SashWindowsMngr>
