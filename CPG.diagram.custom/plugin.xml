@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <!--<extension point="org.eclipse.ui.bindings">
+       <key commandId="cloudProvisioning.transformModel" 
+	       	sequence="M1+I" 
+	       	schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"/>
+   </extension>
+   <extension point="org.eclipse.ui.commands">
+       <category 
+	       	name="CPG" 
+	       	description="Commands related to CPG diagrams." 
+	       	id="cloudProvisioning.commands.category"/>
+	   <command 
+	   		categoryId="cloudProvisioning.commands.category" 
+	   		description="Transforms model" 
+	   		id="cloudProvisioning.transformModel" 
+	   		name="Transform Model">
+	   </command>
+   </extension>
+   <extension point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            adaptable="false"
+            id="cloudProvisioning.diagram.ui.objectContribution.ModelTransformPart1"
+            objectClass="cloudProvisioning.diagram.edit.parts.ModelTransformPart">
+         <menu 
+            id="CpgModel" 
+            label="&amp;Model" 
+            path="additions"> 
+            <separator name="group1"/>
+         </menu>
+         <action
+               class="cloudProvisioning.diagram.part.ModelTransformAction"
+               definitionId="cloudProvisioning.transformModel"
+               enablesFor="1"
+               id="cloudProvisioning.popup.ModelTransformActionID"
+               label="&amp;Transform"
+               menubarPath="CpgModel/group1">
+         </action>
+      </objectContribution>    -->
+      <!--<viewerContribution 
+  		id="CPG.diagram.custom.viewerContribution1"
+  		targetID="cloudProvisioning.diagram.part.CpgDiagramEditorID">
+      		<action 
+      			id="cloudProvisioning.transformAction"
+      			class="cloudProvisioning.diagram.part.ModelTransformAction"
+      			label="&amp;Transform"
+      			definitionId="cloudProvisioning.transformModel"
+      			menubarPath="additions">
+      		</action>
+      </viewerContribution>                
+	</extension>-->
+	
+	<extension point="org.eclipse.ui.menus" id="context-menus">
+      <?gmfgen generated="true"?>
+      <!-- menuContribution locationURI="menu:org.eclipse.ui.main.menu?after=">
+      </menuContribution>
+      <menuContribution locationURI="toolbar:org.eclipse.ui.main.toolbar?after=">
+      </menuContribution -->
+      <menuContribution locationURI="popup:org.eclipse.gmf.runtime.diagram.ui.DiagramEditorContextMenu">
+         <command commandId="CPG.diagram.TransformAction">
+            <visibleWhen>
+               <and>
+                  <with variable="activePartId"><equals value="cloudProvisioning.diagram.part.CpgDiagramEditorID"/></with>
+                  <with variable="selection"><iterate ifEmpty="false"> 
+                     <instanceof value="cloudProvisioning.diagram.edit.parts.CanvasEditPart"/>
+                  </iterate></with>
+               </and>
+            </visibleWhen>
+         </command>
+      </menuContribution>
+   </extension>
+
+   <extension point="org.eclipse.ui.commands" id="menu-commands">
+      <?gmfgen generated="true"?>
+      <category id="cloudProvisioning.diagram.part.CpgDiagramEditorID" name="%cmdcategory.name" description="%cmdcategory.desc"/>
+      <command id="CPG.diagram.TransformAction"
+         name="Transform Model"
+         categoryId="cloudProvisioning.diagram.part.CpgDiagramEditorID"
+         defaultHandler="cloudProvisioning.diagram.part.ModelTransformAction"/>
+   </extension>
+
+   <extension point="org.eclipse.ui.handlers" id="menu-handlers">
+      <?gmfgen generated="true"?>
+   </extension>
+
+   <!-- optionally, specify keybindings -->
+</plugin>
