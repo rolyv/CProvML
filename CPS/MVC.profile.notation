@@ -537,25 +537,6 @@
           <element xmi:type="uml:Stereotype" href="MVC.profile.uml#_0eZ7EMREEeOYIM-EEkJrsw"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0ebwQcREEeOYIM-EEkJrsw" x="545" y="183"/>
         </children>
-        <children xmi:type="notation:Shape" xmi:id="_Hj8okMRFEeOYIM-EEkJrsw" type="1028" fontName="Segoe UI" lineColor="0">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Hj9PoMRFEeOYIM-EEkJrsw" source="ShadowFigure">
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Hj9PocRFEeOYIM-EEkJrsw" key="ShadowFigure_Value" value="false"/>
-          </eAnnotations>
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Hj9PosRFEeOYIM-EEkJrsw" source="displayNameLabelIcon">
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Hj9Po8RFEeOYIM-EEkJrsw" key="displayNameLabelIcon_value" value="false"/>
-          </eAnnotations>
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Hj9PpMRFEeOYIM-EEkJrsw" source="QualifiedName">
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Hj9PpcRFEeOYIM-EEkJrsw" key="QualifiedNameDepth" value="1000"/>
-          </eAnnotations>
-          <children xmi:type="notation:DecorationNode" xmi:id="_Hj9PpsRFEeOYIM-EEkJrsw" type="1059"/>
-          <children xmi:type="notation:DecorationNode" xmi:id="_Hj92sMRFEeOYIM-EEkJrsw" type="5064"/>
-          <children xmi:type="notation:BasicCompartment" xmi:id="_HkCIIMRFEeOYIM-EEkJrsw" visible="false" type="compartment_shape_display">
-            <styles xmi:type="notation:TitleStyle" xmi:id="_HkCIIcRFEeOYIM-EEkJrsw"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HkCIIsRFEeOYIM-EEkJrsw"/>
-          </children>
-          <element xmi:type="uml:Constraint" href="MVC.profile.uml#_HjwbUMRFEeOYIM-EEkJrsw"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Hj8okcRFEeOYIM-EEkJrsw" x="82" y="300"/>
-        </children>
         <styles xmi:type="notation:TitleStyle" xmi:id="_Na3c1sQ-EeO5YoHrVP4sVQ"/>
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Na3c18Q-EeO5YoHrVP4sVQ"/>
       </children>
@@ -827,6 +808,25 @@
       </children>
       <element xmi:type="uml:Profile" href="MVC.profile.uml#_2wDqIMXwEeOpv7iMJVB_pA"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2wHUgcXwEeOpv7iMJVB_pA" x="78" y="946" width="906" height="421"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_Hj8okMRFEeOYIM-EEkJrsw" type="1028" fontName="Segoe UI" lineColor="0">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Hj9PoMRFEeOYIM-EEkJrsw" source="ShadowFigure">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Hj9PocRFEeOYIM-EEkJrsw" key="ShadowFigure_Value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Hj9PosRFEeOYIM-EEkJrsw" source="displayNameLabelIcon">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Hj9Po8RFEeOYIM-EEkJrsw" key="displayNameLabelIcon_value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Hj9PpMRFEeOYIM-EEkJrsw" source="QualifiedName">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Hj9PpcRFEeOYIM-EEkJrsw" key="QualifiedNameDepth" value="1000"/>
+      </eAnnotations>
+      <children xmi:type="notation:DecorationNode" xmi:id="_Hj9PpsRFEeOYIM-EEkJrsw" type="1059"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_Hj92sMRFEeOYIM-EEkJrsw" type="5064"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_HkCIIMRFEeOYIM-EEkJrsw" visible="false" type="compartment_shape_display">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_HkCIIcRFEeOYIM-EEkJrsw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HkCIIsRFEeOYIM-EEkJrsw"/>
+      </children>
+      <element xmi:type="uml:Constraint" href="MVC.profile.uml#_HjwbUMRFEeOYIM-EEkJrsw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Hj8okcRFEeOYIM-EEkJrsw" x="132" y="847"/>
     </children>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_GLv5wZaWEeOyGuS94aT43g"/>
     <element xmi:type="uml:Profile" href="MVC.profile.uml#_GLroUJaWEeOyGuS94aT43g"/>

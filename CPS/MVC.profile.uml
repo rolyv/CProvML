@@ -2297,9 +2297,6 @@
     <packagedElement xmi:type="uml:Extension" xmi:id="_3AF0sMREEeOYIM-EEkJrsw" name="E_GetByName_Operation1" memberEnd="_3AF0scREEeOYIM-EEkJrsw _3AFNoMREEeOYIM-EEkJrsw">
       <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_3AF0scREEeOYIM-EEkJrsw" name="extension_GetByName" type="_0eZ7EMREEeOYIM-EEkJrsw" aggregation="composite" association="_3AF0sMREEeOYIM-EEkJrsw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Constraint" xmi:id="_HjwbUMRFEeOYIM-EEkJrsw" name="Constraint2" constrainedElement="_HxwtAMRDEeO5YoHrVP4sVQ">
-      <specification xmi:type="uml:LiteralString" xmi:id="_HjwbUcRFEeOYIM-EEkJrsw" name="Contraint 2" value="inv: features->collect(i | i.hasStereotype(&quot;GetByName&quot;))->size() >= 1"/>
-    </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Profile" xmi:id="_2wDqIMXwEeOpv7iMJVB_pA" name="Profile1" metaclassReference="_8LoiAMXwEeOpv7iMJVB_pA">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LWT8cMXxEeOpv7iMJVB_pA" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -2453,5 +2450,8 @@
     <packagedElement xmi:type="uml:Extension" xmi:id="_vLZJYcXxEeObgeZlyFGzCg" name="E_RepoInterface_Lifeline1" memberEnd="_vLZJYsXxEeObgeZlyFGzCg _vLZJYMXxEeObgeZlyFGzCg">
       <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_vLZJYsXxEeObgeZlyFGzCg" name="extension_RepoInterface" type="_hK2m0MXxEeObgeZlyFGzCg" aggregation="composite" association="_vLZJYcXxEeObgeZlyFGzCg"/>
     </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Constraint" xmi:id="_HjwbUMRFEeOYIM-EEkJrsw" name="Constraint2" constrainedElement="_HxwtAMRDEeO5YoHrVP4sVQ">
+    <specification xmi:type="uml:LiteralString" xmi:id="_HjwbUcRFEeOYIM-EEkJrsw" name="Contraint 2" value="inv: features->collect(i | i.hasStereotype(&quot;GetByName&quot;))->size() >= 1"/>
   </packagedElement>
 </uml:Profile>
