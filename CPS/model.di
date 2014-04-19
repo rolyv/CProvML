@@ -145,10 +145,35 @@
     <availablePage>
       <emfPageIdentifier href="model.notation#_tjEQUMZXEeOYQoVIpzu9Xw"/>
     </availablePage>
+    <availablePage>
+      <emfPageIdentifier href="model.notation#_sdABcMdaEeOjM4ho_NUF_Q"/>
+    </availablePage>
+    <availablePage>
+      <emfPageIdentifier href="model.notation#_NqjygMdbEeOjM4ho_NUF_Q"/>
+    </availablePage>
+    <availablePage>
+      <emfPageIdentifier href="model.notation#_MELOEMdcEeOjM4ho_NUF_Q"/>
+    </availablePage>
+    <availablePage>
+      <emfPageIdentifier href="model.notation#_60tUkMdfEeOjM4ho_NUF_Q"/>
+    </availablePage>
+    <availablePage>
+      <emfPageIdentifier href="model.notation#_huH8IMfXEeOjkNmtdrJxKQ"/>
+    </availablePage>
+    <availablePage>
+      <emfPageIdentifier href="model.notation#___StMMfaEeOjkNmtdrJxKQ"/>
+    </availablePage>
+    <availablePage>
+      <emfPageIdentifier href="model.notation#_aERN0MfiEeOjkNmtdrJxKQ"/>
+    </availablePage>
   </pageList>
   <sashModel currentSelection="//@sashModel/@windows.0/@children.0">
     <windows>
-      <children xsi:type="di:TabFolder"/>
+      <children xsi:type="di:TabFolder">
+        <children>
+          <emfPageIdentifier href="model.notation#_aVFlcJDWEeO_F6mXGJ9tdA"/>
+        </children>
+      </children>
     </windows>
   </sashModel>
 </di:SashWindowsMngr>
