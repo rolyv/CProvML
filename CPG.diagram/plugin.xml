@@ -544,6 +544,18 @@
    <extension point="org.eclipse.ui.handlers" id="menu-handlers">
       <?gmfgen generated="true"?>
    </extension>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="CPG.diagram.CpgApplication"
+            name="Cloud Provisioning GVE">
+         <property
+               name="appName"
+               value="Cloud Provisioning GVE">
+         </property>
+      </product>
+   </extension>
 
    <!-- optionally, specify keybindings -->
 </plugin>

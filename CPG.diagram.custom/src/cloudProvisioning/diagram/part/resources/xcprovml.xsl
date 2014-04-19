@@ -4,8 +4,16 @@
 <xsl:template match="/">
 	<environments>				    
 	<xsl:for-each select="//environments">
-  		<environment Name="{@Name}">
-    		<instances>
+  		<environment>
+  			<xsl:attribute name="Name">
+  				<xsl:choose>
+  				<xsl:when test="@Name!=''">
+  					<xsl:value-of select="@Name" />
+  				</xsl:when>
+  				<xsl:otherwise>env0</xsl:otherwise>
+  			</xsl:choose>
+  			</xsl:attribute>
+    		<instances>    		
     		<xsl:for-each select="instances">
 		      <instance 
 		        Name="{@Name}">
